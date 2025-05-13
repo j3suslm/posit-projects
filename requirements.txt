@@ -1,0 +1,13 @@
+plotly
+pandas
+polars
+pyarrow
+plotnine
+duckdb
+seaborn
+ipywidgets
+jupyter
+ipykernel
+voila
+itables
+

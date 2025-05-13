@@ -1,0 +1,346 @@
+---
+title: Gasoline Prices in Mexico
+subtitle: Fuel Price Fluctuations, A Constant Concern
+author: '**Jesus L. Monroy** <br> *Economist & Data Scientist*'
+date: '2025-02-03'
+date-format: MMM, YYYY
+format:
+  revealjs:
+    width: 1400
+    height: 800
+    center-title-slide: true
+    embed-resources: true
+    preview-links: auto
+    incremental: true
+    theme: serif
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    navigation-mode: vertical
+    controls: true
+    controls-layout: bottom-right
+    controls-tutorial: true
+    touch: true
+    menu:
+      side: left
+      width: normal
+    footer: © 2025
+jupyter: python3
+---
+
+# Overview {.smaller}
+
+## Current Situation {.smaller}
+
+::: {.incremental}
+
+* Rising Prices
+
+    Despite government efforts to stabilize fuel costs, gasoline prices in Mexico have been on the rise. Some estimates suggest prices could reach MX$30 per liter during 2025.
+
+* Regional Variations
+
+    Gasoline prices vary significantly across different states in Mexico. Quintana Roo has the highest average price for regular gasoline, while Veracruz has the lowest.
+
+* Government Intervention
+
+    The government has implemented measures like a price cap of MX$24 per liter for regular gasoline and has been working to stabilize fuel prices. However, these efforts have faced challenges.
+
+:::
+
+## Factors Affecting Prices {.smaller}
+
+::: {.incremental}
+
+* Global Oil Prices
+
+    International oil prices play a significant role in determining gasoline prices in Mexico.
+
+* Government Policies
+
+    Taxes, subsidies, and regulations implemented by the Mexican government influence fuel prices.
+
+* Economic Conditions
+
+    Inflation, exchange rates, and other economic factors can impact gasoline prices.
+
+:::
+
+## Challenges and Concerns {.smaller}
+
+* Impact on Low-Income Families
+
+    Rising gasoline prices put a strain on low-income households, affecting their daily expenses and overall economic well-being.
+
+* Economic Impact
+
+    Increased fuel costs can have a ripple effect across various sectors of the economy, potentially leading to inflation and affecting businesses.
+
+* Government Promises
+
+    The government’s promises to keep gasoline prices low have been met with skepticism, as prices continue to climb.
+
+```{python}
+import polars as pl
+import duckdb as db
+from plotnine import *
+```
+
+```{python}
+conn = db.connect('my_database.db')
+```
+
+```{python}
+df = conn.sql('select * from gas_stations').pl()
+```
+
+```{python}
+conn.close()
+```
+
+```{python}
+df = (
+    df.select('entidad'
+              , 'municipio'
+              , 'precio_tar'
+              , 'precio_vendedores'
+              , 'ganancia')
+        .rename({
+            'entidad':'state',
+            'municipio':'municipality',
+            'precio_tar':'gasoline_cost',
+            'precio_vendedores':'sale_price',
+            'ganancia':'profit',
+        })
+).with_columns(
+    (pl.col('profit')/pl.col('gasoline_cost')).alias('profit%'),
+    mun_state=pl.col('municipality')+', '+pl.col('state')
+)
+```
+
+```{python}
+states = (
+        df.group_by('state')
+            .agg(pl.col('gasoline_cost','sale_price','profit', 'profit%').mean())
+            .sort('state')
+        )
+```
+
+```{python}
+municipalities = (
+        df.group_by('mun_state')
+            .agg(pl.col('gasoline_cost','sale_price','profit','profit%').mean())
+            .sort('mun_state')
+        )
+```
+
+## Top 05 States with highest gasoline prices {.smaller}
+
+The following table presents a snapshot of the States with highest gasoline prices in Mexico.
+
+```{python}
+#| label: tbl-top5-states
+#| tbl-cap: Top 05 States with highest prices
+#| tbl-cap-location: bottom
+
+(
+    states
+        .top_k(5, by='sale_price')
+        .to_pandas()
+        .style
+        .hide()    
+        .format({'gasoline_cost': '${:,.2f}',
+                 'sale_price': '${:.2f}',
+                 'profit': '${:.2f}',
+                 'profit%': '{:.2%}',})
+)
+```
+
+## Top 05 States with lowest gasoline prices {.smaller}
+
+The following table presents a snapshot of the States with lowest gasoline prices in Mexico.
+
+```{python}
+#| label: tbl-bottom5-states
+#| tbl-cap: Top 05 States with lowest prices
+#| tbl-cap-location: bottom
+(
+    states
+        .bottom_k(5, by='sale_price')
+        .to_pandas()
+        .style
+        .hide()    
+        .format({'gasoline_cost': '${:,.2f}',
+                 'sale_price': '${:.2f}',
+                 'profit': '${:.2f}',
+                 'profit%': '{:.2%}',})
+)
+```
+
+## Top 05 Municipalities with highest gasoline prices {.smaller}
+
+The following table presents a snapshot of the Municipalities with highest gasoline prices in Mexico.
+
+```{python}
+#| label: tbl-top5-municipalitites
+#| tbl-cap: Top 05 Municipalities with highest prices
+#| tbl-cap-location: bottom
+
+(
+    municipalities
+        .top_k(5, by='sale_price')
+        .to_pandas()
+        .style
+        .hide()    
+        .format({'gasoline_cost': '${:,.2f}',
+                 'sale_price': '${:.2f}',
+                 'profit': '${:.2f}',
+                 'profit%': '{:.2%}',})
+)
+```
+
+## Top 05 Municipalities with lowest gasoline prices {.smaller}
+
+The following table presents a snapshot of the Municipalities with lowest gasoline prices in Mexico.
+
+```{python}
+#| label: tbl-bottom5-municipalitites
+#| tbl-cap: Top 05 Municipalities with lowest prices
+#| tbl-cap-location: bottom
+
+(
+    municipalities
+        .bottom_k(5, by='sale_price')
+        .to_pandas()
+        .style
+        .hide()    
+        .format({'gasoline_cost': '${:,.2f}',
+                 'sale_price': '${:.2f}',
+                 'profit': '${:.2f}',
+                 'profit%': '{:.2%}',})
+)
+```
+
+## Average Gasoline Price by State {.smaller}
+
+The following chart shows average gasoline prices by State in Mexico.
+
+```{python}
+#| label: fig-states
+#| fig-cap: Average Gasoline Prices by State
+
+(
+    ggplot(states, mapping=aes(x='state', y='sale_price'))
+        + geom_bar(stat='identity', fill="#4c72b0")
+        + coord_flip()
+        + scale_y_continuous(limits=(0, 25))
+        + labs(x='',
+               y='Gasoline price')
+        + theme(axis_text_y=element_text(rotation=0),
+               figure_size=(8.5, 6),
+               plot_background=element_rect(fill='#F0F1EB'),
+               panel_background=element_rect(fill='#F0F1EB', alpha=0.6),
+               )
+)
+```
+
+## Profit by State {.smaller}
+
+The following chart shows average profit by selling gasoline by State in Mexico.
+
+```{python}
+#| label: fig-states-profit
+#| fig-cap: Profit by State
+
+(
+    ggplot(states, mapping=aes(x='state', y='profit'))
+        + geom_bar(stat='identity', fill="#800020")
+        + coord_flip()
+        + scale_y_continuous(limits=(0, 3.4))
+        + labs(x='',
+               y='Profit')
+        + theme(axis_text_y=element_text(rotation=0),
+               figure_size=(8.5, 6),
+               plot_background=element_rect(fill='#F0F1EB'),
+               panel_background=element_rect(fill='#F0F1EB', alpha=0.6),
+               )
+)
+```
+
+## Dispersion of Gasoline Prices {.smaller}
+
+The following chart shows the dispersion of gasoline prices by State in Mexico.
+
+```{python}
+#| label: fig-municipalities
+#| fig-cap: Dispersion of Gasoline Prices by State
+
+(
+    ggplot(data=df, mapping=aes(x='state', y='sale_price', fill='state')) 
+    + geom_boxplot()
+    + coord_flip()
+    + scale_y_continuous(limits=(20, 25.9))
+    + labs(x='',
+           y='Gasoline price')
+    + theme(legend_position='none',
+           figure_size=(8.5, 6),
+           plot_background=element_rect(fill='#F0F1EB'),
+               panel_background=element_rect(fill='#F0F1EB', alpha=0.6),
+           )
+)
+```
+
+## Dispersion of Profits {.smaller}
+
+The following chart shows the dispersion of profit by selling gasoline by State in Mexico.
+
+```{python}
+#| label: fig-municipalities-profit
+#| fig-cap: Dispersion of Profits by State
+
+(
+    ggplot(data=df, mapping=aes(x='state', y='profit', fill='state')) 
+    + geom_boxplot()
+    + coord_flip()
+    + scale_y_continuous(limits=(-2, 3.9))
+    + labs(x='',
+           y='Profit')
+    + theme(legend_position='none',
+           figure_size=(8.5, 6),
+           plot_background=element_rect(fill='#F0F1EB'),
+           panel_background=element_rect(fill='#F0F1EB', alpha=0.6),
+           )
+)
+```
+
+## Geographical Distribution {.smaller}
+
+::: {#fig-datawrapper}
+```{=html}
+<iframe width="850" height="700" src="https://datawrapper.dwcdn.net/gXnz2/2/" title="Datawrapper chart" data-external="1"></iframe>
+```
+Gasoline Sale Prices by State in Mexico
+:::
+
+# Conclusions {.smaller}
+
+In most states, filling a 40-liter car tank costs around $1,000 pesos.
+
+While precise price predictions are difficult, it's reasonable to expect continued volatility in gasoline prices in Mexico during 2025.
+
+The interplay of global oil markets, government policies, and domestic economic conditions will create a dynamic environment.
+Consumers should be prepared for potential price fluctuations and consider strategies for managing their fuel expenses.
+
+The energy sector, meanwhile, will be closely watched as Mexico navigates the complex challenges of ensuring affordable and accessible fuel for its population. 
+
+The future of gasoline prices in Mexico remains uncertain, but one thing is clear: it will continue to be a topic of significant importance for both consumers and policymakers.
+
+# Contact {.smaller}
+
+**Jesus L. Monroy**
+
+
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesus_lmonroy) | [Linkedin](https://www.linkedin.com/in/j3sus-lmonroy) | [Twitter](https://www.twitter.com/sqlalchemist)
+

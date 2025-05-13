@@ -1,0 +1,4 @@
+- source: gasoline-dashboard.ipynb
+  quarto-pub:
+    - id: 809e8525-e6a2-4767-910a-bcbbf925fa1f
+      url: https://j3sus.quarto.pub/gasoline-prices-in-mexico-dashboard

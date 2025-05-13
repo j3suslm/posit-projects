@@ -1,0 +1,313 @@
+---
+title: Creating Stunning Data Visualizations with Datawrapper
+subtitle: '*A Powerful Addition for the Python Ecosystem*'
+author: Jesus L. Monroy
+abstract: |
+  Data visualization is a powerful tool for conveying insights and making data accessible to a wider audience. Meanwhile Python offers a plethora of libraries for creating visualizations, Datawrapper provides a unique approach by combining the flexibility of custom code with the ease of a user-friendly interface. This article explores the benefits of integrating Datawrapper into Python workflows for efficient and effective data visualization.
+  Datawrapper is a powerful online tool designed to help you create engaging and informative data visualizations. Whether you’re a journalist, researcher, or simply someone who wants to present data in a more visually appealing way, Datawrapper can make the process quick and easy.
+date: '2024-11-02'
+date-format: MMM, YYYY
+toc: true
+toc-depth: 3
+toc-expand: 3
+toc-title: Contents
+toc-location: left
+page-layout: full
+execute:
+  echo: true
+format:
+  pdf:
+    documentclass: report
+    papersize: letter
+    mainfont: Helvetica Neue
+    cap-location: margin
+    reference-location: margin
+    citation-location: margin
+    geometry:
+      - top=30mm
+      - bottom=30mm
+      - left=30mm
+      - right=50mm
+      - heightrounded
+      - marginparwidth=1.6in
+  html:
+    other-links:
+      - text: My Portfolio
+        href: https://j3sus.quarto.pub/my-portfolio/posts/python/Mexico_pol_scenario.html
+    code-links:
+      - text: Code
+        icon: file-code
+        href: https://github.com/SqlAlchemist/Portfolio/blob/main/Polynomial_regression.ipynb
+    page-layout: full
+    embed-resources: true
+    code-fold: show
+    code-summary: Show code
+    code-tools:
+      source: false
+      toggle: true
+      caption: code
+    html-math-method: mathml
+    theme: theme.scss
+    cap-location: margin
+    reference-location: margin
+    citation-location: margin
+    geometry:
+      - top=30mm
+      - bottom=30mm
+      - left=30mm
+      - right=50mm
+      - heightrounded
+      - marginparwidth=1.6in
+code-line-numbers: false
+code-copy: false
+code-overflow: wrap
+jupyter: python3
+---
+
+
+{{< pagebreak >}}
+
+![](datawrapper-python.png){width=90% fig-align="center"}
+
+# Key Features
+
+### Easy-to-use interface
+
+Datawrapper’s intuitive design makes it accessible to users of all skill levels. Even those without a strong background in data visualization can create professional-looking charts and maps.
+
+### Diverse chart types
+
+From simple bar charts and line graphs to more complex maps and scatter plots, Datawrapper offers a variety of chart types to suit different data sets and storytelling needs.
+
+### Customization
+
+Users can customize their visualizations to match their brand or personal style. This includes options for changing colors, fonts, and layouts.
+
+### Interactivity
+
+Datawrapper allows users to create interactive visualizations that respond to user input. For example, users can hover over data points to see more detailed information or filter data based on specific criteria.
+
+### Embedding and sharing
+
+Once a visualization is created, it can be easily embedded into websites, blogs, or social media posts. Users can also share their visualizations directly with others.
+
+### Collaboration
+
+Datawrapper supports collaboration, allowing multiple users to work on the same visualization simultaneously. This is particularly useful for teams or organizations that need to create data visualizations together.
+
+# Use Cases for Datawrapper
+
+### Journalism
+
+Datawrapper is a popular tool among journalists who want to present complex data in a clear and visually engaging way. It can be used to create interactive charts, maps, and infographics that enhance storytelling.
+
+### Research
+
+Researchers can use Datawrapper to visualize their findings and make them more accessible to a wider audience. By presenting data in a visual format, researchers can communicate their ideas more effectively and increase the impact of their work.
+
+### Business
+
+Businesses can use Datawrapper to create dashboards, reports, and presentations that help them make data-driven decisions. By visualizing key metrics and trends, businesses can gain valuable insights into their performance.
+
+### Education
+
+Teachers and students can use Datawrapper to create interactive visualizations that help them understand and learn from data. It can be used to teach data analysis, statistics, and other subjects.
+
+# Creating Visualizations with Python & Datawrapper[^1]
+
+[^1]: The main objective of this paper is to show how you can use Datawrapper API and create pdf documents within the Python ecosystem without using other tools. Visit its official [website](https://www.datawrapper.de)
+
+#### Import libraries
+
+```{python}
+#| echo: true
+#| output: false
+from datawrapper import Datawrapper
+import numpy as np
+import pandas as pd
+import json
+import warnings
+warnings.filterwarnings('ignore')
+```
+
+#### Connect to Datawrapper
+
+```{python}
+#| echo: true
+#| output: false
+
+# Token gotten from datawrapper api
+filename = 'credentials.json'
+# read json file
+with open(filename) as f:
+    keys = json.load(f)
+# read credentials
+token = keys['datawrapper_api']
+# Acces datawrapper
+dw = Datawrapper(access_token = token)
+```
+
+[This paper is based on my Medium article [Datawrapper: A Powerful Tool for Creating Stunning Data Visualizations](https://medium.com/learning-data/datawrapper-a-powerful-tool-for-creating-stunning-data-visualizations-1dc194e57b7b)]{.aside}
+
+#### Read dataset
+
+```{python}
+#| echo: true
+#| output: false
+df = pd.read_csv('data.csv', sep=";",)
+```
+
+```{python}
+#| tbl-label: tbl-people
+#| tbl-cap: Where people live in by type of area
+#| tbl-cap-location: margin
+
+from IPython.display import Markdown, display
+from tabulate import tabulate
+display(Markdown(df.to_markdown(index = False)))
+```
+
+#### Create Datawrapper chart
+
+```{python}
+#| echo: true
+#| output: false
+pop = dw.create_chart(
+    title='Where do people live?', chart_type='d3-bars-stacked', data=df
+)
+```
+
+#### Update chart description
+
+```{python}
+#| echo: true
+#| output: false
+dw.update_description(
+    pop['id'],
+    source_name = 'UN Population Division',
+    source_url = 'https://population.un.org/wup/',
+    byline = 'Jesus L. Monroy<br>Economist & Data Scientist<br><br>',
+    intro = 'Population percentage living in the capital by Country'
+)
+```
+
+#### Publish chart
+
+```{python}
+#| echo: true
+#| output: false
+dw.publish_chart(chart_id = pop['id'])
+```
+
+#### Customize metadata
+
+```{python}
+#| echo: true
+#| output: false
+dw.update_chart(
+    chart_id = pop['id'],
+    metadata = {
+        'visualize': {
+            'sharing': {'enabled': True},
+            'thick': True,
+            'custom-colors': {
+                '%pop in rural areas': '#dadada',
+                '%pop in urban areas': '#1d81a2',
+                '%pop in the capital': '#15607a',
+               },
+           },
+        'publish': {
+            'blocks': {'get-the-data': False},
+           },
+    }
+)
+```
+
+#### Republish chart
+
+```{python}
+#| echo: true
+#| output: false
+dw.publish_chart(pop['id'])
+```
+
+#### Display chart
+
+```{python}
+#| echo: true
+#| output: false
+dw.display_chart('9vB29')
+```
+
+::: {#fig-people}
+
+![](people.png){width=100% fig-align="left"}
+
+Population Distribution by Area Type
+
+:::
+
+:::{.callout-note}
+
+For further information see my teet [Create Stunning Charts with Datawrapper](https://x.com/Sqlalchemist/status/1835830484640919644)
+
+:::
+
+\
+
+```{python}
+#| echo: true
+#| output: false
+dw.display_chart('jlJnt')
+```
+
+::: {#fig-governors}
+
+![](governors.png){width=90% fig-align="center"}
+
+Mexico's State Governors by Political Party
+
+:::
+
+:::{.callout-note}
+
+For further information, see my article [Mexico City's Political Landscape](https://medium.com/@jesus_lmonroy/mexico-citys-political-landscape-a-reflection-of-national-landscape-dcd552b2da38)
+
+:::
+
+\
+
+```{python}
+#| echo: true
+#| output: false
+dw.display_chart('2cED4')
+```
+
+::: {#fig-cdmx}
+
+![](cdmx.png){width=90% fig-align="center"}
+
+Mexico City Geopolitical Distribution
+
+:::
+
+# Conclusion
+
+To start using Datawrapper, simply create a free account on their website. Once you’re logged in, you can begin creating your first visualization. Datawrapper offers a variety of tutorials and resources to help you get started and make the most of the platform.
+
+By leveraging the power of Datawrapper, you can create compelling data visualizations that help you tell your story more effectively. Whether you’re a seasoned data analyst or just starting out, Datawrapper is a valuable tool that can help you bring your data to life.
+
+By combining the power of Python with the user-friendly interface of Datawrapper, data professionals can streamline their visualization workflows, produce high-quality charts and maps, and effectively communicate insights to diverse audiences.
+
+# Reference
+
+- Datawrapper (2024) [Datawrapper Academy](https://academy.datawrapper.de/)
+- Khanchandani E. (2020) [How to use Datawrapper for journalists](https://www.interhacktives.com/2020/01/29/data-visualisation-with-datawrapper-for-journalists-a-tutorial/) in Interhacktives
+- Sanchez, S. (2023) [A lightweight Python wrapper for the Datawrapper API](https://datawrapper.readthedocs.io/en/latest/) in Datawrapper API
+
+# Contact
+
+#### Jesus L. Monroy
+
+*Economist & Data Scientist*
+

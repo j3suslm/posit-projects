@@ -11,4 +11,5 @@ ipykernel
 voila
 itables
 datawrapper
+tabulate
 

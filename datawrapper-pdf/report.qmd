@@ -232,7 +232,7 @@ dw.publish_chart(pop['id'])
 ```{python}
 #| echo: true
 #| output: false
-dw.display_chart('9vB29')
+dw.display_chart('nFdhO')
 ```
 
 ::: {#fig-people}

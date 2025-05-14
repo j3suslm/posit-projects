@@ -15,38 +15,31 @@ Many of these projects are published on Posit, allowing for interactive explorat
 
 ## Projects
 
-**Project 1: [Project Title 1](Link to Project 1 on GitHub)**
+**Project 1: [Stunning Visualizations with Datawrapper](https://jesuslm-datawrapper.share.connect.posit.cloud)**
     
   * Description
       
-    A brief description of the project's goals, methods, and key findings.
+    Data visualization is a powerful tool for conveying insights and making data accessible to a wider audience. Meanwhile Python offers a plethora of libraries for creating visualizations, Datawrapper provides a unique approach by combining the flexibility of custom code with the ease of a user-friendly interface.
+    This article explores the benefits of integrating Datawrapper into Python workflows for efficient and effective data visualization.
+    Datawrapper is a powerful online tool designed to help you create engaging and informative data visualizations.
+    Whether you’re a journalist, researcher, or simply someone who wants to present data in a more visually appealing way, Datawrapper can make the process quick and easy.
     
   * Technologies Used
     
-    List the main programming languages, libraries, and tools used (e.g., R, Python, tidyverse, scikit-learn, TensorFlow, etc.).
+    `Python`, `Datawrapper`, `pandas`, `tabulate`
 
 
-**Project 2: [Project Title 2](Link to Project 2 on GitHub)**
+**Project 2: [Gasoline Prices in Mexico Dashboard](https://jesuslm-gasoline-prices-dashboard.share.connect.posit.cloud)**
     
-    * Description
+  * Description
+      
+    Despite government efforts to stabilize fuel costs, gasoline prices in Mexico have been on the rise.
+    Some estimates suggest prices could reach MX$30 per liter during 2025.
     
-    A brief description of the project's goals, methods, and key findings.
+  * Technologies Used
     
-    * Technologies Used
-  
-    List the main programming languages, libraries, and tools used.
+    `Python`, `Quarto`, `polars`, `duckdb`, `plotnine`
 
-
-**Project 3: [Project Title 3](Link to Project 3 on GitHub)**
-    
-    * Description
-  
-    A brief description of the project's goals, methods, and key findings.  Mention if it's available on Posit Cloud and link to it.
-    
-    * Technologies Used
-  
-    List the main programming languages, libraries, and tools used.
-    
 
 ## Skills
 

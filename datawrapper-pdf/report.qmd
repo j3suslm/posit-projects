@@ -127,7 +127,6 @@ import numpy as np
 import pandas as pd
 import json
 import warnings
-from pathlib import Path
 warnings.filterwarnings('ignore')
 ```
 
@@ -138,7 +137,7 @@ warnings.filterwarnings('ignore')
 #| output: false
 
 # Token gotten from datawrapper api
-filename = Path(__file__).parent.parent/'credentials.json'
+filename = '../credentials.json'
 # read json file
 with open(filename) as f:
     keys = json.load(f)

@@ -126,6 +126,7 @@ from datawrapper import Datawrapper
 import numpy as np
 import pandas as pd
 import json
+import os
 import warnings
 warnings.filterwarnings('ignore')
 ```
@@ -136,13 +137,8 @@ warnings.filterwarnings('ignore')
 #| echo: true
 #| output: false
 
-# Token gotten from datawrapper api
-filename = '../credentials.json'
-# read json file
-with open(filename) as f:
-    keys = json.load(f)
 # read credentials
-token = keys['datawrapper_api']
+token = os.getenv('datawrapper_api')
 # Acces datawrapper
 dw = Datawrapper(access_token = token)
 ```

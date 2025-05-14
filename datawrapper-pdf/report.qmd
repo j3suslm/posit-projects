@@ -19,7 +19,7 @@ format:
   pdf:
     documentclass: report
     papersize: letter
-    mainfont: Helvetica Neue
+    mainfont: Open Sans
     cap-location: margin
     reference-location: margin
     citation-location: margin
@@ -127,6 +127,7 @@ import numpy as np
 import pandas as pd
 import json
 import warnings
+from pathlib import Path
 warnings.filterwarnings('ignore')
 ```
 
@@ -137,7 +138,7 @@ warnings.filterwarnings('ignore')
 #| output: false
 
 # Token gotten from datawrapper api
-filename = 'credentials.json'
+filename = Path(__file__).parent.parent/'credentials.json'
 # read json file
 with open(filename) as f:
     keys = json.load(f)

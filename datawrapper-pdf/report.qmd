@@ -33,11 +33,11 @@ format:
   html:
     other-links:
       - text: My Portfolio
-        href: https://j3sus.quarto.pub/my-portfolio/posts/python/Mexico_pol_scenario.html
+        href: https://tinyurl.com/jesus-portfolio
     code-links:
       - text: Code
         icon: file-code
-        href: https://github.com/SqlAlchemist/Portfolio/blob/main/Polynomial_regression.ipynb
+        href: https://github.com/j3suslm/posit-projects/blob/main/datawrapper-pdf/report.qmd
     page-layout: full
     embed-resources: true
     code-fold: show
@@ -67,7 +67,7 @@ jupyter: python3
 
 {{< pagebreak >}}
 
-![](datawrapper-python.png){width=90% fig-align="center"}
+![](images/datawrapper-python.png){width=90% fig-align="center"}
 
 # Key Features
 
@@ -237,7 +237,7 @@ dw.display_chart('nFdhO')
 
 ::: {#fig-people}
 
-![](people.png){width=100% fig-align="left"}
+![](images/people.png){width=100% fig-align="left"}
 
 Population Distribution by Area Type
 
@@ -245,7 +245,7 @@ Population Distribution by Area Type
 
 :::{.callout-note}
 
-For further information see my teet [Create Stunning Charts with Datawrapper](https://x.com/Sqlalchemist/status/1835830484640919644)
+For further information see my tweet [Create Stunning Charts with Datawrapper](https://x.com/j3suslm/status/1835830484640919644)
 
 :::
 
@@ -259,7 +259,7 @@ dw.display_chart('jlJnt')
 
 ::: {#fig-governors}
 
-![](governors.png){width=90% fig-align="center"}
+![](images/governors.png){width=90% fig-align="center"}
 
 Mexico's State Governors by Political Party
 
@@ -281,7 +281,7 @@ dw.display_chart('2cED4')
 
 ::: {#fig-cdmx}
 
-![](cdmx.png){width=90% fig-align="center"}
+![](images/cdmx.png){width=90% fig-align="center"}
 
 Mexico City Geopolitical Distribution
 

@@ -8,10 +8,10 @@ abstract: |
   Plotnine library in Python is based on the famous ggplot2 R package. In this article, we will show some examples of this superb visualization library.<br>
 published-title: Published
 date: '2023-11-24'
-date-format: iso
+date-format: MMM, YYYY
 toc: true
 toc-title: Contents
-toc-location: right
+toc-location: left
 page-layout: full
 execute:
   echo: true
@@ -19,22 +19,24 @@ format:
   html:
     page-layout: full
     embed-resources: true
-    code-fold: true
+    code-fold: show
     code-tools:
       source: false
       toggle: true
       caption: code
     code-summary: Show code
     html-math-method: mathml
-    theme:
-      light: flatly
+    theme: theme.scss
+    other-links:
+      - text: My Portfolio
+        href: https://tinyurl.com/jesus-portfolio
 code-line-numbers: false
 code-copy: false
 code-overflow: wrap
 jupyter: python3
 ---
 
-# Using R ggplot2 Package in Python With plotnine Library
+## Overview
 
 <img src="https://financesonline.com/uploads/2019/09/ggplot2-logo1.png" alt="ggplot" width="300" height="130" style="padding-left:8px"/> <img src="http://download.broadview.com.cn/Original/21019700a5ade45e047d" alt="plotnine" width="110" height="110" style="padding-left:8px"/>
 
@@ -65,6 +67,7 @@ from plotnine.data import *
 import numpy as np
 import pandas as pd
 import polars as pl
+from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
 ```
@@ -76,24 +79,20 @@ economics = pl.from_pandas(economics)
 ```
 
 ```{python}
-economics.schema
-```
-
-```{python}
-chart = (
+(
     ggplot(data=economics)
     + aes(x='date', y='uempmed')
     + geom_line(color='#670000', size=1)
     + labs(title='US unemployed duration (weeks)')
-    + theme(plot_title=element_text(size=17, family='Helvetica Neue', face='bold'))
+    + theme(figure_size=(16, 8),
+            axis_text_x = element_text(color="black", size=18, angle=0, hjust=.3),
+            axis_text_y = element_text(color="grey", size=16), 
+            plot_title = element_text(size = 25, face = "bold"), 
+            axis_title = element_text(size = 18)
+            )
     + xlab('')
     + ylab('Unemployed duration (median)')
-    #+ theme_538() # set fivethirtyeight theme
 ).draw()
-```
-
-```{python}
-chart
 ```
 
 ## Contact

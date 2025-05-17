@@ -12,4 +12,9 @@ voila
 itables
 datawrapper
 tabulate
+json
+os
+dotenv
+pathlib
+dash
 

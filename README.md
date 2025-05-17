@@ -24,7 +24,7 @@ Many of these projects are published on Posit, allowing for interactive explorat
     Datawrapper is a powerful online tool designed to help you create engaging and informative data visualizations.
     Whether you’re a journalist, researcher, or simply someone who wants to present data in a more visually appealing way, Datawrapper can make the process quick and easy.
     
-  * Technologies Used
+  * Tools Used
     
     `Python`, `Datawrapper`, `pandas`, `tabulate`
 
@@ -36,9 +36,19 @@ Many of these projects are published on Posit, allowing for interactive explorat
     Despite government efforts to stabilize fuel costs, gasoline prices in Mexico have been on the rise.
     Some estimates suggest prices could reach MX$30 per liter during 2025.
     
-  * Technologies Used
+  * Tools Used
     
     `Python`, `Quarto`, `polars`, `duckdb`, `plotnine`
+
+**Project 3: [Plotnine: ggplot2 for Python](https://connect.posit.cloud/jesuslm/content/0196d1d2-c45f-f92d-b619-8965153755dd)**
+
+  * Description
+    
+    Plotnine library in Python is based on the famous ggplot2 R package.
+    In this article, we will show some examples of this superb visualization library.
+
+  * Tools Used
+  `Python`, `Plotnine`, `polars`, `Quarto`
 
 
 ## Skills

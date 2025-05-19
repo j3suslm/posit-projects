@@ -5,12 +5,13 @@ author: '*Jesus L. Monroy*'
 date: last-modified
 date-format: MMM, YYYY
 abstract: My abstract
-brand: themes/_brand.yml
+brand: _brand.yml
 format:
   html:
     toc: true
     toc-title: Table of Contents
     toc-location: left
+    page-layout: full
     embed-resources: true
 jupyter: python3
 ---

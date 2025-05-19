@@ -1,0 +1,126 @@
+---
+title: Location of Farmacias Similares in Mexico
+subtitle: A Geographical Overview
+author: '*Jesus L. Monroy*'
+date: last-modified
+date-format: MMM, YYYY
+abstract: My abstract
+brand: themes/_brand.yml
+format:
+  html:
+    toc: true
+    toc-title: Table of Contents
+    toc-location: left
+    embed-resources: true
+jupyter: python3
+---
+
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:35.813237Z', start_time: '2025-04-08T19:44:35.194752Z'}
+# import libraries
+import pandas as pd
+import requests
+import folium
+```
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:35.820277Z', start_time: '2025-04-08T19:44:35.817024Z'}
+url = 'https://www.farmaciasdesimilares.com/getpickuppoints'
+```
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:39.270828Z', start_time: '2025-04-08T19:44:35.956125Z'}
+# request data
+response = requests.get(url)
+stores = response.json()
+```
+
+```{python}
+stores[0]
+```
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:39.286398Z', start_time: '2025-04-08T19:44:39.280550Z'}
+drugstore=[]
+city=[]
+state=[]
+neighborhood=[]
+street=[]
+zip_code=[]
+number=[]
+latitude=[]
+longitude=[]
+
+for store in range(len(stores)):
+    drugstore.append(stores[store]['name'])
+    city.append(stores[store]['address']['city'])
+    state.append(stores[store]['address']['state'])
+    neighborhood.append(stores[store]['address']['neighborhood'])
+    street.append(stores[store]['address']['street'])
+    number.append(stores[store]['address']['number'])
+    zip_code.append(stores[store]['address']['postalCode'])
+    latitude.append(stores[store]['address']['location']['latitude'])
+    longitude.append(stores[store]['address']['location']['longitude'])
+```
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:39.316342Z', start_time: '2025-04-08T19:44:39.297306Z'}
+simi_df = pd.DataFrame(
+    {'drugstore':drugstore,
+    'street':street,
+    'number':number,
+    'neighborhood':neighborhood,
+    'city': city,
+    'zip_code':zip_code,
+    'latitude': latitude,
+    'longitude': longitude,}
+)
+```
+
+```{python}
+simi_df.head()
+```
+
+```{python}
+simi_df.to_csv('similares.csv')
+```
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:39.452371Z', start_time: '2025-04-08T19:44:39.448897Z'}
+simi_face = 'https://tinyurl.com/3mvfbu4t'
+```
+
+```{python}
+#| ExecuteTime: {end_time: '2025-04-08T19:44:40.419760Z', start_time: '2025-04-08T19:44:39.485535Z'}
+# map
+simi_map = folium.Map(location=[23, -101], zoom_start=5, attr='Google')
+
+for i in range(0,len(simi_df)):
+    # logo marker
+    folium.Marker(location=[simi_df['latitude'][i], simi_df['longitude'][i]],
+                  popup=folium.Popup(
+                      f"<b>Drugstore:</b> {simi_df['drugstore'][i]} \
+                      <br><b>Street:</b> {simi_df['street'][i]} \
+                      <br><b>Neighborhood:</b> {simi_df['neighborhood'][i]}"
+                      ),
+                  icon=folium.features.CustomIcon(
+                      simi_face,
+                      icon_size=(40,40)
+                      )
+                 ).add_to(simi_map)
+```
+
+```{python}
+simi_map
+```
+
+# References
+
+- Pacheco, C. (2025) [simi_ubicas](https://github.com/claudiodanielpc). Github.
+
+# Contact
+
+**Jesus L. Monroy**  
+*Economist & Data Scientist*
+

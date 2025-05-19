@@ -16,4 +16,6 @@ dotenv
 pathlib
 dash
 scikit-learn
+requests
+folium
 

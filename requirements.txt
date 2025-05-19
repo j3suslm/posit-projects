@@ -15,4 +15,5 @@ tabulate
 dotenv
 pathlib
 dash
+scikit-learn
 

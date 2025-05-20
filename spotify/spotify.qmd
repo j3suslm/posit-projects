@@ -87,18 +87,6 @@ import plotly.express as px
 from great_tables import GT, md
 ```
 
-```{python}
-# get token
-filename = '../APIs/credentials.json'
-
-# read json file
-with open(filename) as f:
-    keys = json.load(f)
-
-# read credentials
-token = keys['md_token']
-```
-
 ## Database connection
 
 [`Duckdb` is a powerful tool for data analysts and developers who need to perform fast and efficient analytical queries on large datasets, especially in environments where simplicity and portability are crucial.]{.aside}

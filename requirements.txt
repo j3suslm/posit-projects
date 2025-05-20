@@ -18,4 +18,5 @@ dash
 scikit-learn
 requests
 folium
-
+great-tables
+warnings

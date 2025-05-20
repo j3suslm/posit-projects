@@ -1,0 +1,483 @@
+---
+title: Spotify User Analysis
+subtitle: '*Uncovering Trends in Music Listening Behavior with Polars*'
+author: Jesus L. Monroy
+date: last-modified
+date-format: MMM, YYYY
+abstract: |
+  This project explores a dataset of Spotify music listening habits, leveraging the power of the Polars DataFrame library for efficient and scalable analysis. By employing Polars' optimized data manipulation capabilities, we efficiently process and analyze Spotify data, extracting meaningful insights into user behavior and the dynamics of the music ecosystem. Furthermore, this work highlights the potential of Polars as a powerful tool for large-scale data analysis in the music industry and beyond.
+format:
+  pdf:
+    code-block-bg: '#f8f8f8'
+    toc: true
+    toc-depth: 2
+    toc-title: Table of Contents
+    documentclass: report
+    papersize: letter
+    mainfont: Helvetica Neue
+    geometry:
+      - top=30mm
+      - bottom=30mm
+      - left=20mm
+      - right=50mm
+      - heightrounded
+      - marginparwidth=1.6in
+    lot: true
+    lof: true
+    number-sections: false
+    colorlinks: true
+    cite-method: biblatex
+    highlight-style: arrow
+    execute:
+      echo: true
+jupyter: python3
+---
+
+
+{{<pagebreak>}}
+
+[`Spotify`, a leading digital music, podcast, and video streaming service, has revolutionized the way individuals consume audio content.
+By offering a vast library of on-demand content through a freemium model, Spotify has significantly shifted music consumption from ownership to access. Spotify's expansion into podcasting and other audio content reflects its ambition to become a comprehensive audio platform. ]{.aside}
+
+![](spotify.png){width=90% .lightbox fig-align="center"}
+
+{{<pagebreak>}}
+
+# Introduction
+
+This study conducts a historical analysis of Spotify data, leveraging the efficiency of `Polars`, the analytical power of `DuckDB`, and the visualization capabilities of `Plotly`.
+By combining these tools, we examine trends in music consumption, artist popularity, and playlist dynamics over time.
+
+Polars facilitates rapid data manipulation and cleaning of large Spotify datasets, while `DuckDB` enables complex `SQL` queries for in-depth analysis.
+
+`Plotly` is then employed to create interactive visualizations, revealing patterns and insights that would be difficult to discern from raw data alone.
+
+This analysis explores the evolution of musical genres, the impact of algorithmic recommendations, and the shifting landscape of artist distribution.
+
+We demonstrate the efficacy of this toolchain for extracting meaningful narratives from Spotify's extensive historical data, providing a comprehensive understanding of the platform's influence on the music industry.
+
+# Environment settings
+
+```{python}
+# import libraries
+import numpy as np
+import pandas as pd
+import polars as pl
+import duckdb as db
+from plotnine import *
+from great_tables import GT, md
+```
+
+## Database connection
+
+[`Duckdb` is a powerful tool for data analysts and developers who need to perform fast and efficient analytical queries on large datasets, especially in environments where simplicity and portability are crucial.]{.aside}
+
+```{python}
+#| output: false
+
+# database connection
+token = os.getenv('MD_TOKEN')
+conn = db.connect(f"md:?motherduck_token={token}")
+# create dataframe
+df = conn.sql('select * from projects.spotify_history').pl()
+conn.close()
+```
+
+{{<pagebreak>}}
+
+## Dataset
+
+[`Polars` is a modern DataFrame library designed for speed and efficiency, offering a compelling alternative to traditional data manipulation tools.]{.aside}
+
+```{python}
+df.schema
+```
+
+```{python}
+df = (
+    df.select(pl.exclude('spotify_track_uri'))
+        .with_columns(year=pl.col('ts').dt.year())
+)
+```
+
+```{python}
+#| tbl-label: tbl-overview
+#| tbl-cap: A sample of data used in the analysis.
+#| tbl-cap-location: margin
+
+(
+    GT(df.head())
+    .tab_header(title=md("### Spotify Songs History Dataset"))
+    .fmt_date(columns='ts', date_style='iso')
+    .fmt_number(columns='ms_played', decimals=0)
+    .cols_hide(columns=['year','reason_start','reason_end'])
+    .cols_label(
+        ts='Date',
+        platform='Platform',
+        ms_played='Mins played',
+        track_name='Song',
+        artist_name='Artist',
+        album_name='Album',
+        reason_start='Reason start',
+        reason_end='Reason end',
+        shuffle='Shuffle',
+        skipped='Skipped',
+    )
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: https://mavenanalytics.io')
+)
+```
+
+```{python}
+print(f'The dataset has {df.shape[0]:,.0f} rows.')
+print(f'The year goes from {df['year'].min()} up to {df['year'].max()}.')
+```
+
+::: {.column-margin}
+For further information about the fields of the dataset see @tbl-dictionary
+:::
+
+# Findings
+
+## Unique Artists, Albums and Songs
+
+```{python}
+# unique values per year
+tops = (
+        df.select('year','artist_name','album_name','track_name')
+            .group_by('year', maintain_order=True)
+            .n_unique()
+)
+```
+
+```{python}
+#| tbl-label: tbl-tops
+#| tbl-cap: Unique Artists, Albums and Songs by Year.
+#| tbl-cap-location: margin
+
+(
+    GT(tops)
+    .tab_header(
+        title=md("### Unique Artists, Albums and Songs Played by Year")
+    )
+    .fmt_number(columns=['artist_name','album_name','track_name'],
+                decimals=0)
+    .cols_label(
+        year='Year',
+        artist_name='Artists',
+        album_name='Albums',
+        track_name='Songs',
+    )
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: Self-elaboration by author')
+)
+```
+
+## Minutes Played by Month and Year
+
+```{python}
+years = (
+    df.group_by('year', maintain_order=True)
+        .agg((pl.col('ms_played').sum()/60_000).round(2)
+        .alias('total_mins'))
+)
+```
+
+```{python}
+months = (
+    df.group_by_dynamic('ts', every='1mo')
+        .agg((pl.col('ms_played').sum()/60_000).round(2)
+        .alias('total_mins'))
+)
+```
+
+```{python}
+#| fig-label: fig-minutes-year
+#| fig-cap: Total of Minutes Played By Year.
+#| fig-cap-location: margin
+
+(
+    ggplot(years, aes(x='year', y='total_mins'))
+    + geom_col(color='black', fill='#1DB954')
+    + geom_text(
+        aes(label='total_mins'),
+        size=8,
+        va='bottom',
+        format_string="{:,.0f}",
+    )
+    + labs(
+        x='',
+        y='Minutes played',
+        title='Total Minutes Played per Year'
+    )
+    + theme(axis_text_x =element_text(angle=0))
+    + scale_x_continuous(breaks=np.arange(2013, 2025, 1))
+    + scale_y_continuous(breaks=np.arange(0, 60_000, 10_000))
+    + theme(figure_size=(5.5, 4)) 
+)
+```
+
+```{python}
+#| fig-label: fig-months
+#| fig-cap: Total of Minutes Played By Year and Month.
+#| fig-cap-location: margin
+
+(
+    ggplot(months, aes(x='ts', y='total_mins'))
+    + geom_line(color='#1DB954', size=1.1)
+    + scale_y_continuous(breaks=np.arange(0, 8_000, 1_000))
+    + labs(
+        x='',
+        y='Minutes played',
+        title='Total Minutes Played per Month'
+    )
+    + theme(axis_text_x =element_text(angle=0))
+    + theme(figure_size=(5.6, 4))
+)
+```
+
+```{python}
+#| echo: false
+#| output: false
+#| column: margin
+
+(
+    GT(years)
+    .fmt_number(columns='total_mins', decimals=0)
+    .cols_label(
+        year='Year',
+        total_mins='Minutes Played'
+    )
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: Self-elaboration')
+)
+```
+
+## Top 05 Artists by Year
+
+```{python}
+top_artists = (
+    df
+        .group_by('year','artist_name')
+        .agg(pl.len())
+        .sort(by=['year','len'], descending=True)
+        .select(
+            pl.all().top_k_by('len', k=5).over('year')
+        )
+        .group_by('year')
+        .agg(pl.col('artist_name'))
+        .sort('year')
+)
+```
+
+```{python}
+#| tbl-label: tbl-top-artists
+#| tbl-cap: Top 05 Artists by Year.
+#| tbl-cap-location: bottom
+
+(
+    GT(top_artists)
+    .tab_header(title=md("### Top 05 Artists by Year"))
+     .cols_width(
+        cases={
+            'year': '10%',
+            'artist_name': '100%',
+        }
+    )
+    .cols_label(
+        year='Year',
+        artist_name='Artist'
+    )
+    .cols_align(align='left', columns=('artist_name'))
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: Self-elaboration by author')
+)
+```
+
+## Top 05 Albums by Year
+
+```{python}
+top_albums = (
+    df
+        .group_by('year','album_name')
+        .agg(pl.len())
+        .sort(by=['year','len'], descending=True)
+        .select(
+            pl.all().top_k_by('len', k=5).over('year')
+        )
+        .group_by('year')
+        .agg(pl.col('album_name'))
+        .sort('year')
+)
+```
+
+```{python}
+#| tbl-label: tbl-top-albums
+#| tbl-cap: Top 05 Albums by Year.
+#| tbl-cap-location: bottom
+
+(
+    GT(top_albums)
+    .tab_header(title=md("### Top 05 Albums by Year"))
+     .cols_width(
+        cases={
+            'year': '10%',
+            'album_name': '100%',
+        }
+    )
+    .cols_label(
+        year='Year',
+        album_name='Album'
+    )
+    .cols_align(align='left', columns=('album_name'))
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: Self-elaboration by author')
+)
+```
+
+## Top 05 Songs by Year
+
+```{python}
+top_songs = (
+    df
+        .group_by('year','track_name')
+        .agg(pl.len())
+        .sort(by=['year','len'], descending=True)
+        .select(
+            pl.all().top_k_by('len', k=5).over('year')
+        )
+        .group_by('year')
+        .agg(pl.col('track_name'))
+        .sort('year')
+)
+```
+
+```{python}
+#| tbl-label: tbl-top-songs
+#| tbl-cap: Top 05 Songs by Year.
+#| tbl-cap-location: bottom
+
+(
+    GT(top_songs)
+    .tab_header(title=md("### Top 05 Songs by Year"))
+     .cols_width(
+        cases={
+            'year': '10%',
+            'track_name': '100%',
+        }
+    )
+    .cols_label(
+        year='Year',
+        track_name='Song'
+    )
+    .cols_align(align='left', columns=('track_name'))
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: Self-elaboration by author')
+)
+```
+
+```{python}
+platform = (
+    df.group_by('platform')
+        .agg(pl.len())
+        .sort('len', descending=True)
+        .with_columns((pl.col("len") / pl.sum("len")).alias("percent"))
+)
+```
+
+```{python}
+#| tbl-label: tbl-platform
+#| tbl-cap: Total of Records Played by Platform.
+#| tbl-cap-location: margin
+
+(
+    GT(platform)
+    .tab_header(title=md("### Percentage of Use by Platform"))
+    .fmt_number(columns='len', decimals=0)
+    .fmt_percent('percent', decimals=2)
+    .cols_label(
+        platform='Platform',
+        len='Total',
+        percent='Percentage'
+    )
+    .cols_align(align='left', columns=('platform'))
+    .tab_options(table_font_size='90%')
+    .tab_options(table_width='80%')
+    .tab_source_note(source_note='Source: Self-elaboration by author')
+)
+```
+
+# Conclusions
+
+We can conclude with the following findings:
+
+**Listening Habits Over Time**
+
+The total minutes played show an increase by getting a peak, since then it has been decreasing in listening time over the years, with a peak in **2020**. This could be attributed to reasons like new devices, changes in lifestyle, discovery of new music.
+
+Monthly listening patterns reveal seasonal engagement, possibly due to events, or holidays.
+
+**Discovery and Exploration**
+
+The number of unique artists, albums, and songs played has remained relatively stable over the years, suggesting a shrinking interest in discovering new music.
+
+A significant increase in unique songs played compared to unique albums in a particular year might indicate a trend towards listening to individual tracks rather than full albums.
+
+**Platform Usage**
+
+The primary platform for listening is **Android** Smartphones, accounting for around 93% of total playtime, indicating its importance in music consumption.
+Usage of iOS remains low over time.
+
+**Artist Loyalty and Discovery**
+
+The consistent presence of **The Beatles** in the top 05 artists across multiple years suggests a strong and enduring preference for their music.
+        
+The emergence of new artists in the top 05 each year indicates a continuous exploration and adoption of new musical tastes.
+    
+**Album Engagement**
+    
+The recurrence of specific albums in the top 05 albums across different years highlights their lasting appeal and potentially signifies comfort listening or revisiting favorite works.
+        
+A high turnover in the top 05 albums year-over-year might suggest a focus on new releases and less revisiting of older albums.
+    
+**Song Popularity and Trends**
+
+The top 05 songs often include tracks from the top 05 artists of the same year, indicating a strong correlation between artist preference and song popularity.
+        
+The appearance of certain genres or moods within the top 05 songs for a specific year could reflect prevailing personal preferences or external influences during that period.
+
+# References
+
+- Maven Analytics (2025). [Maven Music Challenge Dataset](https://mavenanalytics.io/challenges/maven-music-challenge/e161353d-9967-4297-869c-505de168e610). Retrieved from Maven Analytics Website.
+- Yonak, R (2019). [How Spotify has changed the way we listen to music](https://audioxide.com/articles/how-spotify-has-changed-the-way-we-listen-to-music). Retrieved from Audioxide Website.
+
+# Appendix
+
+| Field | Description |
+| :----- | :----------- |
+| spotify_track_uri | Spotify URI that uniquely identifies each track
+| ts | Timestamp indicating when the track stopped playing in UTC
+| platform | Platform used when streaming the track
+| ms_played | Number of milliseconds the stream was played
+| track_name | Name of the track
+| artist_name | Name of the artist
+| album_name | Name of the album
+| reason_start | Why the track started
+| reason_end | Why the track ended
+| shuffle | If shuffle mode was used when playing the track (boolean)
+| skipped | If the user skipped to the next song (boolean)
+
+: Data dictionary, detailing field names and descriptions {#tbl-dictionary .striped .hover .bordered}
+
+# Contact
+
+**Jesus L. Monroy**  
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) | [Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm)

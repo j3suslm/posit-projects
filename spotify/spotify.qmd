@@ -85,8 +85,6 @@ import polars as pl
 import duckdb as db
 import plotly.express as px
 from great_tables import GT, md
-import warnings
-warnings.filterwarnings('ignore')
 ```
 
 ```{python}

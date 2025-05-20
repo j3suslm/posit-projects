@@ -1,12 +1,12 @@
 ---
 title: Gasoline Prices in Mexico
-subtitle: F*uel Price Fluctuations, A Constant Concern*
+subtitle: *Fuel Price Fluctuations, A Constant Concern*
 date: '2025-02-03'
 date-format: MMM, YYYY
 author: Jesus L. Monroy
 abstract: |
   Gasoline prices in Mexico are a complex issue influenced by various factors.
-   In this article we examine the gasoline prices in the 32 States that constitute Mexico and also their differences in cost, sale price and profits.
+  In this article we examine the gasoline prices in the 32 States that constitute Mexico and also their differences in cost, sale price and profits.
   Challenges remain in stabilizing prices and mitigating the impact on consumers and the economy.
 format:
   html:
@@ -19,10 +19,10 @@ format:
     other-links:
       - text: Medium
         icon: medium
-        href: https://medium.com/@jesus_lmonroy
+        href: https://medium.com/@jesuslm
       - text: Linkedin
         icon: linkedin
-        href: https://www.linkedin.com/in/j3sus-lmonroy
+        href: https://www.linkedin.com/in/j3sus-lm
       - text: Twitter
         icon: twitter
         href: https://x.com/j3suslm
@@ -46,18 +46,7 @@ format:
 code-line-numbers: false
 code-copy: false
 code-overflow: wrap
-jupyter:
-  jupytext:
-    formats: ipynb,qmd
-    text_representation:
-      extension: .qmd
-      format_name: quarto
-      format_version: '1.0'
-      jupytext_version: 1.16.1
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
+jupyter: python3
 ---
 
 ```{python}
@@ -319,4 +308,4 @@ The future of gasoline prices in Mexico remains uncertain, but one thing is clea
 <br>
 *Economist & Data Scientist*
 
-[Medium](https://medium.com/@jesus_lmonroy) | [Linkedin](https://www.linkedin.com/in/j3sus-lmonroy) | [Twitter](https://www.twitter.com/sqlalchemist)
+[Medium](https://medium.com/@jesuslm) | [Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm)

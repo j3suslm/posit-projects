@@ -106,7 +106,7 @@ from plotnine import *
 ### Connect to database
 
 ```{python}
-conn = db.connect('my_database.db')
+conn = db.connect('data/my_database.db')
 ```
 
 ### Create dataframe
@@ -347,7 +347,7 @@ municipalities = (
 
 ```{python}
 from IPython.display import Image
-Image('gasoline-sale-price.png')
+Image('images/gasoline-sale-price.png')
 ```
 
 # Conclusions

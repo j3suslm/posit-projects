@@ -4,7 +4,7 @@ author: Jesus L. Monroy
 format:
   dashboard:
     theme: flatly
-    logo: gas.png
+    logo: images/gas.png
     nav-buttons:
       - Portfolio
       - icon: suitcase-lg
@@ -31,7 +31,7 @@ from plotnine import *
 ```
 
 ```{python}
-conn = db.connect('my_database.db')
+conn = db.connect('data/my_database.db')
 ```
 
 ```{python}

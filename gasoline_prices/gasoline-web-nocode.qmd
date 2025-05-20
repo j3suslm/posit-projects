@@ -123,7 +123,7 @@ from plotnine import *
 ```
 
 ```{python}
-conn = db.connect('my_database.db')
+conn = db.connect('data/my_database.db')
 ```
 
 ```{python}

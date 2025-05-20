@@ -1,6 +1,6 @@
 ---
 title: Gasoline Prices in Mexico
-subtitle: *"Fuel Price Fluctuations, A Constant Concern"*
+subtitle: "Fuel Price Fluctuations, A Constant Concern"
 date: '2025-02-03'
 date-format: MMM, YYYY
 author: Jesus L. Monroy

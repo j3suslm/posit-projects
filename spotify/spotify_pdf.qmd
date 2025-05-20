@@ -65,6 +65,9 @@ import pandas as pd
 import polars as pl
 import duckdb as db
 from plotnine import *
+import os
+from dotenv import load_dotenv
+load_dotenv('.env')
 from great_tables import GT, md
 ```
 

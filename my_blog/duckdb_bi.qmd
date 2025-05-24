@@ -1,0 +1,150 @@
+<a href="index.qmd">Home</a>
+
+# Building Efficient Dashboards for The Modern Data Scientist
+
+*Efficient Data Exploration and Reporting with DuckDB and Evidence.dev*   
+*Mar, 2025*
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+<!-- use 03 spaces in markdown to create a new line -->
+
+![](https://motherduck-com-web-prod.s3.amazonaws.com/assets/img/large_duckdb_bi_as_code_blog_88b8acbf7f.png)
+
+# Overview
+
+In the modern data landscape, speed and agility are paramount.
+We're constantly seeking tools that empower us to analyze data quickly and efficiently, without the overhead of complex cloud infrastructure. Two such tools, DuckDB and Evidence.dev, are making waves in this space, offering a powerful combination for local data analysis and reporting.
+
+# DuckDB: The Analytical Swiss Army Knife
+
+DuckDB excels in handling large datasets efficiently due to its columnar storage and vectorized execution engine.
+It is well-suited for scenarios where you need a fast and embedded database solution within your Python application.
+Here are some key things you can do with it:
+
+**Execute SQL Queries**
+
+- Directly run SQL queries using duckdb.sql within your Python code.
+- Efficiently work with in-memory databases, making DuckDB ideal for quick data exploration and analysis.
+- DuckDB provides a full-fledged SQL dialect, enabling you to perform various data manipulation and analysis tasks using familiar SQL syntax.
+- You can use duckdb.sql to execute queries against in-memory or disk-based databases created with DuckDB.
+
+**Leverage In-memory and Persistent Databases**
+
+- Create in-memory databases through duckdb.connect() for immediate querying without external storage needs.
+- Connect to persistent databases on disk using the same duckdb.connect() function, specifying the database path.
+
+**Work with Various Data Formats**
+
+- Read and write data from different file formats, including CSV, Parquet, and JSON, both locally and remotely (e.g., S3 buckets).
+
+**Build Complex Queries Incrementally**
+
+- Construct SQL queries step-by-step by storing the results (relations) of previous queries into variables.
+- Use these stored relations in subsequent queries, allowing for modular and reusable code.
+
+**Utilize DuckDB's SQL Dialect**
+
+- Take advantage of DuckDB's comprehensive SQL dialect, supporting various operations like joins, aggregations, window functions, and more.
+
+**Load and manipulate data**
+
+- DuckDB supports reading and writing data from various file formats like CSV, Parquet, and JSON.
+- You can load data from these files into DuckDB tables for further processing and analysis.
+- DuckDB offers various functions for data manipulation, including filtering, sorting, aggregation, and joining tables.
+
+**Explore and analyze data**
+
+- DuckDB allows you to perform exploratory data analysis (EDA) using its SQL capabilities.
+- You can write queries to calculate descriptive statistics, identify patterns, and gain insights from your data.
+
+**Prototype and experiment**
+
+- DuckDB's lightweight and in-process nature makes it ideal for rapid prototyping and experimentation.
+- You can quickly test and iterate on data analysis tasks without the overhead of setting up and managing a separate database server.
+
+# Evidence.dev: Transforming Data into Actionable Insights
+
+Evidence.dev is an open-source framework that allows you to build data reports and dashboards using SQL and Markdown.
+It simplifies the process of turning raw data into clear, shareable insights. 
+Key features include:
+
+- **SQL-First Approach**
+
+    Leverage your existing SQL skills to query data and generate visualizations.
+
+- **Markdown-Based Reporting**
+
+    Create interactive reports using Markdown, with embedded SQL queries and visualizations.
+
+- **Local Development & Deployment**
+
+    Develop reports locally and deploy them as static websites.
+
+- **Data Source Flexibility**
+
+    Connect to various data sources, including databases and files.
+
+# The Power of Integration: DuckDB + Evidence.dev
+
+Combining DuckDB and Evidence.dev creates a powerful local data analysis and reporting pipeline.
+Here's how they work together:
+
+- **Data Ingestion**
+
+    Use DuckDB to efficiently load and transform your data from various sources.
+
+- **Local Analysis**
+
+    Perform complex analytical queries directly on your local machine using DuckDB's high-performance engine.
+
+- **Report Building**
+
+    Connect Evidence.dev to your DuckDB database and create interactive reports using SQL and Markdown.
+
+- **Sharing Insights**
+
+    Deploy your Evidence.dev reports as static websites to share your findings with your team or stakeholders.
+
+# Example Workflow
+
+Imagine you have a large CSV file containing sales data.
+You can use DuckDB to:
+
+- Load the CSV into a DuckDB table
+- Perform aggregations and calculate key metrics (e.g., total sales per region).
+- Join the sales data with other relevant data sources.
+
+Then, you can use Evidence.dev to:
+
+- Connect to the DuckDB database
+- Write SQL queries to retrieve the calculated metrics.
+- Create visualizations (e.g., bar charts, line graphs) to represent the data.
+- Generate a report that summarizes your findings.
+
+# Conclusions
+
+DuckDB and Evidence.dev are democratizing data analysis, empowering individuals and teams to gain valuable insights without the complexity and expense of traditional data infrastructure. If you're looking for a powerful and efficient way to analyze and report on your data, this combination is worth exploring.
+
+- **Faster Iteration**
+
+    Local development with DuckDB and Evidence.dev allows for rapid iteration and experimentation.
+
+- **Data Privacy**
+
+    Analyzing sensitive data locally eliminates the need to upload it to cloud servers.
+
+- **Cost-Effectiveness**
+
+    Avoid expensive cloud data warehousing and processing costs.
+
+- **Simplified Workflow**
+
+    Streamline your data analysis and reporting process with these user-friendly tools.
+
+# Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm) | [Twitter](https://x.com/j3suslm)

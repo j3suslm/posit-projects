@@ -1,0 +1,87 @@
+project:
+  type: website
+website:
+  title: "Jesus LM"
+  back-to-top-navigation: false
+  page-navigation: true
+  page-footer:
+    background: "#f8f8f8"
+    center: 
+      #- text: "License"
+      #  href: license.qmd
+      - text: "&emsp; &#169; 2025 All Rights Reserved"
+  navbar:
+    title: My Blog
+    background: primary
+    search: true
+    right:
+      - href: https://tinyurl.com/jesus-portfolio
+        text: Portfolio
+      - href: https://tinyurl.com/jesus-tableau
+        text: Tableau
+      - icon: medium
+        href: https://medium.com/@jesuslm
+      - icon: linkedin
+        href: https://www.linkedin.com/in/j3sus-lm
+      - icon: twitter
+        href: https://x.com/j3suslm
+  sidebar:
+    style: "docked"
+    border: false
+    contents:
+      - section: Posts
+        contents:
+        - text: "BI with SQL & Markdown"
+          href: evidence.qmd
+        - text: BI as Code
+          href: bi_as_code.qmd
+        - text: Docs as Code
+          href: docs_as_code.qmd
+        - text: Slides as Code
+          href: slides_as_code.qmd
+        - text: Duckdb & Evidence
+          href: duckdb_bi.qmd
+        - text: Duckdb & Google Sheets
+          href: duckdb_gsheets.qmd
+        - text: Judiciary Elections in Mexico
+          href: judiciary_elections.qmd
+        - text: Social Security in Mexico
+          href: social_security_mexico.qmd
+        - text: National Guard in Mexico
+          href: national_guard.qmd
+        - text: The Economist & Data Scientist Role in Public Security
+          href: public_security.qmd
+      - section: Reports
+        contents:
+        - text: Understanding Spotify User Behavior
+          href: https://jesuslm-spotify-music.share.connect.posit.cloud
+        - text: Gasoline Prices in Mexico
+          href: https://jesuslm-gasoline-prices-webpage.share.connect.posit.cloud
+        - text: Farmacias Similares Locations
+          href: https://jesuslm-farmacias-similares.share.connect.posit.cloud
+        - text: Cluster Analysis using Polars
+          href: https://jesuslm-clustering.share.connect.posit.cloud
+      - section: Dashboards
+        contents:
+        - text: Gasoline Prices in Mexico
+          href: https://jesuslm-gasolineprices-dashboard.share.connect.posit.cloud
+        - text: Farmacias Similares Dashboard
+          href: https://j3suslm-fsdashboard.evidence.app
+        - text: Mexico City Crime Dashboard
+          href: https://j3susl-monroy.evidence.app
+      - section: Slideshows
+        contents:
+        - text: Gasoline Prices in Mexico
+          href: https://jesuslm-gasoline-prices-slideshow.share.connect.posit.cloud
+format:
+  html:
+    page-layout: full
+    grid:
+      sidebar-width: 250px
+      body-width: 800px
+      margin-width: 200px
+      gutter-width: 1em
+    theme:
+      - flatly
+    css: styles.css
+    toc: true

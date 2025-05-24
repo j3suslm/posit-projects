@@ -1,0 +1,113 @@
+<a href="index.qmd">Home</a>
+
+# The Mexican National Guard: Progress, Concerns, and the Future of Public Security
+*A force under Scrutiny*   
+*Apr, 2024*
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+![](https://ibero.mx/sites/default/files/prensaymultimedios/gn_mexico.jpg)
+
+# Introduction
+
+The National Guard (Guardia Nacional - GN) is Mexico's national gendarmerie, officially established on June 30, 2019. 
+Created with the aim of tackling the country's high levels of crime and restoring public safety, it absorbed personnel and units from the former Federal Police, as well as the military police and naval police.
+
+# History and Formation
+
+The National Guard was initially campaigned on taking the military off the streets.
+However, facing a persistent security crisis, it was proposed as a new force under military command to prevent and combat crime.
+
+In February 2019, the Mexican Congress approved constitutional reforms to create the National Guard. The law regulating the force came into effect in May 2019.
+
+The National Guard effectively replaced the Federal Police, which had been plagued by issues of corruption and human rights violations throughout its 20-year existence.
+While some experts suggested reforming the Federal Police, the decision was made to create a new institution.
+
+Initially, the National Guard was intended to be a civilian institution under the Secretariat of Security and Civilian Protection.
+However, in practice, it has been largely composed of military personnel, and in September 2024, its command was officially transferred to the Secretariat of National Defense.
+
+The force launched operations with tens of thousands of members and aimed to reach an estimated 120,000 members.
+
+# Functions and Responsibilities
+
+The National Guard has a broad mandate that includes:
+
+- Preventing and combating crime throughout the national territory.
+- Preserving public security.
+- Intensifying the enforcement of immigration policy, including deployment to the southern and northern borders to control the flow of migrants. This was notably increased as part of agreements with the United States.
+- Federal law enforcement duties.
+- Gendarmerie functions, implying a force with military discipline focused on general law enforcement.
+- Civilian police duties, with the power to detain suspects and collaborate with public prosecutors in investigations. They can investigate both federal and common crimes under certain agreements.
+- Supporting public security tasks in coordination with state and municipal authorities.
+- Civil protection in disasters and crises.
+- Kidnapping resolution, criminal surveillance, and intelligence gathering.
+- Border protection.
+
+More recently, the armed forces, including the National Guard, have been assigned additional tasks such as protecting oil pipelines, helping build infrastructure projects, and distributing vaccines.
+
+<br>
+
+<iframe width="750" height="850" src="https://datawrapper.dwcdn.net/Sr51n/4/" title="Crime Incidence in Mexico" data-external="1"></iframe>
+
+<br>
+
+::: {.callout-note appearance="default"}
+You can hover the mouse over the map to get additional information.
+:::
+
+<br>
+
+# Concerns and Criticisms
+
+The National Guard has faced significant scrutiny and criticism:
+
+**Militarization of public security**
+
+A primary concern is the increasing role of the military in traditionally civilian law enforcement tasks. Critics argue this blurs the lines between military and police functions and could lead to issues related to training, accountability, and human rights.
+
+**Human rights**
+
+There have been concerns about the training of National Guard members in human rights and allegations of excessive use of force, arbitrary detentions, and other abuses, particularly in the context of immigration enforcement.
+
+**Effectiveness in reducing crime**
+
+Despite its large deployment, some analyses suggest that the National Guard has not yet demonstrably reduced crime or violence in the country.
+
+**Accountability**
+Questions remain about the mechanisms for holding National Guard members accountable for misconduct, with some advocating for strong, independent civilian oversight.
+
+**Mission creep**
+
+The broadening scope of the National Guard's responsibilities, extending beyond traditional law enforcement to areas like infrastructure and migration control, has raised concerns about its intended purpose and potential overreach.
+
+<br>
+
+<iframe width="750" height="750" src="https://datawrapper.dwcdn.net/geGCy/3/" title="National Guard's Deployed Personnel in Mexico - 2019" data-external="1"></iframe>
+
+<br>
+
+::: {.callout-note appearance="default"}
+You can hover the mouse over the map to get additional information.
+:::
+
+<br>
+
+# Conclusions
+
+As of today, the National Guard continues to be a significant security force in Mexico, with a strong military component.
+It is actively involved in law enforcement across the country, border security operations, and various other tasks assigned by the government.
+The debate surrounding its role, effectiveness, and adherence to human rights standards remains ongoing.
+Recent deployments, such as the reinforcement of the northern border with Army troops, highlight the continued reliance on federal forces for security challenges.
+
+# References
+
+- Storr, S. (2023) [What is Guardia Nacional?](https://seguridadviacivil.ibero.mx/2023/04/18/que-es-la-guardia-nacional-en-2023/). Seguridad Ciudadana: La via Civil.
+- Gobierno de Mexico (2019) [National Guard Personnel Deployed](https://www.gob.mx/sspc/prensa/mas-de-56-mil-elementos-de-la-guardia-nacional-estan-desplegados-en-150-coordinaciones-regionales-del-pais-212953)
+
+# Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm) | [Twitter](https://x.com/j3suslm)

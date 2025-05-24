@@ -1,0 +1,102 @@
+---
+about:
+  template: solana
+---
+
+<!-- use dive to align paragraph -->
+<div style="text-align: justify">
+
+<html lang="en">
+<body>
+
+<a href="index.qmd">Home</a>
+
+<h1>Level Up Your Presentations: Embrace Slides as Code</h1>
+<p><em>Create your slideshows with Marp, Python, and Quarto</em>! 🚀
+<br>
+<em>Apr, 2025</em></p>
+
+<p><strong>Jesus L. Monroy</strong>
+<br>
+<em>Economist & Data Scientist</em></p>
+
+<div class="image-container">
+<img src="https://slidemodel.com/wp-content/uploads/00-conference-presentation-slides-cover.png" alt="slides as code" style="float:center; margin-right: 1em; width: 100%;">
+</div>
+
+<h2>Introduction</h2>
+
+<p align="justify">Tired of wrestling with drag-and-drop interfaces and endless formatting tweaks for your presentations?
+Ready to embrace the power of version control and reproducible results for your slides.
+Then it's time to dive into the exciting world of Slides as Code!
+This approach treats your presentation content and styling as code, offering a more efficient, collaborative, and maintainable workflow, by using <strong>Markdown</strong>, <strong>Python</strong>, and <strong>Quarto</strong>.</p>
+
+<h2>What's the Magic Behind Slides as Code?</h2>
+
+<p align="justify">Instead of directly manipulating visual elements, you define your slides using a lightweight markup language (like Markdown) and potentially sprinkle in code for dynamic content or visualizations.
+This offers several key advantages:</p>
+
+<ul>
+<li><strong>Version Control</strong>
+<p align="justify">Track changes, collaborate seamlessly with Git, and easily revert to previous versions. Say goodbye to accidental deletions and confusing "final_final_v3" files!</p>
+</li>
+<li><strong>Reproducibility</strong>
+<p align="justify">Ensure your presentations are consistent and can be easily recreated. No more wondering how you achieved that specific layout or chart.</p>
+</li>
+<li><strong>Efficiency</strong>
+<p align="justify">Focus on your content rather than tedious formatting. Write in a clean, text-based format and let the tools handle the presentation rendering.</p>
+</li>
+<li><strong>Automation</strong>
+<p align="justify">Generate slides programmatically using Python, pulling data from various sources or creating dynamic visualizations.</p>
+</li>
+<li><strong>Platform Agnostic</strong>
+<p align="justify">Often, the output formats are widely compatible (HTML, PDF, etc.), making sharing and viewing easy.</p>
+</li>
+</ul>
+
+<h2>Meet the Dream Team</h2>
+
+<p><strong>Markdown</strong></p>
+<p align="justify">A lightweight markup language with plain text formatting syntax. Think of it as a simplified way to add basic formatting (like bolding, italics, headings, lists, etc.) to your text using simple symbols. Instead of using complex word processors with menus and buttons, you use characters you already know on your keyboard</p>
+
+<p><strong>Python</strong></p>
+<p align="justify">The workhorse for data manipulation, analysis, and generating dynamic content. You can use Python scripts to fetch data, create charts with libraries like Matplotlib or Seaborn, and then seamlessly integrate these outputs into your Marp slides.</p>
+
+<p><strong>Quarto</strong></p>
+<p align="justify">This powerful open-source scientific and technical publishing system ties everything together. Quarto can render Marp Markdown into beautiful presentations, and it also provides excellent support for embedding Python code chunks directly within your Markdown.</p>
+
+<h2>How They Work Together?</h2>
+
+<ul>
+<li><strong>Content Creation (<em>Markdown</em>)</strong>
+<p align="justify">You write your presentation content in a <code>.md</code> file using Marp's Markdown syntax. You define slide breaks using <code>---</code>, apply themes, and add basic formatting.</p>
+</li>
+<li><strong>Dynamic Content (<em>Python</em>)</strong>
+<p align="justify">If you need to include data visualizations or dynamic information, you write Python code snippets within your Quarto document (which can include your Marp Markdown). These code chunks can:</p>
+<ul>
+<li>Read data from files or APIs.</li>
+<li>Perform calculations and analysis.</li>
+<li>Generate plots and charts using Python libraries.</li>
+</ul>
+<br>
+</li>
+<li><strong>Rendering (<em>Quarto</em>)</strong>
+<p align="justify">Quarto takes your <code>.md</code> file (with embedded Python if any) and renders it into a polished presentation in your desired format (e.g., HTML reveal.js slides, PDF beamer slides). Quarto handles the execution of your Python code and seamlessly integrates the output into your Marp presentation.</p>
+</li>
+</ul>
+
+<h2>Conclusions</h2>
+
+<p align="justify"><strong>Slides as code is the future!</strong> The Benefits are Clear. Embracing Slides as Code with <code>Markdown</code>, <code>Python</code>, and <code>Quarto</code> can significantly improve your presentation workflow. You'll gain better control, enhance collaboration, and create more dynamic and reproducible presentations.
+<em>Ready to ditch the traditional slide editors and unlock the power of code for your presentations?</em></p>
+
+<h2>Contact</h2>
+
+<p><strong>Jesus L. Monroy</strong>
+<br>
+<em>Economist & Data Scientist</em></p>
+
+<p><a href="https://www.linkedin.com/in/j3sus-lm">Linkedin</a> | <a href="https://medium.com/@jesuslm">Medium</a> | <a href="https://x.com/j3suslm">Twitter</a></p>
+</body>
+</html>
+</div>

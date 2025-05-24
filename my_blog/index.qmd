@@ -1,0 +1,21 @@
+---
+title: Jesus LM
+subtitle: "*Economist & Data Scientist*"
+about:
+  template: solana
+---
+
+<!-- Use 03 spaces to create new line -->
+I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare.
+
+I use `Python`[^1], `SQL`, and `Tableau` to transform raw data into clear, actionable data products (*webpages, slideshows, interactive reports*) that support decision-making, occasionally incorporating regression and classification analyses.
+
+Committed to fostering data literacy, I share data posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesuslm)
+
+Background in `Economics` (BA), `Information Technology` (MA) and `Data Science` and `Machine Learning` (Certification).
+
+Vegan.
+
+![](https://static.vecteezy.com/system/resources/previews/011/599/360/non_2x/newspaper-with-the-headline-news-and-glasses-and-coffee-cup-on-wooden-table-daily-newspaper-mock-up-concept-photo.jpg){width=50%}
+
+[^1]: numpy, pandas, polars, duckdb, matplotlib, seaborn, plotly, folium, dash, shiny, statsmodels, sckitlearn.

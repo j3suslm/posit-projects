@@ -1,0 +1,110 @@
+<a href="index.qmd">Home</a>
+
+# Crowding in Social Security Services in Mexico 
+*The Case of FOVISSSTE*   
+*April, 2025*
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+![](https://radiouat.mx/wp-content/uploads/2017/12/issste-filas.png)
+
+# Abstract
+
+The strain on Mexico's public healthcare systems, particularly the Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE) and the Instituto Mexicano del Seguro Social (IMSS), is a persistent and deeply concerning issue.
+Overcrowded waiting rooms, lengthy delays, and limited resources paint a stark picture of the challenges faced by both patients and healthcare providers.
+
+- ISSTE serves approximately 13.7 million Mexican government workers, retirees, their spouses, and underage children. 
+- Together with the Mexican Social Security Institute (IMSS), ISSSTE provides health coverage for 55% to 60% of the total Mexican population. 
+- ISSTE primarily focuses on providing healthcare and social services to federal, state, and municipal government employees.
+
+# The Overwhelming Crowd: A Daily Reality
+
+Reports and personal accounts consistently describe scenes of overwhelming congestion in ISSSTE and IMSS facilities. Patients often endure hours, sometimes even days, of waiting for consultations, treatments, or surgeries. This situation leads to:
+
+- **Extended wait times**
+
+    Delays in receiving necessary care can exacerbate existing health conditions and lead to complications.
+
+- **Reduced quality of care**
+
+    Overburdened staff may struggle to provide adequate attention to each patient.
+
+- **Patient frustration and anxiety**
+
+    The stress of long waits and uncertain outcomes can significantly impact patients' well-being.
+
+- **Increased risk of infections**
+
+    Crowded waiting areas can become breeding grounds for contagious diseases.
+
+# Root Causes of Overcrowding
+
+Several factors contribute to the overcrowding crisis:
+
+- **Insufficient infrastructure**
+
+    The number of healthcare facilities and medical personnel has not kept pace with the growing population and its healthcare needs.
+
+- **Underfunding**
+
+    Limited financial resources restrict the ability of ISSSTE and IMSS to expand capacity, invest in new equipment, and hire additional staff.
+
+- **Increased prevalence of chronic diseases**
+
+    The rising rates of diabetes, hypertension, and other chronic conditions place a significant burden on the healthcare system.
+
+- **Inefficient administrative processes**
+
+    Bureaucratic hurdles and delays in scheduling appointments and processing paperwork contribute to longer wait times.
+
+- **Aging population**
+
+    As the population ages, the demand for healthcare services, particularly for geriatric care, increases.
+
+- **Lack of preventative care**
+
+    A focus on treating illnesses rather than preventing them leads to more people requiring intensive medical intervention.
+
+# Consequences of Overcrowding
+
+The consequences of overcrowding extend beyond individual patients, impacting the entire healthcare system and society:
+
+- **Increased mortality and morbidity**
+
+    Delays in treatment can lead to preventable deaths and worsened health outcomes.
+
+- **Economic burden**
+
+    Lost productivity due to illness and disability places a strain on the economy.
+
+- **Erosion of public trust**
+
+    Frustration with the healthcare system can erode public confidence in government institutions.
+
+- **Strain on healthcare professionals**
+
+    Overwork and burnout among doctors, nurses, and other healthcare workers can lead to staff shortages and reduced morale.
+
+- **Increased emergency room usage**
+
+    When regular appointments take too long, people go to emergency rooms, further over crowding those areas.
+
+# Conclusions
+
+Addressing the overcrowding crisis requires a multifaceted approach involving increased investment in infrastructure, improved administrative efficiency, a greater focus on preventative care, and strategies to manage the growing burden of chronic diseases. 
+It is a critical challenge that demands urgent attention to ensure the well-being of the Mexican population.
+
+# References
+
+- Vazquez, C (2024) [Understanding IMSS: Mexico's Social Security System](https://coderslink.com/employers/blog/understanding-imss-mexico-social-security-system/#:~:text=Both%20institutions%20provide%20similar%20services,those%20in%20the%20private%20sector). Coderslink. Retrieved from website.
+- Villarreal, V. (2022) [Infographic | How Do Mexicans Get Healthcare?](https://www.wilsoncenter.org/article/infographic-how-do-mexicans-get-healthcare). Wilson Center. Retrieved from website.
+
+# Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm) | [Twitter](https://x.com/j3suslm)
+
+</p>

@@ -1,0 +1,53 @@
+{
+  "index.qmd": {
+    "index.html": "29df5b58"
+  },
+  "license.md": {
+    "license.html": "6a5042e4"
+  },
+  "license.qmd": {
+    "license.html": "d46bf989"
+  },
+  "resume.qmd": {
+    "resume.html": "e06d1290"
+  },
+  "resume2.qmd": {
+    "resume2.html": "462382ba"
+  },
+  "evidence.qmd": {
+    "evidence.html": "e870ca0f"
+  },
+  "judiciary_elections.qmd": {
+    "judiciary_elections.html": "0946fbcc"
+  },
+  "bi_as_code.qmd": {
+    "bi_as_code.html": "cdb80b59"
+  },
+  "docs_as_code.qmd": {
+    "docs_as_code.html": "a90d9d01"
+  },
+  "slides_as_code.qmd": {
+    "slides_as_code.html": "66afe095"
+  },
+  "national-guard.qmd": {
+    "national-guard.html": "0831bb25"
+  },
+  "national_guard.qmd": {
+    "national_guard.html": "5f748911"
+  },
+  "public security.qmd": {
+    "public security.html": "e69ea2bf"
+  },
+  "public_security.qmd": {
+    "public_security.html": "0e6c3179"
+  },
+  "social_security_mexico.qmd": {
+    "social_security_mexico.html": "ebaf3ffd"
+  },
+  "duckdb_bi.qmd": {
+    "duckdb_bi.html": "1e36ecee"
+  },
+  "duckdb_gsheets.qmd": {
+    "duckdb_gsheets.html": "99f91009"
+  }
+}

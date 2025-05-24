@@ -1,278 +1,258 @@
----
-about:
-  template: solana
----
+# Unleashing Business Intelligence with Python
+*Shifting from Drag-and-Drop BI Tools to Code-based Applications*   
+*May, 2025*
 
-<!-- use dive to align paragraph -->
-<div style="text-align: justify">
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
 
-<html lang="en">
-<body>
+<div>
+<img src="https://quarto.org/docs/dashboards/images/penguins-shiny.png" alt="bi as code" style="float:center; margin-right: 1em; width: 90%;">
+</div>
 
-<a href="index.qmd">Home</a>
+# No-Code Stage: Combining SQL and Tableau
 
-<h1>Unleashing Business Intelligence with Python</h1>
-<p><em>Shifting from Drag-and-Drop BI Tools to Code-based Applications</i></em>
-<br>
-<i>May, 2025</i>
-<p><strong>Jesus L. Monroy</strong>
-<br>
-<em>Economist &amp; Data Scientist</emp>
-</p>
-
-<img src="https://towardsdatascience.com/wp-content/uploads/2020/12/1Lmri73DDQJok6s_L2gnLng.gif" alt="code or not to code" style="float:center; margin-right: 1em; width: 100%;">
-
-<h1>No-Code Stage: Combining SQL and Tableau</h1>
-
-<p>A Winning Combination and the next step to BI as Code</p>
-        
-<p align="justify">In the world of data analysis and visualization, <b>Tableau</b> has established itself as a powerful tool for transforming numbers into impactful visual insights.
+A Winning Combination and the next step to BI as Code.
+In the world of data analysis and visualization, *Tableau* has established itself as a powerful tool for transforming numbers into impactful visual insights.
 However, the way we feed those dashboards has a significant impact on their performance, flexibility, and scalability.
-Here's why using <b>SQL</b> to prepare your data before bringing it into Tableau is a superior strategy.</p>
+Here's why using *SQL* to prepare your data before bringing it into Tableau is a superior strategy.
         
-<h2>Why SQL as a Paintbrush for Your Tableau Dashboards?</h2>
-        
-<img src="https://help.tableau.com/current/pro/desktop/es-es/Img/customsql_ds_logical.png" alt="tableau and sql" style="float:center; margin-right: 1em; width: 100%;">
+## Why SQL as a Paintbrush for Your Tableau Dashboards?
 
-<p align="justify">Imagine <b>Tableau</b> is your canvas and the data is the paint. <b>SQL</b> acts as your expert color mixer, allowing you to prepare exactly the shades and proportions you need before applying them to the canvas. Here are some of the key benefits:</p>
-        
-<ul>
-<li><strong>Optimized Performance</strong>
-<p align="justify">Instead of loading large amounts of raw data into Tableau and relying on its data engine to perform complex transformations, SQL lets you filter, aggregate, and transform data directly in the database. This means Tableau works with much smaller, optimized data sets, resulting in faster and more responsive dashboards.</p>
-</li>
-<li><strong>Greater Flexibility and Control</strong>
-<p align="justify">SQL gives you granular control over your data transformation logic. You can perform complex joins, apply conditional logic, create calculated fields, and shape the data exactly as you need it for your specific visualizations. This is much more flexible than relying solely on Tableau's capabilities for these tasks.</p>
-</li>
-<li><strong>Reuse and Consistency</strong>
-<p align="justify">SQL queries can be saved, versioned, and reused across multiple dashboards or even different tools. This promotes consistency in business logic and reduces work redundancy.</p>
-</li>
-<li><strong>Scalability</strong>
-<p align="justify">As your data volumes grow, performing heavy transformations within Tableau can become prohibitively expensive in terms of performance. Delegating these tasks to the database via SQL allows your solution to scale more efficiently.</p>
-</li>
-<li><strong>Data Warehouse Integration</strong>
-<p align="justify">If your organization already uses a data warehouse, SQL is the native language for interacting with it. Using SQL to prepare data for Tableau integrates naturally with your existing data infrastructure.</p>
-</li>
-</ul>
-        
-<h2>The Ideal Workflow: SQL First, Tableau Later</h2>
+![](https://help.tableau.com/current/pro/desktop/es-es/Img/customsql_ds_logical.png)
 
-<p>An efficient workflow involves:</p>
+Imagine *Tableau* is your canvas and the data is the paint. *SQL* acts as your expert color mixer, allowing you to prepare exactly the shades and proportions you need before applying them to the canvas. Here are some of the key benefits:
         
-<ul>
-<li><strong>Connecting Tableau to the database</strong>
-<p align="justify">Using custom SQL queries or materialized views to prepare and shape the data. This includes filtering, aggregations, joins, and any other necessary transformations.</p>
-</li>
-<li><strong>Building visualizations</strong>
-<p align="justify">Using Tableau drag and drop from the pre-processed data.</p>
-</li>
-</ul>
-        
-<hr>
+- **Optimized Performance**
 
-<h1>Shifting to BI as Code: Evidence.dev</h1>
-        
-<p align="justify">While the combination of SQL and Tableau is powerful, modern tools like <b>Evidence.dev</b> are emerging as interesting alternatives that seek to further simplify the process of creating data-driven dashboards.</p>
-        
-<img src="https://evidence.dev/changelog/usql.gif" alt="sql and markdown" style="float:center; margin-right: 1em; width: 100%;">
+  Instead of loading large amounts of raw data into Tableau and relying on its data engine to perform complex transformations, SQL lets you filter, aggregate, and transform data directly in the database. This means Tableau works with much smaller, optimized data sets, resulting in faster and more responsive dashboards.
 
-<p><strong>SQL as the Primary Language</strong></p>
-        
-<p align="justify">Similar to the strategy we promote, Evidence.dev uses SQL as its primary language to define data logic and visualizations. This means there's less of a clear separation between data preparation and visualization.</p>
-        
-<p><strong>Code-Defined Visualizations</strong></p>
-        
-<p align="justify">Visualizations in Evidence.dev are defined using code (primarily Markdown with SQL code blocks), which offers even greater control and facilitates collaboration and versioning through systems like Git.</p>
-        
-<p><strong>Integrated Pipeline</strong></p>
-        
-<p align="justify">Evidence.dev essentially integrates the data pipeline and visualization into a single tool. You don't need a separate tool like Tableau for visualization after preparing the data with SQL.</p>
-        
-<p><strong>Focus on Data Engineering</strong></p>
-        
-<p align="justify">Evidence.dev is more aligned with data engineering principles, promoting transparency, reproducibility, and maintainability in the dashboard creation process.</p>
-        
-<h2>Replacement or Integration?</h2>
-        
-<p align="justify">While Evidence.dev offers an attractive alternative, it doesn't necessarily have to be a complete replacement for the SQL + Tableau combination in all cases.</p>
-        
-<p><strong>Potential Replacement</strong></p>
-        
-<p align="justify">For teams with a strong focus on data engineering and who value full control through code, Evidence.dev could be an excellent option to replace the traditional SQL + Tableau workflow.</p>
-        
-<p><strong>Strategic Integration</strong></p>
-        
-<p align="justify">It is also possible to integrate Evidence.dev into an existing Tableau workflow. For example, data models defined and transformed in Evidence.dev could be used as data sources for Tableau dashboards, leveraging the strengths of both tools.</p>
-        
-<hr>
-        
-<h1>Unleashing the Power of Python as BI as Code: Plotly Dash</h1>
-        
-<p align="justify">Tired of static reports and clunky spreadsheets? Want to transform your data into engaging, interactive stories? Look no further than <b>Plotly Dash</b>, a powerful <b>Python</b> framework for building analytical web applications –no web development expertise required!</p>
-        
-<p align="justify">Dash empowers data scientists and analysts to create beautiful, responsive dashboards directly from their Python scripts. Imagine effortlessly turning your data insights into shareable web applications that anyone can explore and understand.</p>
-        
-<img src="https://repository-images.githubusercontent.com/430076839/e7ea7d21-e313-4ba2-90c9-5f627b751b65" alt="dash" style="width: 100%;">
+- **Greater Flexibility and Control**
 
-<h2>Why Choose Plotly Dash for Your Dashboards?</h2>
-        
-<p align="justify">Dash offers a compelling set of advantages that make it a go-to choice for building data dashboards:</p>
-        
-<p><strong>Python Native</strong></p>
-        
-<p align="justify">Built entirely on Python, Dash seamlessly integrates with your existing data science stack, including libraries like Pandas, NumPy, and Scikit-learn. This means you can leverage your familiar Python workflows to build sophisticated dashboards.</p>
-        
-<p><strong>Interactive and Dynamic</strong></p>
-        
-<p align="justify">Dash dashboards are inherently interactive. Users can filter data, zoom into charts, hover over data points for details, and trigger updates in real-time. This level of engagement fosters deeper data exploration and understanding.</p>
-        
-<p><strong>Declarative Syntax</strong></p>
-        
-<p align="justify">Dash utilizes a declarative syntax, making it incredibly intuitive to define the layout and interactivity of your dashboard. You describe what you want to see, and Dash handles the underlying complexities of building the web application.</p>
-        
-<p><strong>Rich Component Library</strong></p>
-        
-<p align="justify">Plotly provides a comprehensive library of interactive and customizable components, including charts, graphs, tables, dropdown menus, sliders, and more. These components are built on top of the robust Plotly.js library, ensuring high-quality visualizations.</p>
-        
-<p><strong>Customizable Layouts</strong></p>
-        
-<p align="justify">Dash offers flexible layout options, allowing you to arrange components precisely as needed. You can create multi-page dashboards, organize elements into rows and columns, and design visually appealing interfaces.</p>
-        
-<p><strong>Deployment Flexibility</strong></p>
-        
-<p align="justify">Dash applications can be deployed on various platforms, from local machines to enterprise-level servers and cloud platforms like Heroku, AWS, and Google Cloud. This makes it easy to share your dashboards with a wider audience.</p>
-        
-<p><strong>Active Community and Extensive Documentation</strong></p>
-        
-<p align="justify">Dash boasts a vibrant and supportive community, along with comprehensive and well-maintained documentation. This makes it easier to learn, troubleshoot, and find solutions to your dashboarding challenges.</p>
-        
-<h2>Recent Improvements and Exciting Features</h2>
-        
-<p align="justify">The Plotly Dash ecosystem is continuously evolving, with recent updates bringing even more power and flexibility:</p>
-        
-<p><strong>Pattern-Matching Callbacks</strong></p>
-        
-<p align="justify">This feature simplifies the creation of dashboards with dynamically generated components, making it easier to handle scenarios with a variable number of inputs or outputs.</p>
-        
-<p><strong>Clientside Callbacks (with JavaScript)</strong></p>
-        
-<p align="justify">While Dash is primarily Python-based, the introduction of clientside callbacks allows developers to write JavaScript code for specific interactive elements, leading to faster and more responsive user experiences for certain interactions.</p>
-        
-<p><strong>Improved Performance</strong></p>
-        
-<p align="justify">Ongoing efforts focus on optimizing the performance of Dash applications, ensuring smoother interactions and faster loading times, especially for large datasets.</p>
-        
-<p><strong>Enhanced Theming and Styling</strong></p>
-        
-<p align="justify">Recent updates have brought more options for customizing the visual appearance of Dash applications, allowing for greater control over branding and aesthetics.</p>
-        
-<p><strong>Integration with More Tools</strong></p>
-        
-<p align="justify">Dash continues to improve its integration with other data science and web development tools, expanding its versatility.</p>
-        
-<h2>Getting Started with Plotly Dash:</h2>
-        
-<p align="justify">Diving into Plotly Dash is easier than you might think!</p>
+  SQL gives you granular control over your data transformation logic. You can perform complex joins, apply conditional logic, create calculated fields, and shape the data exactly as you need it for your specific visualizations. This is much more flexible than relying solely on Tableau's capabilities for these tasks.
 
-<img src="images/code.png" alt="code" style="float:center; margin-right: 1em; width: 100%;">
+- **Reuse and Consistency**
+ 
+  SQL queries can be saved, versioned, and reused across multiple dashboards or even different tools. This promotes consistency in business logic and reduces work redundancy.
 
-<p align="justify">From there, you can explore the official Dash documentation and numerous online tutorials to start building your own interactive dashboards.</p>      
-        
-<hr>
-        
-<h1>Craft Interactive Dashboards with Shiny for Python ✨</h1>
-        
-<p align="justify">Ready to transform your raw data into compelling, interactive stories? Look no further than <b>Shiny for Python</b>! This powerful library brings the magic of reactive web applications directly to your Python workflow, making dashboard creation more intuitive and accessible than ever before.</p>
-        
-<p align="justify">For those familiar with the R ecosystem, Shiny needs little introduction. Now, Pythonistas can leverage its elegant framework to build dynamic dashboards without needing extensive web development knowledge. Imagine: interactive charts that respond to user inputs, filterable tables that reveal hidden insights, and customizable layouts that perfectly showcase your findings –all built with the Python you already know and love.</p>
-        
-<img src="https://shiny.posit.co/py/docs/assets/tipping-dashboard.png" alt="code" style="float:center; margin-right: 1em; width: 100%;">
+- **Scalability**
 
-<h2>Why Choose Shiny for Python? Let's Dive into the Advantages:</h2>
-        
-<p><strong>Python Powerhouse</strong></p>
-        
-<p align="justify">You can seamlessly integrate your favorite Python data science libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly directly into your dashboards. This means you can perform complex data manipulation and visualization within the same familiar environment.</p>
-        
-<p><strong>Reactive Magic</strong></p>
-        
-<p align="justify">Shiny's core strength lies in its reactivity. When a user interacts with an input (like a slider or dropdown), the linked outputs (charts, tables, text) automatically update in real-time. This creates a fluid and engaging exploratory experience for your audience.</p>
-        
-<p><strong>Simplified Web Development</strong></p>
-        
-<p align="justify">Say goodbye to wrestling with HTML, CSS, and JavaScript intricacies. Shiny for Python abstracts away much of this complexity, allowing you to focus on the logic and presentation of your data. Its declarative syntax makes defining UI elements and their behavior remarkably straightforward.</p>
-        
-<p><strong>Customizable Layouts</strong></p>
-        
-<p align="justify">Tailor your dashboards to your exact needs with flexible layout options. Arrange elements in columns, rows, or use more advanced grid systems to create visually appealing and informative interfaces.</p>
-        
-<p><strong>Shareability</strong></p>
-        
-<p align="justify">Once your dashboard is built, deploying it is relatively simple. You can share it with colleagues, stakeholders, or even the wider world, enabling data-driven decision-making and communication.</p>
-        
-<p><strong>Growing Ecosystem</strong></p>
-        
-<p align="justify">While still relatively new compared to its R counterpart, the Shiny for Python ecosystem is rapidly expanding. Expect to see more components, extensions, and community support emerge over time.</p>
-        
-<h2>What's Improved? Building on the Shiny Legacy:</h2>
-        
-<p align="justify">Shiny for Python benefits from the years of experience and refinement of its R predecessor. This translates to:</p>
-        
-<p><strong>Modern Pythonic Syntax</strong></p>
-        
-<p align="justify">The Python API is designed to feel natural and intuitive for Python developers.</p>
-        
-<p><strong>Leveraging Python's Strengths</strong></p>
-        
-<p align="justify">It seamlessly integrates with Python's rich ecosystem for data manipulation, scientific computing, and visualization.</p>
-        
-<p><strong>Cross-Platform Compatibility</strong></p>
-        
-<p align="justify">Deploy your dashboards on various operating systems and environments.</p>
-        
-<p align="justify">Getting Started with Shiny for Python is Easier Than You Think:</p>
-        
-<p align="justify">If you're eager to jump in, here's a taste of how simple it can be:</p>
-        
-<img src="images/shiny.png" alt="shiny code" style="float:center; margin-right: 1em; width: 100%;">
+  As your data volumes grow, performing heavy transformations within Tableau can become prohibitively expensive in terms of performance. Delegating these tasks to the database via SQL allows your solution to scale more efficiently.
 
-<p align="justify">This minimal example demonstrates how to create a simple dashboard with a dropdown to filter a bar chart.</p>
-        
-<hr>
+- **Data Warehouse Integration**
 
-<h1>Conclusions</h1>
+  If your organization already uses a data warehouse, SQL is the native language for interacting with it. Using SQL to prepare data for Tableau integrates naturally with your existing data infrastructure.
         
-<p align="justify">Using <i>SQL</i> to prepare your data before visualizing it in </i>Tableau</i> is a smart strategy that leads to faster, more flexible, and scalable dashboards.
+## The Ideal Workflow: SQL First, Tableau Later
+
+An efficient workflow involves:
+        
+- **Connecting Tableau to the database**
+
+  Using custom SQL queries or materialized views to prepare and shape the data. This includes filtering, aggregations, joins, and any other necessary transformations.
+
+- **Building visualizations**
+
+  Using Tableau drag and drop from the pre-processed data.</p>
+        
+---
+
+# Shifting to BI as Code: Evidence.dev
+        
+While the combination of SQL and Tableau is powerful, modern tools like *Evidence.dev* are emerging as interesting alternatives that seek to further simplify the process of creating data-driven dashboards.
+        
+![](https://evidence.dev/changelog/usql.gif)
+
+**SQL as the Primary Language**
+        
+Similar to the strategy we promote, Evidence.dev uses SQL as its primary language to define data logic and visualizations. This means there's less of a clear separation between data preparation and visualization.
+        
+**Code-Defined Visualizations**
+        
+Visualizations in Evidence.dev are defined using code (primarily Markdown with SQL code blocks), which offers even greater control and facilitates collaboration and versioning through systems like Git.
+        
+**Integrated Pipeline**
+        
+Evidence.dev essentially integrates the data pipeline and visualization into a single tool. You don't need a separate tool like Tableau for visualization after preparing the data with SQL.
+        
+**Focus on Data Engineering**
+        
+Evidence.dev is more aligned with data engineering principles, promoting transparency, reproducibility, and maintainability in the dashboard creation process.
+        
+## Replacement or Integration?
+        
+While Evidence.dev offers an attractive alternative, it doesn't necessarily have to be a complete replacement for the SQL + Tableau combination in all cases.
+        
+**Potential Replacement**
+        
+For teams with a strong focus on data engineering and who value full control through code, Evidence.dev could be an excellent option to replace the traditional SQL + Tableau workflow.
+        
+**Strategic Integration**
+        
+It is also possible to integrate Evidence.dev into an existing Tableau workflow. For example, data models defined and transformed in Evidence.dev could be used as data sources for Tableau dashboards, leveraging the strengths of both tools.
+
+---
+        
+# Unleashing the Power of Python as BI as Code: Plotly Dash
+        
+Tired of static reports and clunky spreadsheets? Want to transform your data into engaging, interactive stories? Look no further than *Plotly Dash*, a powerful *Python* framework for building analytical web applications –no web development expertise required!
+        
+Dash empowers data scientists and analysts to create beautiful, responsive dashboards directly from their Python scripts. Imagine effortlessly turning your data insights into shareable web applications that anyone can explore and understand.
+        
+<div>
+<img src="https://repository-images.githubusercontent.com/430076839/e7ea7d21-e313-4ba2-90c9-5f627b751b65" width="95%">
+</div>
+
+## Why Choose Plotly Dash for Your Dashboards?
+        
+Dash offers a compelling set of advantages that make it a go-to choice for building data dashboards:
+        
+**Python Native**
+        
+Built entirely on Python, Dash seamlessly integrates with your existing data science stack, including libraries like Pandas, NumPy, and Scikit-learn. This means you can leverage your familiar Python workflows to build sophisticated dashboards.
+        
+**Interactive and Dynamic**
+        
+Dash dashboards are inherently interactive. Users can filter data, zoom into charts, hover over data points for details, and trigger updates in real-time. This level of engagement fosters deeper data exploration and understanding.
+        
+**Declarative Syntax**
+        
+Dash utilizes a declarative syntax, making it incredibly intuitive to define the layout and interactivity of your dashboard. You describe what you want to see, and Dash handles the underlying complexities of building the web application.
+        
+**Rich Component Library**
+        
+Plotly provides a comprehensive library of interactive and customizable components, including charts, graphs, tables, dropdown menus, sliders, and more. These components are built on top of the robust Plotly.js library, ensuring high-quality visualizations.
+        
+**Customizable Layouts**
+        
+Dash offers flexible layout options, allowing you to arrange components precisely as needed. You can create multi-page dashboards, organize elements into rows and columns, and design visually appealing interfaces.
+        
+**Deployment Flexibility**
+        
+Dash applications can be deployed on various platforms, from local machines to enterprise-level servers and cloud platforms like Heroku, AWS, and Google Cloud. This makes it easy to share your dashboards with a wider audience.
+
+**Active Community and Extensive Documentation**
+        
+Dash boasts a vibrant and supportive community, along with comprehensive and well-maintained documentation. This makes it easier to learn, troubleshoot, and find solutions to your dashboarding challenges.
+        
+## Recent Improvements and Exciting Features
+        
+The Plotly Dash ecosystem is continuously evolving, with recent updates bringing even more power and flexibility:
+        
+**Pattern-Matching Callbacks**
+        
+This feature simplifies the creation of dashboards with dynamically generated components, making it easier to handle scenarios with a variable number of inputs or outputs.
+        
+**Clientside Callbacks (with JavaScript)**
+        
+While Dash is primarily Python-based, the introduction of clientside callbacks allows developers to write JavaScript code for specific interactive elements, leading to faster and more responsive user experiences for certain interactions.
+        
+**Improved Performance**
+        
+Ongoing efforts focus on optimizing the performance of Dash applications, ensuring smoother interactions and faster loading times, especially for large datasets.
+        
+**Enhanced Theming and Styling**
+        
+Recent updates have brought more options for customizing the visual appearance of Dash applications, allowing for greater control over branding and aesthetics.
+        
+**Integration with More Tools**
+        
+Dash continues to improve its integration with other data science and web development tools, expanding its versatility.
+        
+## Getting Started with Plotly Dash
+        
+Diving into Plotly Dash is easier than you might think!
+
+![](images/code.png)
+
+From there, you can explore the official Dash documentation and numerous online tutorials to start building your own interactive dashboards.
+        
+---
+        
+# Craft Interactive Dashboards with Shiny for Python ✨
+
+Ready to transform your raw data into compelling, interactive stories? Look no further than *Shiny for Python*! This powerful library brings the magic of reactive web applications directly to your Python workflow, making dashboard creation more intuitive and accessible than ever before.
+        
+For those familiar with the R ecosystem, Shiny needs little introduction. Now, Pythonistas can leverage its elegant framework to build dynamic dashboards without needing extensive web development knowledge. Imagine: interactive charts that respond to user inputs, filterable tables that reveal hidden insights, and customizable layouts that perfectly showcase your findings –all built with the Python you already know and love.
+        
+![](https://shiny.posit.co/py/docs/assets/tipping-dashboard.png)
+
+## Why Choose Shiny for Python? Let's Dive into the Advantages
+        
+**Python Powerhouse**
+        
+You can seamlessly integrate your favorite Python data science libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly directly into your dashboards. This means you can perform complex data manipulation and visualization within the same familiar environment.
+
+**Reactive Magic**
+        
+Shiny's core strength lies in its reactivity. When a user interacts with an input (like a slider or dropdown), the linked outputs (charts, tables, text) automatically update in real-time. This creates a fluid and engaging exploratory experience for your audience.
+        
+**Simplified Web Development**
+        
+Say goodbye to wrestling with HTML, CSS, and JavaScript intricacies. Shiny for Python abstracts away much of this complexity, allowing you to focus on the logic and presentation of your data. Its declarative syntax makes defining UI elements and their behavior remarkably straightforward.
+        
+**Customizable Layouts**
+        
+Tailor your dashboards to your exact needs with flexible layout options. Arrange elements in columns, rows, or use more advanced grid systems to create visually appealing and informative interfaces.
+        
+**Shareability**
+        
+Once your dashboard is built, deploying it is relatively simple. You can share it with colleagues, stakeholders, or even the wider world, enabling data-driven decision-making and communication.
+        
+**Growing Ecosystem**
+        
+While still relatively new compared to its R counterpart, the Shiny for Python ecosystem is rapidly expanding. Expect to see more components, extensions, and community support emerge over time.
+        
+## What's Improved? Building on the Shiny Legacy
+        
+Shiny for Python benefits from the years of experience and refinement of its R predecessor. This translates to:
+        
+**Modern Pythonic Syntax**
+        
+The Python API is designed to feel natural and intuitive for Python developers.
+        
+**Leveraging Python's Strengths**
+        
+It seamlessly integrates with Python's rich ecosystem for data manipulation, scientific computing, and visualization.
+        
+**Cross-Platform Compatibility**
+        
+Deploy your dashboards on various operating systems and environments.    
+If you're eager to jump in, here's a taste of how simple it can be:
+        
+![](images/shiny.png)
+
+This minimal example demonstrates how to create a simple dashboard with a dropdown to filter a bar chart.
+        
+
+# Conclusions
+        
+Using <i>SQL</i> to prepare your data before visualizing it in *Tableau* is a smart strategy that leads to faster, more flexible, and scalable dashboards.
 Emerging tools like <i>Evidence.dev</i> are taking this philosophy a step further by integrating data preparation and visualization into a SQL-based environment.
-Evaluating the specific needs of your team and project will help you determine if the traditional SQL + Tableau combination is still the best option or if a modern alternative like Evidence.dev could offer significant advantages. <b>The power of your data is in how you prepare it</b>!</p>
+Evaluating the specific needs of your team and project will help you determine if the traditional SQL + Tableau combination is still the best option or if a modern alternative like Evidence.dev could offer significant advantages. **The power of your data is in how you prepare it!**
            
-<p align="justify"><i>Plotly Dash</i> has emerged as a leading framework for building interactive data dashboards in <i>Python</i>. Its Python-native nature, rich component library, and focus on interactivity make it an ideal choice for data professionals looking to communicate their insights effectively. With continuous improvements and a thriving community, Dash is only getting better, empowering you to unlock the true potential of your data.</p>
+*Plotly Dash* has emerged as a leading framework for building interactive data dashboards in *Python*. Its Python-native nature, rich component library, and focus on interactivity make it an ideal choice for data professionals looking to communicate their insights effectively. With continuous improvements and a thriving community, Dash is only getting better, empowering you to unlock the true potential of your data.</p>
         
-<p align="justify">So, why settle for static reports? Embrace the power of Plotly Dash and start building dynamic, engaging dashboards today!</p>
+So, why settle for static reports? Embrace the power of Plotly Dash and start building dynamic, engaging dashboards today!
 
-<b>The Future is Shiny!</b>
+**The Future is Shiny!**
         
-<p align="justify"><i>Shiny</i> for Python opens up exciting possibilities for data scientists, analysts, and anyone who wants to communicate data effectively. Its ease of use, combined with the power of <i>Python</i>'s ecosystem, makes it a compelling choice for building interactive and insightful dashboards.</p>
+*Shiny* for Python opens up exciting possibilities for data scientists, analysts, and anyone who wants to communicate data effectively. Its ease of use, combined with the power of *Python*'s ecosystem, makes it a compelling choice for building interactive and insightful dashboards.
 
-<hr>
         
-<h2>References</h2>
-<ul>
-<li> Monroy, J. (2025) <a href="https://medium.com/h7w/mexico-city-crime-dashboard-5ed500ff1ce9">Mexico City Crime Dashboard</a>. Retrieved from website.</li>
-<li> Monroy, J. (2025) <a href="https://medium.com/h7w/building-efficient-dashboards-for-the-modern-data-scientist-92b7622bb0a2">Building Effective Dashboards for the Modern Data Scientist</a>. Retrieved from website.</li>
-<li>Monroy, J. (2025) <a href="https://medium.com/h7w/business-intelligence-as-code-04bd54b2658b">Business Intelligence as Code</a>. Retrieved from website.</li>
-<li>Dash Website <a href="https://dash.plotly.com">Dash Python User Guide</a>. Retrieved from website.</li> 
-<li>Shiny Website <a href="https://shiny.posit.co/py">Shiny for Python</a>. Retrieved from website.</li>
-</ul>
+# References
 
-<hr>
+* Monroy, J. (2025) [](https://medium.com/h7w/mexico-city-crime-dashboard-5ed500ff1ce9). Retrieved from website.
+* Monroy, J. (2025) [Building Effective Dashboards for the Modern Data Scientist](https://medium.com/h7w/building-efficient-dashboards-for-the-modern-data-scientist-92b7622bb0a2). Retrieved from website.
+* Monroy, J. (2025) [Business Intelligence as Code](https://medium.com/h7w/business-intelligence-as-code-04bd54b2658b). Retrieved from website.
+* Dash Website [Dash Python User Guide](https://dash.plotly.com). Retrieved from website. 
+* Shiny Website [Shiny for Python](https://shiny.posit.co/py). Retrieved from website.
 
-<h2>Contact</h2>
-<p><b>Jesus L. Monroy</b>
-<br>
-<i>Economist & Data Scientist</i></p>
-<p><a href="https://www.linkedin.com/in/j3sus-lm">Linkedin</a> | <a href="https://medium.com/@jesuslm">Medium</a> | <a href="https://x.com/j3suslm">Twitter</a></p>
-        
-</div>
-</body>
-</html>
-</div>
+
+# Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

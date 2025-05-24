@@ -1,5 +1,3 @@
-<a href="index.qmd">Home</a>
-
 # Building Efficient Dashboards for The Modern Data Scientist
 
 *Efficient Data Exploration and Reporting with DuckDB and Evidence.dev*   

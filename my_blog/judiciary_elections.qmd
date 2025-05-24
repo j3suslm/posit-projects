@@ -1,72 +1,64 @@
----
-about:
-  template: solana
----
+# The Scales of Popularity: Economic Implications of Judicial Elections in Mexico
+*Mar, 2025*
 
-<!-- use dive to align paragraph -->
-<div style="text-align: justify">
-
-<html lang="en">
-<body>
-
-<a href="index.qmd">Home</a>
-
-<h1>The Scales of Popularity: Economic Implications of Judicial Elections in Mexico</h1>
-<em>Mar, 2025</em></p>
-
-<p><strong>Jesus L. Monroy</strong>
-<br>
-<em>Economist & Data Scientist</em></p>
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
         
-<div class="image-container">
-<img src="images/choice.png" alt="Choice Illustration" style="float:center; margin-right: 1em; width: 90%;">
-</div>
+![](images/choice.png)
 
+# Overview
 
-<h2>Overview</h2>
-<p align="justify"</p>The recent proposals in Mexico to elect members of the judiciary by popular vote have sparked intense debate, particularly concerning their potential economic implications.
+The recent proposals in Mexico to elect members of the judiciary by popular vote have sparked intense debate, particularly concerning their potential economic implications.
 Applying the economic theory of elections can provide valuable insights into the possible consequences of this shift. This theory, rooted in the idea that voters and politicians act in their self-interest,
-offers a framework to analyze how electoral incentives might reshape the Mexican judicial system.</p>
+offers a framework to analyze how electoral incentives might reshape the Mexican judicial system.
 
-<h2>Economic Theory and Judicial Elections</h2>
+# Economic Theory and Judicial Elections
             
-<h3>Principal-Agent Problem</h3>
-<p align="justify">Economic theory highlights the principal-agent problem, where elected officials (agents) may not always act in the best interests of the voters (principals).
-In the context of judicial elections, this raises concerns about judges prioritizing political expediency over impartial legal interpretation.</p>
-<p>Judges, seeking re-election, might be incentivized to make rulings that appeal to the electorate, potentially compromising their independence and adherence to the rule of law.</p>
+## Principal-Agent Problem
 
-<h3>Information Asymmetry</h3>
-<p align="justify">Voters often have limited information about judicial candidates' qualifications and legal philosophies. This information asymmetry can lead to decisions based on superficial factors like name recognition or campaign rhetoric, rather than substantive legal expertise.</p>
-<p>This can result in the election of judges who lack the necessary competence, undermining the quality of the judiciary.</p>
+Economic theory highlights the principal-agent problem, where elected officials (agents) may not always act in the best interests of the voters (principals).
+In the context of judicial elections, this raises concerns about judges prioritizing political expediency over impartial legal interpretation.
 
-<h3>Interest Group Influence</h3>
-<p align="justify">Economic theory recognizes the influence of interest groups in elections. Well-funded groups can exert disproportionate influence on judicial campaigns, potentially leading to judges who are beholden to specific interests rather than the public good.</p>
-<p align="justify">This raises concerns about the potential for "judicial capture," where powerful groups manipulate the legal system to their advantage.</p>
+Judges, seeking re-election, might be incentivized to make rulings that appeal to the electorate, potentially compromising their independence and adherence to the rule of law.
 
-<h3>Political Cycles</h3>
-<p align="justify">Elected judges may be more susceptible to political cycles, with their rulings influenced by upcoming elections. This can create instability and uncertainty in the legal system, which can deter investment and economic growth.</p>
+## Information Asymmetry
 
-<h3>Impact on Economic Stability</h3>
-<p align="justify">A compromised judiciary can erode investor confidence and create an unpredictable legal environment. This can negatively impact economic stability, foreign investment, and overall economic development.</p>
-<p align="justify">A strong, independent judiciary is essential for enforcing contracts, protecting property rights, and ensuring fair competition, all of which are crucial for a healthy economy.</p>
+Voters often have limited information about judicial candidates' qualifications and legal philosophies. This information asymmetry can lead to decisions based on superficial factors like name recognition or campaign rhetoric, rather than substantive legal expertise.
 
-<h2>Conclusions</h2>
-<p align="justify">The proposed reforms raise concerns about the potential for increased politicization of the judiciary, which could undermine its independence and impartiality. The lack of widespread public understanding of legal complexities could lead to voter decisions based on political popularity rather than judicial qualifications. The potential for increased influence of special interest groups raises concerns about fairness and equity in the legal system. The uncertainty that these changes bring to the judicial system, can cause negative impacts to the Mexican economic climate.</p>
-<p>In essence, applying economic theories of elections to the proposed judicial reforms in Mexico highlights the potential risks to judicial independence, legal certainty, and economic stability.</p>
+This can result in the election of judges who lack the necessary competence, undermining the quality of the judiciary.
 
-<h2>References</h2>
-<ul>
-<li>Ballesteros, M. (2025) <a href="https://www.gov.harvard.edu/2024/09/17/theres-a-better-way-for-mexico-to-elect-its-judges/">There's a Better Way for Mexico to Elect its Judges</a>. Retrieved from website.</li>
-<li>Pueblita, A. (2024) <a href="https://www.wilsoncenter.org/article/judicial-reform-implications-rule-law-and-bilateral-relationship-between-mexico-and-united">The Judicial Reform: Implications for the Rule of Law and the Bilateral Relationship Between Mexico and the United States</a>. Retrieved from website.</li>
-</ul>
+## Interest Group Influence
 
-<h2>Contact</h2>
-<p><b>Jesus L. Monroy</b>
-<br>
-<i>Economist & Data Scientist</i></p>
-<p><a href="https://www.linkedin.com/in/j3sus-lm">Linkedin</a> | <a href="https://medium.com/@jesuslm">Medium</a> | <a href="https://x.com/j3suslm">Twitter</a></p>
+Economic theory recognizes the influence of interest groups in elections. Well-funded groups can exert disproportionate influence on judicial campaigns, potentially leading to judges who are beholden to specific interests rather than the public good.
 
-</div>
-</body>
-</html>
-</div>
+This raises concerns about the potential for "judicial capture," where powerful groups manipulate the legal system to their advantage.
+
+## Political Cycles
+
+Elected judges may be more susceptible to political cycles, with their rulings influenced by upcoming elections. This can create instability and uncertainty in the legal system, which can deter investment and economic growth.
+
+## Impact on Economic Stability
+
+A compromised judiciary can erode investor confidence and create an unpredictable legal environment. This can negatively impact economic stability, foreign investment, and overall economic development.
+
+A strong, independent judiciary is essential for enforcing contracts, protecting property rights, and ensuring fair competition, all of which are crucial for a healthy economy.
+
+# Conclusions
+
+The proposed reforms raise concerns about the potential for increased politicization of the judiciary, which could undermine its independence and impartiality. The lack of widespread public understanding of legal complexities could lead to voter decisions based on political popularity rather than judicial qualifications. The potential for increased influence of special interest groups raises concerns about fairness and equity in the legal system. The uncertainty that these changes bring to the judicial system, can cause negative impacts to the Mexican economic climate.
+
+In essence, applying economic theories of elections to the proposed judicial reforms in Mexico highlights the potential risks to judicial independence, legal certainty, and economic stability.
+
+# References
+
+- Ballesteros, M. (2025) [There's a Better Way for Mexico to Elect its Judges](https://www.gov.harvard.edu/2024/09/17/theres-a-better-way-for-mexico-to-elect-its-judges). Retrieved from website.
+- Pueblita, A. (2024) [The Judicial Reform: Implications for the Rule of Law and the Bilateral Relationship Between Mexico and the United States](https://www.wilsoncenter.org/article/judicial-reform-implications-rule-law-and-bilateral-relationship-between-mexico-and-united). Retrieved from website.
+
+# Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

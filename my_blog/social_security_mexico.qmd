@@ -1,5 +1,3 @@
-<a href="index.qmd">Home</a>
-
 # Crowding in Social Security Services in Mexico 
 *The Case of FOVISSSTE*   
 *April, 2025*

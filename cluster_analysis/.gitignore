@@ -1,7 +1,0 @@
-# list folders, files or wildcards to ignore when uploading to github
-
-.ipynb_checkpoints/   # ignore jupyter checkpoints folder and its contents
-credentials/   # ignore creds folder and its contents
-.DS_Store/   # ignore macOs hidden Desktop Services Store files
-*.tmp   # ignore temporary files 
-*.bak   # ignore backup files

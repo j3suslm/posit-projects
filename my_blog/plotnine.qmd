@@ -1,0 +1,101 @@
+---
+title: ggplot2 in Python
+subtitle: '**An Overview of the famous ggplot2 R package in Python**'
+author-title: Author
+author: '**Jesus L. Monroy** <br> Economist & Data Scientist <br>'
+abstract-title: Abstract
+abstract: |
+  Plotnine library in Python is based on the famous ggplot2 R package. In this article, we will show some examples of this superb visualization library.<br>
+published-title: Published
+date: '2023-11-24'
+date-format: MMM, YYYY
+toc: true
+toc-title: Table of Contents
+execute:
+  echo: true
+format:
+  html:
+    page-layout: full
+    code-fold: show
+    code-tools:
+      source: false
+      toggle: true
+      caption: code
+    code-summary: Show code
+    html-math-method: mathml
+    other-links:
+      - text: My Portfolio
+        href: https://tinyurl.com/jesus-portfolio
+code-line-numbers: false
+code-copy: false
+code-overflow: wrap
+jupyter: python3
+---
+
+## Overview
+
+<img src="https://financesonline.com/uploads/2019/09/ggplot2-logo1.png" alt="ggplot" width="300" height="130" style="padding-left:8px"/> <img src="http://download.broadview.com.cn/Original/21019700a5ade45e047d" alt="plotnine" width="110" height="110" style="padding-left:8px"/>
+
+`ggplot2` is based on Hadley Wickham's [Layered Grammar of Graphics](http://vita.had.co.nz/papers/layered-grammar.pdf)^[Hadley Wickham (2010) A layer Grammar of Graphics.], which provides a systematic way to describe the components of a statistical graphic.
+
+`ggplot2` is a declarative language, which implies to specify the *"what you want"* to plot, rather than *"the how"*.
+
+`ggplot2` has a wide range of features, including:
+
+ * Support for a variety of data types (data frames, matrices, and lists)
+ * A wide variety of geometric objects (points, lines, bars, and histograms)
+ * A variety of statistical transformations (aggregation, smoothing, and binning)
+ * A powerful system for customizing plots
+ 
+## A Layered Grammar of Graphics
+
+There are 03 compulsory components for building visualizations with `plotnine`:
+
+1. Data
+2. Aesthetics
+3. Geometric objects
+
+## Environment settings
+
+```{python}
+from plotnine import *
+from plotnine.data import *
+import numpy as np
+import pandas as pd
+import polars as pl
+from datetime import datetime
+import warnings
+warnings.filterwarnings('ignore')
+```
+
+## Dataset
+
+```{python}
+economics = pl.from_pandas(economics)
+```
+
+```{python}
+(
+    ggplot(data=economics)
+    + aes(x='date', y='uempmed')
+    + geom_line(color='#670000', size=1)
+    + labs(title='US unemployed duration (weeks)')
+    + theme(figure_size=(16, 8),
+            axis_text_x = element_text(color="black", size=18, angle=0, hjust=.3),
+            axis_text_y = element_text(color="grey", size=16), 
+            plot_title = element_text(size = 25, face = "bold"), 
+            axis_title = element_text(size = 18)
+            )
+    + xlab('')
+    + ylab('Unemployed duration (median)')
+).draw()
+```
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lmonroy) | 
+[Medium](https://medium.com/@jesus_lmonroy) | 
+[Twitter](https://x.com/j3suslm)

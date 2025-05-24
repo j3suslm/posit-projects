@@ -1,5 +1,3 @@
-<a href="index.qmd">Home</a>
-
 # Analyzing Data, from Crime Trends to Resource Allocation 
 *The Economist and Data Scientist Role in Public Security*   
 *May, 2025*

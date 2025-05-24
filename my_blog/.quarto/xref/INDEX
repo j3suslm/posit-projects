@@ -49,5 +49,53 @@
   },
   "duckdb_gsheets.qmd": {
     "duckdb_gsheets.html": "99f91009"
+  },
+  "evidence copy.qmd": {
+    "evidence copy.html": "d9376ea8"
+  },
+  "clustering.qmd": {
+    "clustering.tex": "6a50944a"
+  },
+  "plotnine.qmd": {
+    "plotnine.html": "1c5f2a16"
+  },
+  "spotify.qmd": {
+    "spotify.html": "902faa3c"
+  },
+  "spotify_pdf.qmd": {
+    "spotify_pdf.tex": "8c210972"
+  },
+  "farmacias_similares.qmd": {
+    "farmacias_similares.html": "c8da864f"
+  },
+  "gasoline-dashboard.qmd": {
+    "gasoline-dashboard.html": "c5c2af71"
+  },
+  "gasoline-web.qmd": {
+    "gasoline-web.html": "a398ea39"
+  },
+  "gasoline-web-nocode.qmd": {
+    "gasoline-web-nocode.html": "05d92f22"
+  },
+  "gasoline-web-slides.qmd": {
+    "gasoline-web-slides.html": "78891bdd"
+  },
+  "gasoline-pdf.qmd": {
+    "gasoline-pdf.tex": "8635cc9a"
+  },
+  "gasoline_web_slides.qmd": {
+    "gasoline_web_slides.html": "3ce60760"
+  },
+  "gasoline_web_nocode.qmd": {
+    "gasoline_web_nocode.html": "4d9ce5a9"
+  },
+  "gasoline_pdf.qmd": {
+    "gasoline_pdf.tex": "3b9a5e33"
+  },
+  "gasoline_web.qmd": {
+    "gasoline_web.html": "aee4287a"
+  },
+  "gasoline_dashboard.qmd": {
+    "gasoline_dashboard.html": "5acef315"
   }
 }

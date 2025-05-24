@@ -1,138 +1,92 @@
----
-about:
-  template: solana
----
+# BI with SQL and Markdown: Evidence.dev
+*Ditch the drag-and-drop: Code is the Future of Data Analysis*   
+*Mar, 2025*
 
-<html lang="en">
-<body>
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
 
-<a href="index.qmd">Home</a>
+![](https://static.vecteezy.com/system/resources/previews/011/599/360/non_2x/newspaper-with-the-headline-news-and-glasses-and-coffee-cup-on-wooden-table-daily-newspaper-mock-up-concept-photo.jpg)
 
-<h1>BI with SQL and Markdown: Evidence.dev</h1>
-<p><em>Ditch the drag-and-drop: Code is the Future of Data Analysis</em>   
-<br>
-<em>Mar, 2025</em></p>
+# Introduction
 
-<p><strong>Jesus L. Monroy</strong>
-<br>
-<em>Economist & Data Scientist</em></p>
-
-<div class="image-container">
-<img src="https://static.vecteezy.com/system/resources/previews/011/599/360/non_2x/newspaper-with-the-headline-news-and-glasses-and-coffee-cup-on-wooden-table-daily-newspaper-mock-up-concept-photo.jpg" alt="Newspaper" style="float:center; margin-right: 1em; width: 100%;">
-</div>
-
-<h2>Introduction</h2>
-
-<p>
 Have you ever faced with non-functional filters or slow performance in a Business Intelligence (BI) app dashboard connected to various data sources? How long has it taken to find where the data inaccuracy is? Have you ever wished to get technical documentation or version control about a dashboard created by other person?
-<br>
+
 For years, BI tools have promised to democratize data analysis. With their intuitive drag-and-drop interfaces, anyone could supposedly build dashboards and extract insights. But while these tools lowered the initial barrier to entry, they often created new problems down the line. That's where "BI as Code" steps in, offering a more robust and scalable approach to data analysis.
-</p>
 
-<h2>The Limitations of Drag-and-Drop BI</h2>
 
-<p style="text-align: justify;">
+# The Limitations of Drag-and-Drop BI
+
 Drag-and-drop BI tools are great for quick, exploratory analysis. However, they struggle as your data and analytical needs grow.
-</p>
 
-<h3>Lack of Version Control</h3>
+## Lack of Version Control
 
-<p style="text-align: justify;">
 Changes to dashboards are often made directly in the interface, making it difficult to track modifications, revert to previous versions, or collaborate effectively. This leads to "dashboard sprawl" and inconsistencies.
-</p>
 
-<h3>Limited Reproducibility</h3>
+## Limited Reproducibility
 
-<p style="text-align: justify;">
 Replicating complex analyses or deploying them across different environments can be challenging. The point and click nature of those tools create a lot of hidden dependencies, and no clear way to move the work between systems.
-</p>
 
-<h3>Scalability Issues</h3>
+## Scalability Issues
 
-<p style="text-align: justify;">
 As your data volume increases, drag-and-drop tools can become slow and inefficient. Complex transformations and calculations may not be optimized for performance.
-</p>
 
-<h3>Vendor Lock-in</h3>
+## Vendor Lock-in
 
-<p style="text-align: justify;">
 Relying on proprietary interfaces and data models can make it difficult to migrate to other platforms or integrate with other tools.
-</p>
 
-<h2>The Power of BI as Code</h2>
+# The Power of BI as Code
 
-<p style="text-align: justify;">
 BI as Code, on the other hand, treats data analysis and dashboard creation as software development. This approach offers several advantages:
-</p>
 
-<h3>Version Control</h3>
+## Version Control
 
-<p style="text-align: justify;">
 Using Git or other version control systems allows you to track changes, collaborate effectively, and revert to previous versions. This ensures consistency and reduces the risk of errors.
-</p>
 
-<h3>Reproducibility</h3>
+## Reproducibility
 
-<p style="text-align: justify;">
 Code-based analyses are easily reproducible and deployable. You can define your data transformations, calculations, and visualizations in code, ensuring consistent results across different environments.
-</p>
 
-<h3>Scalability and Performance</h3>
+## Scalability and Performance
 
-<p style="text-align: justify;">
 Code can be optimized for performance and scalability. You can leverage powerful programming languages and libraries to handle large datasets and complex calculations efficiently.
-</p>
 
-<h3>Flexibility and Customization</h3>
+## Flexibility and Customization
 
-<p style="text-align: justify;">
 Code provides greater flexibility and customization. You can tailor your analyses and visualizations to meet specific business needs, without being limited by the constraints of a drag-and-drop interface.
-</p>
 
-<h3>Collaboration</h3>
+## Collaboration
 
-<p style="text-align: justify;">
 Code is easier to share and collaborate on than a drag and drop dashboard.
 Automation Code can be automated, allowing for scheduled updates, refreshes, and deployments.
-</p>
 
-<h2>Embracing BI as Code with evidence.dev</h2>
+# Embracing BI as Code with evidence.dev
 
-<p style="text-align: justify;">
 Tools like evidence.dev are leading the charge in the BI as Code revolution. They allow you to write Markdown, SQL and JavaScript to build data-driven web applications, leveraging the power of version control, reproducibility, and scalability.
-<br>
+
 By embracing BI as Code, you can unlock the full potential of your data and build robust, scalable, and reliable data analysis solutions. 
-<br>
+
 It's time to move beyond the limitations of drag-and-drop and embrace the future of BI.
-</p>
 
-<h2>Conclusions</h2>
+# Conclusions
 
-<p style="text-align: justify;">
 Evidence.dev significantly streamlines the process of building data-driven web applications. The provided code examples demonstrate how seamlessly data transformations and visualizations can be integrated within a single framework. This reduces the need for complex data pipelines and frontend development, leading to faster development cycles.
-<br>
+
 The platform's focus on SQL and Markdown allows for a highly iterative development process. Developers can quickly prototype and validate hypotheses directly within the application, enhancing data exploration and analysis.
-<br>
+
 By leveraging Evidence.dev, teams can bridge the gap between data analysis and web application development. This fosters a more collaborative environment where data scientists and developers can work together more effectively.
-</p>
 
-<h2>References</h2>
 
-<ul>
-<li>Evidence (2025) <a href="https://medium.com/r/?url=https%3A%2F%2Fdocs.evidence.dev%2Fbuild-your-first-app">Build your First App</a></li>
-<li>Mehdi, O (2023) <a href="https://medium.com/r/?url=https%3A%2F%2Fmotherduck.com%2Fblog%2Fthe-future-of-bi-bi-as-code-duckdb-impact%2F">The Future of BI: Exploring the Impact of BI-as-Code Tools with DuckDB</a> in MotherDuck Website</li>
-<li>Vishal, G (2024) <a href="https://medium.com/r/?url=https%3A%2F%2Fvishalgandhi.in%2Fbi-as-code%2F">BI as code</a> in The Data Column Website</li>
-</ul>
+# References
 
-<h2>Contact</h2>
+* Evidence (2025) [Build your First App](https://medium.com/r/?url=https%3A%2F%2Fdocs.evidence.dev%2Fbuild-your-first-app)
+* Mehdi, O (2023) [The Future of BI: Exploring the Impact of BI-as-Code Tools with DuckDB](https://medium.com/r/?url=https%3A%2F%2Fmotherduck.com%2Fblog%2Fthe-future-of-bi-bi-as-code-duckdb-impact%2F) in MotherDuck Website
+* Vishal, G (2024) [BI as code](https://medium.com/r/?url=https%3A%2F%2Fvishalgandhi.in%2Fbi-as-code%2F) in The Data Column Website
 
-<p><strong>Jesus L. Monroy</strong>   
-<br>
-<em>Economist & Data Scientist</em></p>
+# Contact
 
-<p class="contact-links">
-<a href="https://www.linkedin.com/in/j3sus-lm">Linkedin</a> | <a href="https://medium.com/@jesuslm">Medium</a> | <a href="https://x.com/j3suslm">Twitter</a>
-</p>
-</body>
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
 
-</html>
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) |
+[Twitter](https://x.com/j3suslm)

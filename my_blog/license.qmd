@@ -1,10 +1,4 @@
----
-title: MIT License
-about:
-  template: solana
----
-
-<a href="index.qmd">Home</a>
+# MIT License
 
 Copyright © 2025 Jesus LM
 

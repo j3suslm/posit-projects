@@ -1,7 +1,5 @@
-<a href="index.qmd">Home</a>
-
-# The Mexican National Guard: Progress, Concerns, and the Future of Public Security
-*A force under Scrutiny*   
+# The Mexican National Guard
+*Progress, Concerns, and the Future of Public Security*   
 *Apr, 2024*
 
 **Jesus L. Monroy**   

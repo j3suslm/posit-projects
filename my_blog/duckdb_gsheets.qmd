@@ -1,5 +1,3 @@
-<a href="index.qmd">Home</a>
-
 # Level Up Your Data Analysis from Your Command Line
 *Connecting DuckDB to Google Sheets!*   
 *Apr, 2025*

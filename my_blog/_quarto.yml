@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _output
 website:
   title: "Jesus LM"
   back-to-top-navigation: false
@@ -53,18 +54,20 @@ website:
           href: public_security.qmd
       - section: Reports
         contents:
+        - text: Cluster analysis with Python and Polars
+          href: clustering.qmd
+        - text: Plotting with ggplot2 in Python
+          href: plotnine.qmd
         - text: Understanding Spotify User Behavior
-          href: https://jesuslm-spotify-music.share.connect.posit.cloud
+          href: spotify.qmd
         - text: Gasoline Prices in Mexico
-          href: https://jesuslm-gasoline-prices-webpage.share.connect.posit.cloud
+          href: gasoline_web_nocode.qmd
         - text: Farmacias Similares Locations
-          href: https://jesuslm-farmacias-similares.share.connect.posit.cloud
-        - text: Cluster Analysis using Polars
-          href: https://jesuslm-clustering.share.connect.posit.cloud
+          href: farmacias_similares.qmd
       - section: Dashboards
         contents:
         - text: Gasoline Prices in Mexico
-          href: https://jesuslm-gasolineprices-dashboard.share.connect.posit.cloud
+          href: gasoline_dashboard.qmd
         - text: Farmacias Similares Dashboard
           href: https://j3suslm-fsdashboard.evidence.app
         - text: Mexico City Crime Dashboard
@@ -72,7 +75,7 @@ website:
       - section: Slideshows
         contents:
         - text: Gasoline Prices in Mexico
-          href: https://jesuslm-gasoline-prices-slideshow.share.connect.posit.cloud
+          href: gasoline_web_slides.qmd
 format:
   html:
     page-layout: full
@@ -85,3 +88,5 @@ format:
       - flatly
     css: styles.css
     toc: true
+    toc-title: Table of Contents
+    toc-expand: 3

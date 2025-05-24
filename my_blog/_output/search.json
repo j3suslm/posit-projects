@@ -1,0 +1,1038 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jesus LM",
+    "section": "",
+    "text": "I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare.\nI use Python1, SQL, and Tableau to transform raw data into clear, actionable data products (webpages, slideshows, interactive reports) that support decision-making, occasionally incorporating regression and classification analyses.\nCommitted to fostering data literacy, I share data posts on Learning Data and T3CH via Medium\nBackground in Economics (BA), Information Technology (MA) and Data Science and Machine Learning (Certification).\nVegan."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Jesus LM",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nnumpy, pandas, polars, duckdb, matplotlib, seaborn, plotly, folium, dash, shiny, statsmodels, sckitlearn.↩︎"
+  },
+  {
+    "objectID": "duckdb_bi.html",
+    "href": "duckdb_bi.html",
+    "title": "Building Efficient Dashboards for The Modern Data Scientist",
+    "section": "",
+    "text": "Building Efficient Dashboards for The Modern Data Scientist\nEfficient Data Exploration and Reporting with DuckDB and Evidence.dev\nMar, 2025\nJesus L. Monroy\nEconomist & Data Scientist \n\n\n\nOverview\nIn the modern data landscape, speed and agility are paramount. We’re constantly seeking tools that empower us to analyze data quickly and efficiently, without the overhead of complex cloud infrastructure. Two such tools, DuckDB and Evidence.dev, are making waves in this space, offering a powerful combination for local data analysis and reporting.\n\n\nDuckDB: The Analytical Swiss Army Knife\nDuckDB excels in handling large datasets efficiently due to its columnar storage and vectorized execution engine. It is well-suited for scenarios where you need a fast and embedded database solution within your Python application. Here are some key things you can do with it:\nExecute SQL Queries\n\nDirectly run SQL queries using duckdb.sql within your Python code.\nEfficiently work with in-memory databases, making DuckDB ideal for quick data exploration and analysis.\nDuckDB provides a full-fledged SQL dialect, enabling you to perform various data manipulation and analysis tasks using familiar SQL syntax.\nYou can use duckdb.sql to execute queries against in-memory or disk-based databases created with DuckDB.\n\nLeverage In-memory and Persistent Databases\n\nCreate in-memory databases through duckdb.connect() for immediate querying without external storage needs.\nConnect to persistent databases on disk using the same duckdb.connect() function, specifying the database path.\n\nWork with Various Data Formats\n\nRead and write data from different file formats, including CSV, Parquet, and JSON, both locally and remotely (e.g., S3 buckets).\n\nBuild Complex Queries Incrementally\n\nConstruct SQL queries step-by-step by storing the results (relations) of previous queries into variables.\nUse these stored relations in subsequent queries, allowing for modular and reusable code.\n\nUtilize DuckDB’s SQL Dialect\n\nTake advantage of DuckDB’s comprehensive SQL dialect, supporting various operations like joins, aggregations, window functions, and more.\n\nLoad and manipulate data\n\nDuckDB supports reading and writing data from various file formats like CSV, Parquet, and JSON.\nYou can load data from these files into DuckDB tables for further processing and analysis.\nDuckDB offers various functions for data manipulation, including filtering, sorting, aggregation, and joining tables.\n\nExplore and analyze data\n\nDuckDB allows you to perform exploratory data analysis (EDA) using its SQL capabilities.\nYou can write queries to calculate descriptive statistics, identify patterns, and gain insights from your data.\n\nPrototype and experiment\n\nDuckDB’s lightweight and in-process nature makes it ideal for rapid prototyping and experimentation.\nYou can quickly test and iterate on data analysis tasks without the overhead of setting up and managing a separate database server.\n\n\n\nEvidence.dev: Transforming Data into Actionable Insights\nEvidence.dev is an open-source framework that allows you to build data reports and dashboards using SQL and Markdown. It simplifies the process of turning raw data into clear, shareable insights. Key features include:\n\nSQL-First Approach\nLeverage your existing SQL skills to query data and generate visualizations.\nMarkdown-Based Reporting\nCreate interactive reports using Markdown, with embedded SQL queries and visualizations.\nLocal Development & Deployment\nDevelop reports locally and deploy them as static websites.\nData Source Flexibility\nConnect to various data sources, including databases and files.\n\n\n\nThe Power of Integration: DuckDB + Evidence.dev\nCombining DuckDB and Evidence.dev creates a powerful local data analysis and reporting pipeline. Here’s how they work together:\n\nData Ingestion\nUse DuckDB to efficiently load and transform your data from various sources.\nLocal Analysis\nPerform complex analytical queries directly on your local machine using DuckDB’s high-performance engine.\nReport Building\nConnect Evidence.dev to your DuckDB database and create interactive reports using SQL and Markdown.\nSharing Insights\nDeploy your Evidence.dev reports as static websites to share your findings with your team or stakeholders.\n\n\n\nExample Workflow\nImagine you have a large CSV file containing sales data. You can use DuckDB to:\n\nLoad the CSV into a DuckDB table\nPerform aggregations and calculate key metrics (e.g., total sales per region).\nJoin the sales data with other relevant data sources.\n\nThen, you can use Evidence.dev to:\n\nConnect to the DuckDB database\nWrite SQL queries to retrieve the calculated metrics.\nCreate visualizations (e.g., bar charts, line graphs) to represent the data.\nGenerate a report that summarizes your findings.\n\n\n\nConclusions\nDuckDB and Evidence.dev are democratizing data analysis, empowering individuals and teams to gain valuable insights without the complexity and expense of traditional data infrastructure. If you’re looking for a powerful and efficient way to analyze and report on your data, this combination is worth exploring.\n\nFaster Iteration\nLocal development with DuckDB and Evidence.dev allows for rapid iteration and experimentation.\nData Privacy\nAnalyzing sensitive data locally eliminates the need to upload it to cloud servers.\nCost-Effectiveness\nAvoid expensive cloud data warehousing and processing costs.\nSimplified Workflow\nStreamline your data analysis and reporting process with these user-friendly tools.\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Duckdb & Evidence"
+    ]
+  },
+  {
+    "objectID": "duckdb_gsheets.html",
+    "href": "duckdb_gsheets.html",
+    "title": "Level Up Your Data Analysis from Your Command Line",
+    "section": "",
+    "text": "Level Up Your Data Analysis from Your Command Line\nConnecting DuckDB to Google Sheets!\nApr, 2025\n\nJesus L. Monroy\nEconomist & Data Scientist\n Source: https://www.arecadata.com/sql-for-google-sheets-with-duckdb\n\n\nIntroduction\nTired of downloading CSVs and juggling spreadsheets for your data analysis? Want the power of a lightning-fast, in-process analytical database without the complex setup? Then it’s time to unlock the magic of connecting DuckDB directly to your Google Sheets!\nDuckDB is a phenomenal open-source analytical data management system. It’s incredibly fast, lightweight, and can run directly within your Python environment (or other languages). Combining its power with the accessibility and collaborative nature of Google Sheets opens up a world of possibilities for streamlined and efficient data analysis.\n\n\nDuckDB & Google Sheets: A Game Changer\nReal-time Data Access\nNo more manual exporting and importing! DuckDB can directly query the data in your Google Sheet, ensuring you’re always working with the latest information.\nLeverage DuckDB’s Analytical Power\nPerform complex SQL queries, joins, aggregations, and window functions on your Google Sheets data with DuckDB’s blazing-fast engine. This goes far beyond the basic formulas available in spreadsheets.\nSimplified Data Pipelines\nAutomate your analysis workflows by directly pulling data from Google Sheets into your DuckDB scripts. This reduces manual steps and potential errors.\nCollaboration & Analysis in One Place\nMaintain the collaborative benefits of Google Sheets for data collection and sharing, while empowering analysts with DuckDB’s robust analytical capabilities.\nScalability Beyond Spreadsheets\nHandle larger datasets more efficiently than you could within Google Sheets alone. DuckDB can process significantly more data with greater speed.\nReproducible Analysis\nYour analysis code in DuckDB becomes a clear and reproducible record of how you processed the data from your Google Sheet.\n\n\nHow to Connect DuckDB to Google Sheets\nUsing CLI\n\nInstall duckdb to your terminal\n\ncurl https://install.duckdb.org | sh\n\nOpen duckdb in your terminal\n\nduckdb\n\n\nInstall gsheets\n\ninstall gsheets from community;\nload gsheets;\n\nObtain gsheets url\n\nhttps://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit#gid=YOUR_TAB_ID\nYou will just need: YOUR_SHEET_ID\n\nConnect to gsheets\n\ncreate secret (type gsheet, provider oauth);\n\n\n\nRun your query\n\nSELECT current_job_title,\n    round(avg(try_cast(base_salary as int))) as avg_salary\nFROM read_gsheet('YOUR_SHEET_ID', sheet='titles')\nWHERE currency = 'USD'\nAND state = 'Texas'\nGROUP BY current_job_title\nORDER BY avg_salary DESC;\n Source: https://www.arecadata.com/sql-for-google-sheets-with-duckdb\n\n\nConclusions\nConnecting DuckDB to Google Sheets is a powerful and convenient way to enhance data analysis workflows. It brings the speed and analytical capabilities of an in-process OLAP database to the familiar environment of Google Sheets. While there are some setup and authentication considerations, the benefits of using SQL for spreadsheet data and the ability to read and write data directly make this integration a valuable tool for data professionals and anyone working with data in Google Sheets.\n\n\nReferences\n\nDuckdb (n.d.) DuckDB GSheets Tutorial\nPalma, D (2024) SQL for Google Sheets with DuckDB Analyze data in Google Sheets using SQL with DuckDB. Areca Data. Retrieved from website.\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Duckdb & Google Sheets"
+    ]
+  },
+  {
+    "objectID": "evidence.html",
+    "href": "evidence.html",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Ditch the drag-and-drop: Code is the Future of Data Analysis\nMar, 2025\nJesus L. Monroy\nEconomist & Data Scientist",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "national_guard.html",
+    "href": "national_guard.html",
+    "title": "The Mexican National Guard",
+    "section": "",
+    "text": "The Mexican National Guard\nProgress, Concerns, and the Future of Public Security\nApr, 2024\nJesus L. Monroy\nEconomist & Data Scientist\n\n\n\nIntroduction\nThe National Guard (Guardia Nacional - GN) is Mexico’s national gendarmerie, officially established on June 30, 2019. Created with the aim of tackling the country’s high levels of crime and restoring public safety, it absorbed personnel and units from the former Federal Police, as well as the military police and naval police.\n\n\nHistory and Formation\nThe National Guard was initially campaigned on taking the military off the streets. However, facing a persistent security crisis, it was proposed as a new force under military command to prevent and combat crime.\nIn February 2019, the Mexican Congress approved constitutional reforms to create the National Guard. The law regulating the force came into effect in May 2019.\nThe National Guard effectively replaced the Federal Police, which had been plagued by issues of corruption and human rights violations throughout its 20-year existence. While some experts suggested reforming the Federal Police, the decision was made to create a new institution.\nInitially, the National Guard was intended to be a civilian institution under the Secretariat of Security and Civilian Protection. However, in practice, it has been largely composed of military personnel, and in September 2024, its command was officially transferred to the Secretariat of National Defense.\nThe force launched operations with tens of thousands of members and aimed to reach an estimated 120,000 members.\n\n\nFunctions and Responsibilities\nThe National Guard has a broad mandate that includes:\n\nPreventing and combating crime throughout the national territory.\nPreserving public security.\nIntensifying the enforcement of immigration policy, including deployment to the southern and northern borders to control the flow of migrants. This was notably increased as part of agreements with the United States.\nFederal law enforcement duties.\nGendarmerie functions, implying a force with military discipline focused on general law enforcement.\nCivilian police duties, with the power to detain suspects and collaborate with public prosecutors in investigations. They can investigate both federal and common crimes under certain agreements.\nSupporting public security tasks in coordination with state and municipal authorities.\nCivil protection in disasters and crises.\nKidnapping resolution, criminal surveillance, and intelligence gathering.\nBorder protection.\n\nMore recently, the armed forces, including the National Guard, have been assigned additional tasks such as protecting oil pipelines, helping build infrastructure projects, and distributing vaccines.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nYou can hover the mouse over the map to get additional information.\n\n\n\n\n\nConcerns and Criticisms\nThe National Guard has faced significant scrutiny and criticism:\nMilitarization of public security\nA primary concern is the increasing role of the military in traditionally civilian law enforcement tasks. Critics argue this blurs the lines between military and police functions and could lead to issues related to training, accountability, and human rights.\nHuman rights\nThere have been concerns about the training of National Guard members in human rights and allegations of excessive use of force, arbitrary detentions, and other abuses, particularly in the context of immigration enforcement.\nEffectiveness in reducing crime\nDespite its large deployment, some analyses suggest that the National Guard has not yet demonstrably reduced crime or violence in the country.\nAccountability Questions remain about the mechanisms for holding National Guard members accountable for misconduct, with some advocating for strong, independent civilian oversight.\nMission creep\nThe broadening scope of the National Guard’s responsibilities, extending beyond traditional law enforcement to areas like infrastructure and migration control, has raised concerns about its intended purpose and potential overreach.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nYou can hover the mouse over the map to get additional information.\n\n\n\n\n\nConclusions\nAs of today, the National Guard continues to be a significant security force in Mexico, with a strong military component. It is actively involved in law enforcement across the country, border security operations, and various other tasks assigned by the government. The debate surrounding its role, effectiveness, and adherence to human rights standards remains ongoing. Recent deployments, such as the reinforcement of the northern border with Army troops, highlight the continued reliance on federal forces for security challenges.\n\n\nReferences\n\nStorr, S. (2023) What is Guardia Nacional?. Seguridad Ciudadana: La via Civil.\nGobierno de Mexico (2019) National Guard Personnel Deployed\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "National Guard in Mexico"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html",
+    "href": "bi_as_code.html",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "",
+    "text": "Shifting from Drag-and-Drop BI Tools to Code-based Applications\nMay, 2025\nJesus L. Monroy\nEconomist & Data Scientist",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "slides_as_code.html",
+    "href": "slides_as_code.html",
+    "title": "Level Up Your Presentations: Embrace Slides as Code",
+    "section": "",
+    "text": "Level Up Your Presentations: Embrace Slides as Code\nCreate your slideshows with Marp, Python, and Quarto! 🚀\nApr, 2025\nJesus L. Monroy\nEconomist & Data Scientist\n\n\n\nIntroduction\nTired of wrestling with drag-and-drop interfaces and endless formatting tweaks for your presentations? Ready to embrace the power of version control and reproducible results for your slides. Then it’s time to dive into the exciting world of Slides as Code! This approach treats your presentation content and styling as code, offering a more efficient, collaborative, and maintainable workflow, by using Markdown, Python, and Quarto.\n\n\nWhat’s the Magic Behind Slides as Code?\nInstead of directly manipulating visual elements, you define your slides using a lightweight markup language (like Markdown) and potentially sprinkle in code for dynamic content or visualizations.\nThis offers several key advantages:\n\nVersion Control\nTrack changes, collaborate seamlessly with Git, and easily revert to previous versions. Say goodbye to accidental deletions and confusing “final_final_v3” files!\nReproducibility\nEnsure your presentations are consistent and can be easily recreated. No more wondering how you achieved that specific layout or chart.\nEfficiency\nFocus on your content rather than tedious formatting. Write in a clean, text-based format and let the tools handle the presentation rendering.\nAutomation\nGenerate slides programmatically using Python, pulling data from various sources or creating dynamic visualizations.\nPlatform Agnostic\nOften, the output formats are widely compatible (HTML, PDF, etc.), making sharing and viewing easy.\n\n\n\nMeet the Dream Team\nMarkdown\nA lightweight markup language with plain text formatting syntax. Think of it as a simplified way to add basic formatting (like bolding, italics, headings, lists, etc.) to your text using simple symbols. Instead of using complex word processors with menus and buttons, you use characters you already know on your keyboard.\nPython\nThe workhorse for data manipulation, analysis, and generating dynamic content. You can use Python scripts to fetch data, create charts with libraries like Matplotlib or Seaborn, and then seamlessly integrate these outputs into your Marp slides.\nQuarto\nThis powerful open-source scientific and technical publishing system ties everything together. Quarto can render Marp Markdown into beautiful presentations, and it also provides excellent support for embedding Python code chunks directly within your Markdown.\n\n\nHow They Work Together?\n\nContent Creation (Markdown)\nYou write your presentation content in a .md file using Marp’s Markdown syntax. You define slide breaks using ---, apply themes, and add basic formatting.\nDynamic Content (Python)\nIf you need to include data visualizations or dynamic information, you write Python code snippets within your Quarto document (which can include your Marp Markdown). These code chunks can:\n\nRead data from files or APIs.\nPerform calculations and analysis.\nGenerate plots and charts using Python libraries.\n\nRendering (Quarto)\nQuarto takes your .md file (with embedded Python if any) and renders it into a polished presentation in your desired format (e.g., HTML reveal.js slides, PDF beamer slides). Quarto handles the execution of your Python code and seamlessly integrates the output into your web presentation.\n\n\n\nConclusions\nSlides as code is the future! The Benefits are Clear. Embracing Slides as Code with Markdown, Python, and Quarto can significantly improve your presentation workflow. You’ll gain better control, enhance collaboration, and create more dynamic and reproducible presentations. Ready to ditch the traditional slide editors and unlock the power of code for your presentations?\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Slides as Code"
+    ]
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "MIT License\nCopyright © 2025 Jesus LM\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "judiciary_elections.html",
+    "href": "judiciary_elections.html",
+    "title": "The Scales of Popularity: Economic Implications of Judicial Elections in Mexico",
+    "section": "",
+    "text": "Mar, 2025\nJesus L. Monroy\nEconomist & Data Scientist",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Judiciary Elections in Mexico"
+    ]
+  },
+  {
+    "objectID": "social_security_mexico.html",
+    "href": "social_security_mexico.html",
+    "title": "Crowding in Social Security Services in Mexico",
+    "section": "",
+    "text": "Crowding in Social Security Services in Mexico\nThe Case of FOVISSSTE\nApril, 2025\nJesus L. Monroy\nEconomist & Data Scientist\n\n\n\nAbstract\nThe strain on Mexico’s public healthcare systems, particularly the Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE) and the Instituto Mexicano del Seguro Social (IMSS), is a persistent and deeply concerning issue. Overcrowded waiting rooms, lengthy delays, and limited resources paint a stark picture of the challenges faced by both patients and healthcare providers.\n\nISSTE serves approximately 13.7 million Mexican government workers, retirees, their spouses, and underage children.\nTogether with the Mexican Social Security Institute (IMSS), ISSSTE provides health coverage for 55% to 60% of the total Mexican population.\nISSTE primarily focuses on providing healthcare and social services to federal, state, and municipal government employees.\n\n\n\nThe Overwhelming Crowd: A Daily Reality\nReports and personal accounts consistently describe scenes of overwhelming congestion in ISSSTE and IMSS facilities. Patients often endure hours, sometimes even days, of waiting for consultations, treatments, or surgeries. This situation leads to:\n\nExtended wait times\nDelays in receiving necessary care can exacerbate existing health conditions and lead to complications.\nReduced quality of care\nOverburdened staff may struggle to provide adequate attention to each patient.\nPatient frustration and anxiety\nThe stress of long waits and uncertain outcomes can significantly impact patients’ well-being.\nIncreased risk of infections\nCrowded waiting areas can become breeding grounds for contagious diseases.\n\n\n\nRoot Causes of Overcrowding\nSeveral factors contribute to the overcrowding crisis:\n\nInsufficient infrastructure\nThe number of healthcare facilities and medical personnel has not kept pace with the growing population and its healthcare needs.\nUnderfunding\nLimited financial resources restrict the ability of ISSSTE and IMSS to expand capacity, invest in new equipment, and hire additional staff.\nIncreased prevalence of chronic diseases\nThe rising rates of diabetes, hypertension, and other chronic conditions place a significant burden on the healthcare system.\nInefficient administrative processes\nBureaucratic hurdles and delays in scheduling appointments and processing paperwork contribute to longer wait times.\nAging population\nAs the population ages, the demand for healthcare services, particularly for geriatric care, increases.\nLack of preventative care\nA focus on treating illnesses rather than preventing them leads to more people requiring intensive medical intervention.\n\n\n\nConsequences of Overcrowding\nThe consequences of overcrowding extend beyond individual patients, impacting the entire healthcare system and society:\n\nIncreased mortality and morbidity\nDelays in treatment can lead to preventable deaths and worsened health outcomes.\nEconomic burden\nLost productivity due to illness and disability places a strain on the economy.\nErosion of public trust\nFrustration with the healthcare system can erode public confidence in government institutions.\nStrain on healthcare professionals\nOverwork and burnout among doctors, nurses, and other healthcare workers can lead to staff shortages and reduced morale.\nIncreased emergency room usage\nWhen regular appointments take too long, people go to emergency rooms, further over crowding those areas.\n\n\n\nConclusions\nAddressing the overcrowding crisis requires a multifaceted approach involving increased investment in infrastructure, improved administrative efficiency, a greater focus on preventative care, and strategies to manage the growing burden of chronic diseases. It is a critical challenge that demands urgent attention to ensure the well-being of the Mexican population.\n\n\nReferences\n\nVazquez, C (2024) Understanding IMSS: Mexico’s Social Security System. Coderslink. Retrieved from website.\nVillarreal, V. (2022) Infographic | How Do Mexicans Get Healthcare?. Wilson Center. Retrieved from website.\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Social Security in Mexico"
+    ]
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Jesus L. Monroy",
+    "section": "",
+    "text": "📍 Mexico City | 🖂 e-mail | 💬 Telegram\n\n\nEconomist & Data Scientist\n\n\nI’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. I use Python, SQL, and Tableau to transform raw data into clear, actionable data products (webpages, slideshows, dashboards) that support decision-making, occasionally incorporating regression and classification analyses. Background in Economics (BA), Information Technology (MA) and Data Science & Machine Learning (Certification). Committed to fostering data literacy, I share some posts on Learning Data and T3CH via Medium.\n\n\nProfessional Experience\n\n\n\nAtos | Reporting Team Information Analyst May 2024 - Mar 2025\n\n\n\nUsed Snowpark and Python for data exploration, transformation, and analysis, enabling scalable data workflows.\n\n\nDesigned intuitive Tableau dashboards to empower end-users with data-driven insights.\n\n\nCreated compelling interactive visualizations and web reports using Python to drive informed decision-making.\n\n\nCollaborated with cross-functional teams to understand business needs and translate them into data solutions.\n\n\nDeveloped engaging web slideshows with interactive tables and charts using Python to effectively communicate data-driven stories to diverse audiences.\n\n\n\n\n\nPeople Media Solutions | IMSS Tableau Analyst Jun 2023 - Feb 2024\n\n\n\nUsed SQL for data manipulation and analysis, enabling data-driven decision-making.\n\n\nCreated visually appealing and informative dashboards using Tableau.\n\n\nCreated clear and concise documentation for digital products using Markdown.\n\n\nAutomated reports using Python, transitioning from manual spreadsheets and slideshows to webpages.\n\n\n\n\n\nPepsi | Digital Transformation Sales Digitalization Specialist Mar 2023 - May 2023\n\n\n\nEnhanced data-driven decision-making by building interactive dashboards with Looker Studio and Google Analytics.\n\n\nUtilized SQL queries to extract, clean, and analyze relevant data from various sources.\n\n\nDeveloped a repository with Python-based web reports for stakeholders.\n\n\n\n\n\nSecretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional Information Analyst Jan 2010 - Dec 2022\n\n\n\nUsed SQL for data collection and transformation.\n\n\nCreated data pipelines with Python and Google apps for management reporting.\n\n\nDesigned interactive dashboards using Looker Studio for monitoring of operational performance.\n\n\nParticipated in meetings with diverse managers to understand business problems and propose data solutions.\n\n\nCreated a digital map of operational facilities using Python, providing an interactive visual of key locations.\n\n\nCollaborated in the implementation of Google Forms and Google Sheets to streamline data collection.\n\n\nDeveloped a digital newspaper for communication among personnel, fostering an engaged workforce.\n\n\nI was promoted as deputy director of the analytical area, improving data governance and literacy.\n\n\n\n\nEducation\n\n\n\n\n\nUniversity\n\n\nCareer\n\n\nPeriod\n\n\n\n\n\n\nMIT-IDSS\n\n\nData Science & Machine Learning Certification\n\n\nmar - jun 2024\n\n\n\n\nUMOV Academy\n\n\nMaster of Information Technology\n\n\n2022 - 2023\n\n\n\n\nUniversidad Autonoma de Puebla\n\n\nBachelor of Economics\n\n\n2001 - 2006\n\n\n\n\n\nSkills\n\n\n\n\nSQL\n\n\nPython\n\n\nTableau\n\n\nMarkdown\n\n\nGit & Github\n\n\nProblem-solving\n\n\nCollaboration\n\n\nTime management\n\n\nBusiness acumen\n\n\nStorytelling\n\n\n\n\nContact\n\n\nPortfolio | Blog | Linkedin | Medium"
+  },
+  {
+    "objectID": "public_security.html",
+    "href": "public_security.html",
+    "title": "Analyzing Data, from Crime Trends to Resource Allocation",
+    "section": "",
+    "text": "Analyzing Data, from Crime Trends to Resource Allocation\nThe Economist and Data Scientist Role in Public Security\nMay, 2025\nJesus L. Monroy\nEconomist & Data Scientist\n\n\n\nImage by NBER\n\n\nThe combination of economic and data science expertise can be highly valuable in enhancing public security. Here’s a breakdown of how these professionals can contribute.\n\nEconomist Contributions\n\n\n\nAnalyzing the Economic Roots of Crime\nEconomists can study the correlation between economic factors (poverty, unemployment, inequality) and crime rates. They can analyze how economic policies impact crime rates, helping policymakers understand the potential consequences of their decisions.\nCost-benefit analysis of crime prevention programs\nEconomists can evaluate the economic efficiency of various public security initiatives.\nResource Allocation\nThey can help optimize the allocation of public security resources, ensuring that funds are directed towards the most effective programs and areas. Analyzing the economic impact of crime on communities and businesses.\nUnderstanding illicit economies\nAnalyzing the economic structures of illegal markets, such as those involving drugs, human trafficking, or illegal arms sales. Evaluating the effectiveness of policies aimed at disrupting these markets.\n\n\n\nData Scientist Contributions\n\n\n\nPredictive Policing\nData scientists can develop models to predict crime hotspots and identify individuals at high risk of involvement in criminal activity.\nAnalyzing crime patterns and trends to inform resource deployment.\nData-Driven Crime Analysis\nThey can analyze large datasets from various sources (police reports, social media, etc.) to identify patterns and insights that would be difficult to detect manually. Using geospatial analysis to map crime hotspots and understand spatial patterns.\nImproving Law Enforcement Efficiency\nDeveloping tools to automate tasks, improve data management, and enhance communication between law enforcement agencies. Analyzing the effectiveness of law enforcement strategies and identifying areas for improvement.\nFraud Detection\nData Scientists can build models that detect fraudulent activities, which are often connected to organized crime.\nAnalyzing the effects of social programs\nThey can analyze the effects of social programs on crime rates, and help determine which programs are the most effective.\n\n\n\nSynergistic Collaboration\nWhen economists and data scientists collaborate, they can provide a more comprehensive understanding of public security challenges. Economists can provide the context and theoretical framework, while data scientists can provide the tools and techniques for analyzing the data. This interdisciplinary approach can lead to more effective and evidence-based public security policies. In essence, by combining economic theory with data-driven analysis, these professionals can play a vital role in creating safer and more secure communities.\n\n\n\nKey functions that an economist and data scientist might perform in public security.\n\nCrime Pattern Analysis and Prediction\n\nEconomist Focus\nAnalyze how economic conditions (e.g., unemployment, poverty, income inequality) correlate with crime rates in specific areas. Develop economic models to explain these relationships.\nData Scientist Focus\nUse machine learning algorithms to identify patterns in crime data (time, location, type of crime, offender demographics). Build predictive models to forecast future crime hotspots and times.\n\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestRegressor\n\ndef predict_crime_hotspots(crime_data, features, target, test_size=0.2):\n    \"\"\"\n    Predicts crime hotspots using a Random Forest Regressor model.\n\n    Args:\n        crime_data (pd.DataFrame): DataFrame containing crime data.\n        features (list): List of feature columns to use for prediction.\n        target (str): The target variable (e.g., 'crime_rate').\n        test_size (float): Proportion of the data to use for testing.\n\n    Returns:\n        tuple: (model, X_test, y_test) - Trained model, test features, \n        and test target.\n    \"\"\"\n    X = crime_data[features]\n    y = crime_data[target]\n\n    X_train, X_test, y_train, y_test = train_test_split(X, y, \n    test_size=test_size, random_state=42)\n\n    model = RandomForestRegressor(n_estimators=100, random_state=42)\n    model.fit(X_train, y_train)\n\n    return model, X_test, y_test\nExample usage:\n''' \nAssuming 'crime_data' is a DataFrame with columns like:\n    'location_x', 'location_y', 'time', 'crime_type', \n    'unemployment_rate', 'poverty_rate', 'crime_rate'\n'''\n\nfeatures = ['location_x', 'location_y', 'time', 'crime_type', \n            'unemployment_rate', 'poverty_rate']\ntarget = 'crime_rate'\nmodel, X_test, y_test = predict_crime_hotspots(crime_data, features,\n                                                target)\npredictions = model.predict(X_test)\nprint(predictions)\n\n\nConclusions\nIn summary, the combined expertise of economists and data scientists offers a powerful toolkit for enhancing public security. Economists illuminate the underlying causes of crime, while data scientists provide the means to predict, prevent, and effectively respond to threats. Embracing this interdisciplinary approach is crucial for developing smarter, more targeted, and ultimately more successful strategies for creating safer communities.\n\n\nReferences\n\nNBER (2025). Economics of Crime. Retrieved from website.\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "The Economist & Data Scientist Role in Public Security"
+    ]
+  },
+  {
+    "objectID": "docs_as_code.html",
+    "href": "docs_as_code.html",
+    "title": "Documentation as Code: Revolutionizing Your Documentation Workflow",
+    "section": "",
+    "text": "Documentation as Code: Revolutionizing Your Documentation Workflow\nThe Future of Documentation is Code\nMar, 2025\nJesus L. Monroy\nEconomist & Data Scientist\n\n\n\n\n\nImage by Onose, Ejiro\n\n\n\n\nIntroduction\nLet’s be honest. Documentation often feels like the neglected stepchild of software development. It’s the thing we promise to get to “later,” the first thing to get cut when deadlines loom, and often ends up being outdated and unreliable. But what if we flipped the script? What if we treated documentation with the same care and rigor as our codebase?\nThat’s the core idea behind Documentation as Code.\nIt’s a paradigm shift that advocates for managing and creating documentation using the same tools, workflows, and principles we apply to writing and maintaining software. Instead of siloed documents living in shared drives or outdated wikis, your documentation lives alongside your code in your version control system (e.g., Github).You use familiar tools to write it (Markdown, AsciiDoc, or reStructuredText), build it automatically, test it, and deploy it just like any other part of your project.\n\n\nWhy should you embrace Docs as Code?\nThere are diverse benefits, including the following:\n\nVersion Control & Collaboration\nJust like your code, your documentation benefits from the power of version control. Track changes, collaborate effectively through pull requests, and easily revert to previous versions. No more wondering who made what change or struggling to merge conflicting edits.\nAutomation & Consistency\nAutomate the build process to generate consistent and well-formatted documentation. This eliminates manual steps prone to errors and ensures your documentation always reflects the latest code.\nLiving Documentation\nBy integrating documentation with your development workflow, you ensure it stays up-to-date. Changes in the code can trigger updates in the documentation, preventing the dreaded scenario of outdated or misleading information.\nImproved Discoverability\nWhen documentation lives alongside the code, it’s easier for developers (and anyone else) to find the information they need, right where they expect it.\nEnhanced Quality\nThe review process inherent in version control and pull requests applies to documentation as well. This leads to more accurate, clearer, and more comprehensive documentation.\nDeveloper Involvement\nBy using familiar tools and workflows, developers are more likely to contribute to and maintain the documentation. It becomes less of a separate chore and more of an integrated part of their development process.\nReduced Friction\nSay goodbye to clunky, separate documentation platforms. Everything is in one place, making it easier to create, update, and consume documentation.\n\n\n\nKey Principles of Docs as Code\nPlain Text Formats\nUse lightweight markup languages like Markdown or AsciiDoc for easy writing, version control, and tooling.\nVersion Control\nStore documentation alongside code in a version control system (e.g., Git).\nAutomation\nAutomate the build, testing, and deployment of documentation.\nCode Reviews\nSubject documentation changes to the same review process as code changes.\nTreat Documentation as a First-Class Citizen\nGive documentation the same level of importance and attention as your codebase.\n\n\nGetting Started with Docs as Code\nThe transition doesn’t have to be drastic. Here are a few steps you can take:\n\nChoose a Lightweight Markup Language\nExplore Markdown, AsciiDoc, or reStructuredText and pick one that suits your team’s needs.\nMove Your Documentation to Version Control\nStart by migrating your existing documentation into your project’s repository.\nImplement a Static Site Generator\nTools like Sphinx, MkDocs, Docusaurus, and Jekyll can automatically generate beautiful and searchable documentation from your plain text files.\nEncourage Collaboration\nFoster a culture where everyone feels responsible for contributing to and maintaining the documentation.\n\n\n\nConclusions\nDocumentation as Code isn’t just about the tools; it’s about a mindset shift. It’s about recognizing the crucial role documentation plays in the success of a project and treating it with the respect and rigor it deserves. By embracing this approach, you can create documentation that is accurate, up-to-date, discoverable, and a true asset to your team and users.\n\n\nReferences\n\nOnose E. (2024) Understanding Docs-as-Code. Medium. Retrieved from website.\n\nHolscher, E. (n.d.) Docs as Code. Write The Docs. Retrieved from website.\n\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Docs as Code"
+    ]
+  },
+  {
+    "objectID": "evidence.html#introduction",
+    "href": "evidence.html#introduction",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Have you ever faced with non-functional filters or slow performance in a Business Intelligence (BI) app dashboard connected to various data sources? How long has it taken to find where the data inaccuracy is? Have you ever wished to get technical documentation or version control about a dashboard created by other person?\nFor years, BI tools have promised to democratize data analysis. With their intuitive drag-and-drop interfaces, anyone could supposedly build dashboards and extract insights. But while these tools lowered the initial barrier to entry, they often created new problems down the line. That’s where “BI as Code” steps in, offering a more robust and scalable approach to data analysis.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#the-limitations-of-drag-and-drop-bi",
+    "href": "evidence.html#the-limitations-of-drag-and-drop-bi",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Drag-and-drop BI tools are great for quick, exploratory analysis. However, they struggle as your data and analytical needs grow.\n\n\nChanges to dashboards are often made directly in the interface, making it difficult to track modifications, revert to previous versions, or collaborate effectively. This leads to “dashboard sprawl” and inconsistencies.\n\n\n\nReplicating complex analyses or deploying them across different environments can be challenging. The point and click nature of those tools create a lot of hidden dependencies, and no clear way to move the work between systems.\n\n\n\nAs your data volume increases, drag-and-drop tools can become slow and inefficient. Complex transformations and calculations may not be optimized for performance.\n\n\n\nRelying on proprietary interfaces and data models can make it difficult to migrate to other platforms or integrate with other tools.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#the-power-of-bi-as-code",
+    "href": "evidence.html#the-power-of-bi-as-code",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "BI as Code, on the other hand, treats data analysis and dashboard creation as software development. This approach offers several advantages:\n\n\nUsing Git or other version control systems allows you to track changes, collaborate effectively, and revert to previous versions. This ensures consistency and reduces the risk of errors.\n\n\n\nCode-based analyses are easily reproducible and deployable. You can define your data transformations, calculations, and visualizations in code, ensuring consistent results across different environments.\n\n\n\nCode can be optimized for performance and scalability. You can leverage powerful programming languages and libraries to handle large datasets and complex calculations efficiently.\n\n\n\nCode provides greater flexibility and customization. You can tailor your analyses and visualizations to meet specific business needs, without being limited by the constraints of a drag-and-drop interface.\n\n\n\nCode is easier to share and collaborate on than a drag and drop dashboard. Automation Code can be automated, allowing for scheduled updates, refreshes, and deployments.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#embracing-bi-as-code-with-evidence.dev",
+    "href": "evidence.html#embracing-bi-as-code-with-evidence.dev",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Tools like evidence.dev are leading the charge in the BI as Code revolution. They allow you to write Markdown, SQL and JavaScript to build data-driven web applications, leveraging the power of version control, reproducibility, and scalability.\nBy embracing BI as Code, you can unlock the full potential of your data and build robust, scalable, and reliable data analysis solutions.\nIt’s time to move beyond the limitations of drag-and-drop and embrace the future of BI.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#conclusions",
+    "href": "evidence.html#conclusions",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Evidence.dev significantly streamlines the process of building data-driven web applications. The provided code examples demonstrate how seamlessly data transformations and visualizations can be integrated within a single framework. This reduces the need for complex data pipelines and frontend development, leading to faster development cycles.\nThe platform’s focus on SQL and Markdown allows for a highly iterative development process. Developers can quickly prototype and validate hypotheses directly within the application, enhancing data exploration and analysis.\nBy leveraging Evidence.dev, teams can bridge the gap between data analysis and web application development. This fosters a more collaborative environment where data scientists and developers can work together more effectively.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#references",
+    "href": "evidence.html#references",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Evidence (2025) Build your First App\nMehdi, O (2023) The Future of BI: Exploring the Impact of BI-as-Code Tools with DuckDB in MotherDuck Website\nVishal, G (2024) BI as code in The Data Column Website",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#contact",
+    "href": "evidence.html#contact",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "",
+    "text": "Jesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence copy.html",
+    "href": "evidence copy.html",
+    "title": "\nBI with SQL and Markdown: Evidence.dev\n",
+    "section": "",
+    "text": "Home\n\nBI with SQL and Markdown: Evidence.dev\n\n\nDitch the drag-and-drop: Code is the Future of Data Analysis\n Mar, 2025\n\n\nJesus L. Monroy  Economist & Data Scientist\n\n\n\n\n\nIntroduction\n\n\nHave you ever faced with non-functional filters or slow performance in a Business Intelligence (BI) app dashboard connected to various data sources? How long has it taken to find where the data inaccuracy is? Have you ever wished to get technical documentation or version control about a dashboard created by other person?  For years, BI tools have promised to democratize data analysis. With their intuitive drag-and-drop interfaces, anyone could supposedly build dashboards and extract insights. But while these tools lowered the initial barrier to entry, they often created new problems down the line. That’s where “BI as Code” steps in, offering a more robust and scalable approach to data analysis.\n\n\nThe Limitations of Drag-and-Drop BI\n\n\nDrag-and-drop BI tools are great for quick, exploratory analysis. However, they struggle as your data and analytical needs grow.\n\n\nLack of Version Control\n\n\nChanges to dashboards are often made directly in the interface, making it difficult to track modifications, revert to previous versions, or collaborate effectively. This leads to “dashboard sprawl” and inconsistencies.\n\n\nLimited Reproducibility\n\n\nReplicating complex analyses or deploying them across different environments can be challenging. The point and click nature of those tools create a lot of hidden dependencies, and no clear way to move the work between systems.\n\n\nScalability Issues\n\n\nAs your data volume increases, drag-and-drop tools can become slow and inefficient. Complex transformations and calculations may not be optimized for performance.\n\n\nVendor Lock-in\n\n\nRelying on proprietary interfaces and data models can make it difficult to migrate to other platforms or integrate with other tools.\n\n\nThe Power of BI as Code\n\n\nBI as Code, on the other hand, treats data analysis and dashboard creation as software development. This approach offers several advantages:\n\n\nVersion Control\n\n\nUsing Git or other version control systems allows you to track changes, collaborate effectively, and revert to previous versions. This ensures consistency and reduces the risk of errors.\n\n\nReproducibility\n\n\nCode-based analyses are easily reproducible and deployable. You can define your data transformations, calculations, and visualizations in code, ensuring consistent results across different environments.\n\n\nScalability and Performance\n\n\nCode can be optimized for performance and scalability. You can leverage powerful programming languages and libraries to handle large datasets and complex calculations efficiently.\n\n\nFlexibility and Customization\n\n\nCode provides greater flexibility and customization. You can tailor your analyses and visualizations to meet specific business needs, without being limited by the constraints of a drag-and-drop interface.\n\n\nCollaboration\n\n\nCode is easier to share and collaborate on than a drag and drop dashboard. Automation Code can be automated, allowing for scheduled updates, refreshes, and deployments.\n\n\nEmbracing BI as Code with evidence.dev\n\n\nTools like evidence.dev are leading the charge in the BI as Code revolution. They allow you to write Markdown, SQL and JavaScript to build data-driven web applications, leveraging the power of version control, reproducibility, and scalability.  By embracing BI as Code, you can unlock the full potential of your data and build robust, scalable, and reliable data analysis solutions.  It’s time to move beyond the limitations of drag-and-drop and embrace the future of BI.\n\n\nConclusions\n\n\nEvidence.dev significantly streamlines the process of building data-driven web applications. The provided code examples demonstrate how seamlessly data transformations and visualizations can be integrated within a single framework. This reduces the need for complex data pipelines and frontend development, leading to faster development cycles.  The platform’s focus on SQL and Markdown allows for a highly iterative development process. Developers can quickly prototype and validate hypotheses directly within the application, enhancing data exploration and analysis.  By leveraging Evidence.dev, teams can bridge the gap between data analysis and web application development. This fosters a more collaborative environment where data scientists and developers can work together more effectively.\n\n\nReferences\n\n\n\nEvidence (2025) Build your First App\n\n\nMehdi, O (2023) The Future of BI: Exploring the Impact of BI-as-Code Tools with DuckDB in MotherDuck Website\n\n\nVishal, G (2024) BI as code in The Data Column Website\n\n\n\nContact\n\n\nJesus L. Monroy\n Economist & Data Scientist\n\n\nLinkedin | Medium | Twitter"
+  },
+  {
+    "objectID": "evidence.html#lack-of-version-control",
+    "href": "evidence.html#lack-of-version-control",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Lack of Version Control",
+    "text": "Lack of Version Control\nChanges to dashboards are often made directly in the interface, making it difficult to track modifications, revert to previous versions, or collaborate effectively. This leads to “dashboard sprawl” and inconsistencies.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#limited-reproducibility",
+    "href": "evidence.html#limited-reproducibility",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Limited Reproducibility",
+    "text": "Limited Reproducibility\nReplicating complex analyses or deploying them across different environments can be challenging. The point and click nature of those tools create a lot of hidden dependencies, and no clear way to move the work between systems.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#scalability-issues",
+    "href": "evidence.html#scalability-issues",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Scalability Issues",
+    "text": "Scalability Issues\nAs your data volume increases, drag-and-drop tools can become slow and inefficient. Complex transformations and calculations may not be optimized for performance.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#vendor-lock-in",
+    "href": "evidence.html#vendor-lock-in",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Vendor Lock-in",
+    "text": "Vendor Lock-in\nRelying on proprietary interfaces and data models can make it difficult to migrate to other platforms or integrate with other tools.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#version-control",
+    "href": "evidence.html#version-control",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Version Control",
+    "text": "Version Control\nUsing Git or other version control systems allows you to track changes, collaborate effectively, and revert to previous versions. This ensures consistency and reduces the risk of errors.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#reproducibility",
+    "href": "evidence.html#reproducibility",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nCode-based analyses are easily reproducible and deployable. You can define your data transformations, calculations, and visualizations in code, ensuring consistent results across different environments.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#scalability-and-performance",
+    "href": "evidence.html#scalability-and-performance",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Scalability and Performance",
+    "text": "Scalability and Performance\nCode can be optimized for performance and scalability. You can leverage powerful programming languages and libraries to handle large datasets and complex calculations efficiently.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#flexibility-and-customization",
+    "href": "evidence.html#flexibility-and-customization",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Flexibility and Customization",
+    "text": "Flexibility and Customization\nCode provides greater flexibility and customization. You can tailor your analyses and visualizations to meet specific business needs, without being limited by the constraints of a drag-and-drop interface.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "evidence.html#collaboration",
+    "href": "evidence.html#collaboration",
+    "title": "BI with SQL and Markdown: Evidence.dev",
+    "section": "Collaboration",
+    "text": "Collaboration\nCode is easier to share and collaborate on than a drag and drop dashboard. Automation Code can be automated, allowing for scheduled updates, refreshes, and deployments.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI with SQL & Markdown"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#why-sql-as-a-paintbrush-for-your-tableau-dashboards",
+    "href": "bi_as_code.html#why-sql-as-a-paintbrush-for-your-tableau-dashboards",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "Why SQL as a Paintbrush for Your Tableau Dashboards?",
+    "text": "Why SQL as a Paintbrush for Your Tableau Dashboards?\n\nImagine Tableau is your canvas and the data is the paint. SQL acts as your expert color mixer, allowing you to prepare exactly the shades and proportions you need before applying them to the canvas. Here are some of the key benefits:\n\nOptimized Performance\nInstead of loading large amounts of raw data into Tableau and relying on its data engine to perform complex transformations, SQL lets you filter, aggregate, and transform data directly in the database. This means Tableau works with much smaller, optimized data sets, resulting in faster and more responsive dashboards.\nGreater Flexibility and Control\nSQL gives you granular control over your data transformation logic. You can perform complex joins, apply conditional logic, create calculated fields, and shape the data exactly as you need it for your specific visualizations. This is much more flexible than relying solely on Tableau’s capabilities for these tasks.\nReuse and Consistency\nSQL queries can be saved, versioned, and reused across multiple dashboards or even different tools. This promotes consistency in business logic and reduces work redundancy.\nScalability\nAs your data volumes grow, performing heavy transformations within Tableau can become prohibitively expensive in terms of performance. Delegating these tasks to the database via SQL allows your solution to scale more efficiently.\nData Warehouse Integration\nIf your organization already uses a data warehouse, SQL is the native language for interacting with it. Using SQL to prepare data for Tableau integrates naturally with your existing data infrastructure.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#the-ideal-workflow-sql-first-tableau-later",
+    "href": "bi_as_code.html#the-ideal-workflow-sql-first-tableau-later",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "The Ideal Workflow: SQL First, Tableau Later",
+    "text": "The Ideal Workflow: SQL First, Tableau Later\nAn efficient workflow involves:\n\nConnecting Tableau to the database\nUsing custom SQL queries or materialized views to prepare and shape the data. This includes filtering, aggregations, joins, and any other necessary transformations.\nBuilding visualizations\nUsing Tableau drag and drop from the pre-processed data.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#replacement-or-integration",
+    "href": "bi_as_code.html#replacement-or-integration",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "Replacement or Integration?",
+    "text": "Replacement or Integration?\nWhile Evidence.dev offers an attractive alternative, it doesn’t necessarily have to be a complete replacement for the SQL + Tableau combination in all cases.\nPotential Replacement\nFor teams with a strong focus on data engineering and who value full control through code, Evidence.dev could be an excellent option to replace the traditional SQL + Tableau workflow.\nStrategic Integration\nIt is also possible to integrate Evidence.dev into an existing Tableau workflow. For example, data models defined and transformed in Evidence.dev could be used as data sources for Tableau dashboards, leveraging the strengths of both tools.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#why-choose-plotly-dash-for-your-dashboards",
+    "href": "bi_as_code.html#why-choose-plotly-dash-for-your-dashboards",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "Why Choose Plotly Dash for Your Dashboards?",
+    "text": "Why Choose Plotly Dash for Your Dashboards?\nDash offers a compelling set of advantages that make it a go-to choice for building data dashboards:\nPython Native\nBuilt entirely on Python, Dash seamlessly integrates with your existing data science stack, including libraries like Pandas, NumPy, and Scikit-learn. This means you can leverage your familiar Python workflows to build sophisticated dashboards.\nInteractive and Dynamic\nDash dashboards are inherently interactive. Users can filter data, zoom into charts, hover over data points for details, and trigger updates in real-time. This level of engagement fosters deeper data exploration and understanding.\nDeclarative Syntax\nDash utilizes a declarative syntax, making it incredibly intuitive to define the layout and interactivity of your dashboard. You describe what you want to see, and Dash handles the underlying complexities of building the web application.\nRich Component Library\nPlotly provides a comprehensive library of interactive and customizable components, including charts, graphs, tables, dropdown menus, sliders, and more. These components are built on top of the robust Plotly.js library, ensuring high-quality visualizations.\nCustomizable Layouts\nDash offers flexible layout options, allowing you to arrange components precisely as needed. You can create multi-page dashboards, organize elements into rows and columns, and design visually appealing interfaces.\nDeployment Flexibility\nDash applications can be deployed on various platforms, from local machines to enterprise-level servers and cloud platforms like Heroku, AWS, and Google Cloud. This makes it easy to share your dashboards with a wider audience.\nActive Community and Extensive Documentation\nDash boasts a vibrant and supportive community, along with comprehensive and well-maintained documentation. This makes it easier to learn, troubleshoot, and find solutions to your dashboarding challenges.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#recent-improvements-and-exciting-features",
+    "href": "bi_as_code.html#recent-improvements-and-exciting-features",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "Recent Improvements and Exciting Features",
+    "text": "Recent Improvements and Exciting Features\nThe Plotly Dash ecosystem is continuously evolving, with recent updates bringing even more power and flexibility:\nPattern-Matching Callbacks\nThis feature simplifies the creation of dashboards with dynamically generated components, making it easier to handle scenarios with a variable number of inputs or outputs.\nClientside Callbacks (with JavaScript)\nWhile Dash is primarily Python-based, the introduction of clientside callbacks allows developers to write JavaScript code for specific interactive elements, leading to faster and more responsive user experiences for certain interactions.\nImproved Performance\nOngoing efforts focus on optimizing the performance of Dash applications, ensuring smoother interactions and faster loading times, especially for large datasets.\nEnhanced Theming and Styling\nRecent updates have brought more options for customizing the visual appearance of Dash applications, allowing for greater control over branding and aesthetics.\nIntegration with More Tools\nDash continues to improve its integration with other data science and web development tools, expanding its versatility.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#getting-started-with-plotly-dash",
+    "href": "bi_as_code.html#getting-started-with-plotly-dash",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "Getting Started with Plotly Dash",
+    "text": "Getting Started with Plotly Dash\nDiving into Plotly Dash is easier than you might think!\n\nFrom there, you can explore the official Dash documentation and numerous online tutorials to start building your own interactive dashboards.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#why-choose-shiny-for-python-lets-dive-into-the-advantages",
+    "href": "bi_as_code.html#why-choose-shiny-for-python-lets-dive-into-the-advantages",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "Why Choose Shiny for Python? Let’s Dive into the Advantages",
+    "text": "Why Choose Shiny for Python? Let’s Dive into the Advantages\nPython Powerhouse\nYou can seamlessly integrate your favorite Python data science libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly directly into your dashboards. This means you can perform complex data manipulation and visualization within the same familiar environment.\nReactive Magic\nShiny’s core strength lies in its reactivity. When a user interacts with an input (like a slider or dropdown), the linked outputs (charts, tables, text) automatically update in real-time. This creates a fluid and engaging exploratory experience for your audience.\nSimplified Web Development\nSay goodbye to wrestling with HTML, CSS, and JavaScript intricacies. Shiny for Python abstracts away much of this complexity, allowing you to focus on the logic and presentation of your data. Its declarative syntax makes defining UI elements and their behavior remarkably straightforward.\nCustomizable Layouts\nTailor your dashboards to your exact needs with flexible layout options. Arrange elements in columns, rows, or use more advanced grid systems to create visually appealing and informative interfaces.\nShareability\nOnce your dashboard is built, deploying it is relatively simple. You can share it with colleagues, stakeholders, or even the wider world, enabling data-driven decision-making and communication.\nGrowing Ecosystem\nWhile still relatively new compared to its R counterpart, the Shiny for Python ecosystem is rapidly expanding. Expect to see more components, extensions, and community support emerge over time.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "bi_as_code.html#whats-improved-building-on-the-shiny-legacy",
+    "href": "bi_as_code.html#whats-improved-building-on-the-shiny-legacy",
+    "title": "Unleashing Business Intelligence with Python",
+    "section": "What’s Improved? Building on the Shiny Legacy",
+    "text": "What’s Improved? Building on the Shiny Legacy\nShiny for Python benefits from the years of experience and refinement of its R predecessor. This translates to:\nModern Pythonic Syntax\nThe Python API is designed to feel natural and intuitive for Python developers.\nLeveraging Python’s Strengths\nIt seamlessly integrates with Python’s rich ecosystem for data manipulation, scientific computing, and visualization.\nCross-Platform Compatibility\nDeploy your dashboards on various operating systems and environments.\nIf you’re eager to jump in, here’s a taste of how simple it can be:\n\nThis minimal example demonstrates how to create a simple dashboard with a dropdown to filter a bar chart.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "BI as Code"
+    ]
+  },
+  {
+    "objectID": "judiciary_elections.html#principal-agent-problem",
+    "href": "judiciary_elections.html#principal-agent-problem",
+    "title": "The Scales of Popularity: Economic Implications of Judicial Elections in Mexico",
+    "section": "Principal-Agent Problem",
+    "text": "Principal-Agent Problem\nEconomic theory highlights the principal-agent problem, where elected officials (agents) may not always act in the best interests of the voters (principals). In the context of judicial elections, this raises concerns about judges prioritizing political expediency over impartial legal interpretation.\nJudges, seeking re-election, might be incentivized to make rulings that appeal to the electorate, potentially compromising their independence and adherence to the rule of law.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Judiciary Elections in Mexico"
+    ]
+  },
+  {
+    "objectID": "judiciary_elections.html#information-asymmetry",
+    "href": "judiciary_elections.html#information-asymmetry",
+    "title": "The Scales of Popularity: Economic Implications of Judicial Elections in Mexico",
+    "section": "Information Asymmetry",
+    "text": "Information Asymmetry\nVoters often have limited information about judicial candidates’ qualifications and legal philosophies. This information asymmetry can lead to decisions based on superficial factors like name recognition or campaign rhetoric, rather than substantive legal expertise.\nThis can result in the election of judges who lack the necessary competence, undermining the quality of the judiciary.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Judiciary Elections in Mexico"
+    ]
+  },
+  {
+    "objectID": "judiciary_elections.html#interest-group-influence",
+    "href": "judiciary_elections.html#interest-group-influence",
+    "title": "The Scales of Popularity: Economic Implications of Judicial Elections in Mexico",
+    "section": "Interest Group Influence",
+    "text": "Interest Group Influence\nEconomic theory recognizes the influence of interest groups in elections. Well-funded groups can exert disproportionate influence on judicial campaigns, potentially leading to judges who are beholden to specific interests rather than the public good.\nThis raises concerns about the potential for “judicial capture,” where powerful groups manipulate the legal system to their advantage.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Judiciary Elections in Mexico"
+    ]
+  },
+  {
+    "objectID": "judiciary_elections.html#political-cycles",
+    "href": "judiciary_elections.html#political-cycles",
+    "title": "The Scales of Popularity: Economic Implications of Judicial Elections in Mexico",
+    "section": "Political Cycles",
+    "text": "Political Cycles\nElected judges may be more susceptible to political cycles, with their rulings influenced by upcoming elections. This can create instability and uncertainty in the legal system, which can deter investment and economic growth.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Judiciary Elections in Mexico"
+    ]
+  },
+  {
+    "objectID": "judiciary_elections.html#impact-on-economic-stability",
+    "href": "judiciary_elections.html#impact-on-economic-stability",
+    "title": "The Scales of Popularity: Economic Implications of Judicial Elections in Mexico",
+    "section": "Impact on Economic Stability",
+    "text": "Impact on Economic Stability\nA compromised judiciary can erode investor confidence and create an unpredictable legal environment. This can negatively impact economic stability, foreign investment, and overall economic development.\nA strong, independent judiciary is essential for enforcing contracts, protecting property rights, and ensuring fair competition, all of which are crucial for a healthy economy.",
+    "crumbs": [
+      "Portfolio",
+      "Posts",
+      "Judiciary Elections in Mexico"
+    ]
+  },
+  {
+    "objectID": "plotnine.html",
+    "href": "plotnine.html",
+    "title": "ggplot2 in Python",
+    "section": "",
+    "text": "ggplot2 is based on Hadley Wickham’s Layered Grammar of Graphics1, which provides a systematic way to describe the components of a statistical graphic.\nggplot2 is a declarative language, which implies to specify the “what you want” to plot, rather than “the how”.\nggplot2 has a wide range of features, including:\n\nSupport for a variety of data types (data frames, matrices, and lists)\nA wide variety of geometric objects (points, lines, bars, and histograms)\nA variety of statistical transformations (aggregation, smoothing, and binning)\nA powerful system for customizing plots",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "plotnine.html#overview",
+    "href": "plotnine.html#overview",
+    "title": "ggplot2 in Python",
+    "section": "",
+    "text": "ggplot2 is based on Hadley Wickham’s Layered Grammar of Graphics1, which provides a systematic way to describe the components of a statistical graphic.\nggplot2 is a declarative language, which implies to specify the “what you want” to plot, rather than “the how”.\nggplot2 has a wide range of features, including:\n\nSupport for a variety of data types (data frames, matrices, and lists)\nA wide variety of geometric objects (points, lines, bars, and histograms)\nA variety of statistical transformations (aggregation, smoothing, and binning)\nA powerful system for customizing plots",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "plotnine.html#a-layered-grammar-of-graphics",
+    "href": "plotnine.html#a-layered-grammar-of-graphics",
+    "title": "ggplot2 in Python",
+    "section": "A Layered Grammar of Graphics",
+    "text": "A Layered Grammar of Graphics\nThere are 03 compulsory components for building visualizations with plotnine:\n\nData\nAesthetics\nGeometric objects",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "plotnine.html#environment-settings",
+    "href": "plotnine.html#environment-settings",
+    "title": "ggplot2 in Python",
+    "section": "Environment settings",
+    "text": "Environment settings\n\n\nShow code\nfrom plotnine import *\nfrom plotnine.data import *\nimport numpy as np\nimport pandas as pd\nimport polars as pl\nfrom datetime import datetime\nimport warnings\nwarnings.filterwarnings('ignore')",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "plotnine.html#dataset",
+    "href": "plotnine.html#dataset",
+    "title": "ggplot2 in Python",
+    "section": "Dataset",
+    "text": "Dataset\n\n\nShow code\neconomics = pl.from_pandas(economics)\n\n\n\n\nShow code\n(\n    ggplot(data=economics)\n    + aes(x='date', y='uempmed')\n    + geom_line(color='#670000', size=1)\n    + labs(title='US unemployed duration (weeks)')\n    + theme(figure_size=(16, 8),\n            axis_text_x = element_text(color=\"black\", size=18, angle=0, hjust=.3),\n            axis_text_y = element_text(color=\"grey\", size=16), \n            plot_title = element_text(size = 25, face = \"bold\"), \n            axis_title = element_text(size = 18)\n            )\n    + xlab('')\n    + ylab('Unemployed duration (median)')\n).draw()",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "plotnine.html#contact",
+    "href": "plotnine.html#contact",
+    "title": "ggplot2 in Python",
+    "section": "Contact",
+    "text": "Contact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "plotnine.html#footnotes",
+    "href": "plotnine.html#footnotes",
+    "title": "ggplot2 in Python",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHadley Wickham (2010) A layer Grammar of Graphics.↩︎",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Plotting with ggplot2 in Python"
+    ]
+  },
+  {
+    "objectID": "spotify.html",
+    "href": "spotify.html",
+    "title": "Understanding Spotify User Behavior",
+    "section": "",
+    "text": "Figure 1: Spotify, a leading digital music, podcast, and video streaming service, has revolutionized the way individuals consume audio content. By offering a vast library of on-demand content through a freemium model, Spotify has significantly shifted music consumption from ownership to access. Spotify’s expansion into podcasting and other audio content reflects its ambition to become a comprehensive audio platform.",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Understanding Spotify User Behavior"
+    ]
+  },
+  {
+    "objectID": "spotify.html#database-connection",
+    "href": "spotify.html#database-connection",
+    "title": "Understanding Spotify User Behavior",
+    "section": "Database connection",
+    "text": "Database connection\nDuckdb is a powerful tool for data analysts and developers who need to perform fast and efficient analytical queries on large datasets, especially in environments where simplicity and portability are crucial.\n\n\nShow code\n# database connection\ntoken = os.getenv('MD_TOKEN')\nconn = db.connect(f\"md:?motherduck_token={token}\")\n# create dataframe\ndf = conn.sql('select * from projects.spotify_history').pl()\nconn.close()\n\n\nPolars is a modern DataFrame library designed for speed and efficiency, offering a compelling alternative to traditional data manipulation tools.",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Understanding Spotify User Behavior"
+    ]
+  },
+  {
+    "objectID": "farmacias_similares.html",
+    "href": "farmacias_similares.html",
+    "title": "Location of Farmacias Similares in Mexico",
+    "section": "",
+    "text": "# import libraries\nimport pandas as pd\nimport requests\nimport folium\nimport folium.plugins\n\n\nurl = 'https://www.farmaciasdesimilares.com/getpickuppoints'\n\n\n# request data\nresponse = requests.get(url)\nstores = response.json()\n\n\nstores[0]\n\n{'id': '47',\n 'name': 'ACAPULCO 1',\n 'description': 'Farmacias de Similares',\n 'instructions': 'Farmacias de Similares',\n 'formatted_address': 'undefined',\n 'address': {'postalCode': '39350',\n  'country': {'acronym': 'MEX', 'name': 'México'},\n  'city': 'ACAPULCO DE JUAREZ',\n  'state': 'Guerrero',\n  'neighborhood': 'PROGRESO',\n  'street': 'GUERRERO',\n  'number': 'ED A',\n  'complement': 'LC 1,2,3',\n  'reference': 'Farmacias de similares',\n  'location': {'latitude': 16.86016, 'longitude': -99.90353}},\n 'isActive': False,\n 'distance': 1693858004992,\n 'seller': 'farmaciassimilaresmx',\n '_sort': [1693858000000],\n 'businessHours': [{'dayOfWeek': 1,\n   'openingTime': '01:00:00',\n   'closingTime': '22:00:00'},\n  {'dayOfWeek': 2, 'openingTime': '02:00:00', 'closingTime': '22:00:00'},\n  {'dayOfWeek': 3, 'openingTime': '03:00:00', 'closingTime': '22:00:00'},\n  {'dayOfWeek': 4, 'openingTime': '03:00:00', 'closingTime': '22:00:00'},\n  {'dayOfWeek': 5, 'openingTime': '04:00:00', 'closingTime': '22:00:00'},\n  {'dayOfWeek': 6, 'openingTime': '05:00:00', 'closingTime': '22:00:00'},\n  {'dayOfWeek': 0, 'openingTime': '06:00:00', 'closingTime': '22:00:00'}],\n 'tagsLabel': ['47'],\n 'pickupHolidays': [],\n 'isThirdPartyPickup': False,\n 'accountOwnerName': 'farmaciassimilaresmx',\n 'accountOwnerId': '010e8ff0-804a-4f40-bb32-20e5c7b50254',\n 'parentAccountName': None,\n 'originalId': None}\n\n\n\ndrugstore=[]\ncity=[]\nstate=[]\nneighborhood=[]\nstreet=[]\nzip_code=[]\nnumber=[]\nlatitude=[]\nlongitude=[]\n\nfor store in range(len(stores)):\n    drugstore.append(stores[store]['name'])\n    city.append(stores[store]['address']['city'])\n    state.append(stores[store]['address']['state'])\n    neighborhood.append(stores[store]['address']['neighborhood'])\n    street.append(stores[store]['address']['street'])\n    number.append(stores[store]['address']['number'])\n    zip_code.append(stores[store]['address']['postalCode'])\n    latitude.append(stores[store]['address']['location']['latitude'])\n    longitude.append(stores[store]['address']['location']['longitude'])\n\n\nsimi_df = pd.DataFrame(\n    {'drugstore':drugstore,\n    'street':street,\n    'number':number,\n    'neighborhood':neighborhood,\n    'city': city,\n    'zip_code':zip_code,\n    'latitude': latitude,\n    'longitude': longitude,}\n)\n\n\nsimi_df.head()\n\n\n\n\n\n\n\n\ndrugstore\nstreet\nnumber\nneighborhood\ncity\nzip_code\nlatitude\nlongitude\n\n\n\n\n0\nACAPULCO 1\nGUERRERO\nED A\nPROGRESO\nACAPULCO DE JUAREZ\n39350\n16.86016\n-99.90353\n\n\n1\nACAPULCO 10\nRUIZ CORTINEZ\n8\nALTA PROGRESO\nACAPULCO DE JUAREZ\n39610\n16.87317\n-99.89115\n\n\n2\nACAPULCO 11\nGRAN VIA EL COLOSO\nLT 10\nLA ESPERANZA\nACAPULCO DE JUAREZ\n39610\n16.84682\n-99.81231\n\n\n3\nACAPULCO 13\nLAZARO CARDENAS\n36\nLAS CRUCES\nACAPULCO DE JUAREZ\n39902\n16.88586\n-99.83698\n\n\n4\nACAPULCO 14\nCUAUHTEMOC\n129\nPROGRESO\nACAPULCO DE JUAREZ\n39350\n16.85863\n-99.89725\n\n\n\n\n\n\n\n\nsimi_df.to_csv('similares.csv')\n\n\nsimi_face = 'https://tinyurl.com/3mvfbu4t'\n\n\n# map\nsimi_map = folium.Map(location=[23, -101], zoom_start=5, attr='Google')\n\nfor i in range(0,len(simi_df)):\n    # logo marker\n    folium.Marker(location=[simi_df['latitude'][i], simi_df['longitude'][i]],\n                  popup=folium.Popup(\n                      f\"&lt;b&gt;Drugstore:&lt;/b&gt; {simi_df['drugstore'][i]} \\\n                      &lt;br&gt;&lt;b&gt;Street:&lt;/b&gt; {simi_df['street'][i]} \\\n                      &lt;br&gt;&lt;b&gt;Neighborhood:&lt;/b&gt; {simi_df['neighborhood'][i]}\"\n                      ),\n                  icon=folium.features.CustomIcon(\n                      simi_face,\n                      icon_size=(40,40)\n                      )\n                 ).add_to(simi_map)\n\nfolium.plugins.Fullscreen(\n    position=\"topleft\",\n    title=\"Expand me\",\n    title_cancel=\"Exit me\",\n    force_separate_button=True,\n    ).add_to(simi_map)\n\n&lt;folium.plugins.fullscreen.Fullscreen at 0x7657a938c380&gt;\n\n\n\nsimi_map\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook\n\n\n\nReferences\n\nPacheco, C. (2025) simi_ubicas. Github.\n\n\n\nContact\nJesus L. Monroy\nEconomist & Data Scientist\nMedium | Linkedin | Twitter"
+  },
+  {
+    "objectID": "gasoline-web-nocode.html",
+    "href": "gasoline-web-nocode.html",
+    "title": "Gasoline Prices in Mexico",
+    "section": "",
+    "text": "Figure 1: Gas Prices in Mexico Report",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline-web-nocode.html#top-05-states-with-highest-gasoline-prices",
+    "href": "gasoline-web-nocode.html#top-05-states-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with highest gasoline prices",
+    "text": "Top 05 States with highest gasoline prices\nThe following table presents a snapshot of the States with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nQUINTANA ROO\n$21.46\n$24.80\n$3.34\n15.55%\n\n\nYUCATAN\n$21.46\n$24.79\n$3.33\n15.52%\n\n\nNAYARIT\n$22.54\n$24.76\n$2.23\n9.90%\n\n\nGUERRERO\n$22.37\n$24.76\n$2.39\n10.67%\n\n\nSINALOA\n$22.36\n$24.72\n$2.36\n10.59%\n\n\n\n\n\n\nTable 2: Top 05 States with highest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline-web-nocode.html#top-05-states-with-lowest-gasoline-prices",
+    "href": "gasoline-web-nocode.html#top-05-states-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with lowest gasoline prices",
+    "text": "Top 05 States with lowest gasoline prices\nThe following table presents a snapshot of the States with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nTAMAULIPAS\n$21.22\n$23.10\n$1.87\n8.79%\n\n\nCOAHUILA DE ZARAGOZA\n$22.25\n$23.12\n$0.87\n4.01%\n\n\nCHIHUAHUA\n$21.47\n$23.36\n$1.89\n8.90%\n\n\nNUEVO LEON\n$21.41\n$23.40\n$1.99\n9.32%\n\n\nVERACRUZ DE IGNACIO DE LA LLAVE\n$21.59\n$23.44\n$1.86\n8.62%\n\n\n\n\n\n\nTable 3: Top 05 States with lowest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline-web-nocode.html#top-05-municipalities-with-highest-gasoline-prices",
+    "href": "gasoline-web-nocode.html#top-05-municipalities-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with highest gasoline prices",
+    "text": "Top 05 Municipalities with highest gasoline prices\nThe following table presents a snapshot of the Municipalities with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nNUEVA ITALIA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nZIRACUARETIRO, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nGABRIEL ZAMORA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nHUIRAMBA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nNAHUATZEN, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\n\n\n\n\nTable 4: Top 05 Municipalities with highest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline-web-nocode.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "href": "gasoline-web-nocode.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with lowest gasoline prices",
+    "text": "Top 05 Municipalities with lowest gasoline prices\nThe following table presents a snapshot of the Municipalities with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nANAHUAC, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nCD. GUERRERO, TAMAULIPAS\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nLAMPAZOS DE NARANJO, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nALLENDE, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\nMORELOS, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\n\n\n\n\nTable 5: Top 05 Municipalities with lowest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline-web.html",
+    "href": "gasoline-web.html",
+    "title": "Gasoline Prices in Mexico",
+    "section": "",
+    "text": "Show code\nimport polars as pl\nimport duckdb as db\nimport plotly.express as px\nfrom plotnine import *"
+  },
+  {
+    "objectID": "gasoline-web.html#top-05-states-with-highest-gasoline-prices",
+    "href": "gasoline-web.html#top-05-states-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with highest gasoline prices",
+    "text": "Top 05 States with highest gasoline prices\n\n\nShow code\n(\n    states\n        .top_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 States with highest prices\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nQUINTANA ROO\n$21.46\n$24.80\n$3.34\n15.55%\n\n\nYUCATAN\n$21.46\n$24.79\n$3.33\n15.52%\n\n\nNAYARIT\n$22.54\n$24.76\n$2.23\n9.90%\n\n\nGUERRERO\n$22.37\n$24.76\n$2.39\n10.67%\n\n\nSINALOA\n$22.36\n$24.72\n$2.36\n10.59%"
+  },
+  {
+    "objectID": "gasoline-web.html#top-05-states-with-lowest-gasoline-prices",
+    "href": "gasoline-web.html#top-05-states-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with lowest gasoline prices",
+    "text": "Top 05 States with lowest gasoline prices\n\n\nShow code\n(\n    states\n        .bottom_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 States with lowest prices\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nTAMAULIPAS\n$21.22\n$23.10\n$1.87\n8.79%\n\n\nCOAHUILA DE ZARAGOZA\n$22.25\n$23.12\n$0.87\n4.01%\n\n\nCHIHUAHUA\n$21.47\n$23.36\n$1.89\n8.90%\n\n\nNUEVO LEON\n$21.41\n$23.40\n$1.99\n9.32%\n\n\nVERACRUZ DE IGNACIO DE LA LLAVE\n$21.59\n$23.44\n$1.86\n8.62%"
+  },
+  {
+    "objectID": "gasoline-web.html#top-05-municipalities-with-highest-gasoline-prices",
+    "href": "gasoline-web.html#top-05-municipalities-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with highest gasoline prices",
+    "text": "Top 05 Municipalities with highest gasoline prices\n\n\nShow code\n(\n    municipalities\n        .top_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 Municipalities with highest prices\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nNUEVA ITALIA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nZIRACUARETIRO, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nGABRIEL ZAMORA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nHUIRAMBA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nNAHUATZEN, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%"
+  },
+  {
+    "objectID": "gasoline-web.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "href": "gasoline-web.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with lowest gasoline prices",
+    "text": "Top 05 Municipalities with lowest gasoline prices\n\n\nShow code\n(\n    municipalities\n        .bottom_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 Municipalities with lowest prices\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nANAHUAC, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nCD. GUERRERO, TAMAULIPAS\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nLAMPAZOS DE NARANJO, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nALLENDE, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\nMORELOS, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#current-situation",
+    "href": "gasoline-web-slides.html#current-situation",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Current Situation",
+    "text": "Current Situation\n\nRising Prices\nDespite government efforts to stabilize fuel costs, gasoline prices in Mexico have been on the rise. Some estimates suggest prices could reach MX$30 per liter during 2025.\nRegional Variations\nGasoline prices vary significantly across different states in Mexico. Quintana Roo has the highest average price for regular gasoline, while Veracruz has the lowest.\nGovernment Intervention\nThe government has implemented measures like a price cap of MX$24 per liter for regular gasoline and has been working to stabilize fuel prices. However, these efforts have faced challenges."
+  },
+  {
+    "objectID": "gasoline-web-slides.html#factors-affecting-prices",
+    "href": "gasoline-web-slides.html#factors-affecting-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Factors Affecting Prices",
+    "text": "Factors Affecting Prices\n\nGlobal Oil Prices\nInternational oil prices play a significant role in determining gasoline prices in Mexico.\nGovernment Policies\nTaxes, subsidies, and regulations implemented by the Mexican government influence fuel prices.\nEconomic Conditions\nInflation, exchange rates, and other economic factors can impact gasoline prices."
+  },
+  {
+    "objectID": "gasoline-web-slides.html#challenges-and-concerns",
+    "href": "gasoline-web-slides.html#challenges-and-concerns",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Challenges and Concerns",
+    "text": "Challenges and Concerns\n\nImpact on Low-Income Families\nRising gasoline prices put a strain on low-income households, affecting their daily expenses and overall economic well-being.\nEconomic Impact\nIncreased fuel costs can have a ripple effect across various sectors of the economy, potentially leading to inflation and affecting businesses.\nGovernment Promises\nThe government’s promises to keep gasoline prices low have been met with skepticism, as prices continue to climb."
+  },
+  {
+    "objectID": "gasoline-web-slides.html#top-05-states-with-highest-gasoline-prices",
+    "href": "gasoline-web-slides.html#top-05-states-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with highest gasoline prices",
+    "text": "Top 05 States with highest gasoline prices\nThe following table presents a snapshot of the States with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nQUINTANA ROO\n$21.46\n$24.80\n$3.34\n15.55%\n\n\nYUCATAN\n$21.46\n$24.79\n$3.33\n15.52%\n\n\nNAYARIT\n$22.54\n$24.76\n$2.23\n9.90%\n\n\nGUERRERO\n$22.37\n$24.76\n$2.39\n10.67%\n\n\nSINALOA\n$22.36\n$24.72\n$2.36\n10.59%\n\n\n\n\n\n\nTable 1: Top 05 States with highest prices"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#top-05-states-with-lowest-gasoline-prices",
+    "href": "gasoline-web-slides.html#top-05-states-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with lowest gasoline prices",
+    "text": "Top 05 States with lowest gasoline prices\nThe following table presents a snapshot of the States with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nTAMAULIPAS\n$21.22\n$23.10\n$1.87\n8.79%\n\n\nCOAHUILA DE ZARAGOZA\n$22.25\n$23.12\n$0.87\n4.01%\n\n\nCHIHUAHUA\n$21.47\n$23.36\n$1.89\n8.90%\n\n\nNUEVO LEON\n$21.41\n$23.40\n$1.99\n9.32%\n\n\nVERACRUZ DE IGNACIO DE LA LLAVE\n$21.59\n$23.44\n$1.86\n8.62%\n\n\n\n\n\n\nTable 2: Top 05 States with lowest prices"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#top-05-municipalities-with-highest-gasoline-prices",
+    "href": "gasoline-web-slides.html#top-05-municipalities-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with highest gasoline prices",
+    "text": "Top 05 Municipalities with highest gasoline prices\nThe following table presents a snapshot of the Municipalities with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nNUEVA ITALIA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nZIRACUARETIRO, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nGABRIEL ZAMORA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nHUIRAMBA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nNAHUATZEN, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\n\n\n\n\nTable 3: Top 05 Municipalities with highest prices"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "href": "gasoline-web-slides.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with lowest gasoline prices",
+    "text": "Top 05 Municipalities with lowest gasoline prices\nThe following table presents a snapshot of the Municipalities with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nANAHUAC, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nCD. GUERRERO, TAMAULIPAS\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nLAMPAZOS DE NARANJO, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nALLENDE, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\nMORELOS, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\n\n\n\n\nTable 4: Top 05 Municipalities with lowest prices"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#average-gasoline-price-by-state",
+    "href": "gasoline-web-slides.html#average-gasoline-price-by-state",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Average Gasoline Price by State",
+    "text": "Average Gasoline Price by State\nThe following chart shows average gasoline prices by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 1: Average Gasoline Prices by State"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#profit-by-state",
+    "href": "gasoline-web-slides.html#profit-by-state",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Profit by State",
+    "text": "Profit by State\nThe following chart shows average profit by selling gasoline by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 2: Profit by State"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#dispersion-of-gasoline-prices",
+    "href": "gasoline-web-slides.html#dispersion-of-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Dispersion of Gasoline Prices",
+    "text": "Dispersion of Gasoline Prices\nThe following chart shows the dispersion of gasoline prices by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 3: Dispersion of Gasoline Prices by State"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#dispersion-of-profits",
+    "href": "gasoline-web-slides.html#dispersion-of-profits",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Dispersion of Profits",
+    "text": "Dispersion of Profits\nThe following chart shows the dispersion of profit by selling gasoline by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 4: Dispersion of Profits by State"
+  },
+  {
+    "objectID": "gasoline-web-slides.html#geographical-distribution",
+    "href": "gasoline-web-slides.html#geographical-distribution",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Geographical Distribution",
+    "text": "Geographical Distribution\n\n\n\n\n\n\nFigure 5: Gasoline Sale Prices by State in Mexico"
+  },
+  {
+    "objectID": "gasoline_web_slides.html#current-situation",
+    "href": "gasoline_web_slides.html#current-situation",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Current Situation",
+    "text": "Current Situation\n\nRising Prices\nDespite government efforts to stabilize fuel costs, gasoline prices in Mexico have been on the rise. Some estimates suggest prices could reach MX$30 per liter during 2025.\nRegional Variations\nGasoline prices vary significantly across different states in Mexico. Quintana Roo has the highest average price for regular gasoline, while Veracruz has the lowest.\nGovernment Intervention\nThe government has implemented measures like a price cap of MX$24 per liter for regular gasoline and has been working to stabilize fuel prices. However, these efforts have faced challenges.",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#factors-affecting-prices",
+    "href": "gasoline_web_slides.html#factors-affecting-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Factors Affecting Prices",
+    "text": "Factors Affecting Prices\n\nGlobal Oil Prices\nInternational oil prices play a significant role in determining gasoline prices in Mexico.\nGovernment Policies\nTaxes, subsidies, and regulations implemented by the Mexican government influence fuel prices.\nEconomic Conditions\nInflation, exchange rates, and other economic factors can impact gasoline prices.",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#challenges-and-concerns",
+    "href": "gasoline_web_slides.html#challenges-and-concerns",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Challenges and Concerns",
+    "text": "Challenges and Concerns\n\nImpact on Low-Income Families\nRising gasoline prices put a strain on low-income households, affecting their daily expenses and overall economic well-being.\nEconomic Impact\nIncreased fuel costs can have a ripple effect across various sectors of the economy, potentially leading to inflation and affecting businesses.\nGovernment Promises\nThe government’s promises to keep gasoline prices low have been met with skepticism, as prices continue to climb.",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#top-05-states-with-highest-gasoline-prices",
+    "href": "gasoline_web_slides.html#top-05-states-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with highest gasoline prices",
+    "text": "Top 05 States with highest gasoline prices\nThe following table presents a snapshot of the States with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nQUINTANA ROO\n$21.46\n$24.80\n$3.34\n15.55%\n\n\nYUCATAN\n$21.46\n$24.79\n$3.33\n15.52%\n\n\nNAYARIT\n$22.54\n$24.76\n$2.23\n9.90%\n\n\nGUERRERO\n$22.37\n$24.76\n$2.39\n10.67%\n\n\nSINALOA\n$22.36\n$24.72\n$2.36\n10.59%\n\n\n\n\n\n\nTable 1: Top 05 States with highest prices",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#top-05-states-with-lowest-gasoline-prices",
+    "href": "gasoline_web_slides.html#top-05-states-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with lowest gasoline prices",
+    "text": "Top 05 States with lowest gasoline prices\nThe following table presents a snapshot of the States with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nTAMAULIPAS\n$21.22\n$23.10\n$1.87\n8.79%\n\n\nCOAHUILA DE ZARAGOZA\n$22.25\n$23.12\n$0.87\n4.01%\n\n\nCHIHUAHUA\n$21.47\n$23.36\n$1.89\n8.90%\n\n\nNUEVO LEON\n$21.41\n$23.40\n$1.99\n9.32%\n\n\nVERACRUZ DE IGNACIO DE LA LLAVE\n$21.59\n$23.44\n$1.86\n8.62%\n\n\n\n\n\n\nTable 2: Top 05 States with lowest prices",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#top-05-municipalities-with-highest-gasoline-prices",
+    "href": "gasoline_web_slides.html#top-05-municipalities-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with highest gasoline prices",
+    "text": "Top 05 Municipalities with highest gasoline prices\nThe following table presents a snapshot of the Municipalities with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nNUEVA ITALIA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nZIRACUARETIRO, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nGABRIEL ZAMORA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nHUIRAMBA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nNAHUATZEN, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\n\n\n\n\nTable 3: Top 05 Municipalities with highest prices",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "href": "gasoline_web_slides.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with lowest gasoline prices",
+    "text": "Top 05 Municipalities with lowest gasoline prices\nThe following table presents a snapshot of the Municipalities with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nANAHUAC, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nCD. GUERRERO, TAMAULIPAS\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nLAMPAZOS DE NARANJO, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nALLENDE, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\nMORELOS, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\n\n\n\n\nTable 4: Top 05 Municipalities with lowest prices",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#average-gasoline-price-by-state",
+    "href": "gasoline_web_slides.html#average-gasoline-price-by-state",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Average Gasoline Price by State",
+    "text": "Average Gasoline Price by State\nThe following chart shows average gasoline prices by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 1: Average Gasoline Prices by State",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#profit-by-state",
+    "href": "gasoline_web_slides.html#profit-by-state",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Profit by State",
+    "text": "Profit by State\nThe following chart shows average profit by selling gasoline by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 2: Profit by State",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#dispersion-of-gasoline-prices",
+    "href": "gasoline_web_slides.html#dispersion-of-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Dispersion of Gasoline Prices",
+    "text": "Dispersion of Gasoline Prices\nThe following chart shows the dispersion of gasoline prices by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 3: Dispersion of Gasoline Prices by State",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#dispersion-of-profits",
+    "href": "gasoline_web_slides.html#dispersion-of-profits",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Dispersion of Profits",
+    "text": "Dispersion of Profits\nThe following chart shows the dispersion of profit by selling gasoline by State in Mexico.\n\n\n\n\n\n\n\n\nFigure 4: Dispersion of Profits by State",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_slides.html#geographical-distribution",
+    "href": "gasoline_web_slides.html#geographical-distribution",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Geographical Distribution",
+    "text": "Geographical Distribution\n\n\n\n\n\n\nFigure 5: Gasoline Sale Prices by State in Mexico",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_nocode.html",
+    "href": "gasoline_web_nocode.html",
+    "title": "Gasoline Prices in Mexico",
+    "section": "",
+    "text": "Figure 1: Gas Prices in Mexico Report",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_nocode.html#top-05-states-with-highest-gasoline-prices",
+    "href": "gasoline_web_nocode.html#top-05-states-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with highest gasoline prices",
+    "text": "Top 05 States with highest gasoline prices\nThe following table presents a snapshot of the States with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nQUINTANA ROO\n$21.46\n$24.80\n$3.34\n15.55%\n\n\nYUCATAN\n$21.46\n$24.79\n$3.33\n15.52%\n\n\nNAYARIT\n$22.54\n$24.76\n$2.23\n9.90%\n\n\nGUERRERO\n$22.37\n$24.76\n$2.39\n10.67%\n\n\nSINALOA\n$22.36\n$24.72\n$2.36\n10.59%\n\n\n\n\n\n\nTable 2: Top 05 States with highest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_nocode.html#top-05-states-with-lowest-gasoline-prices",
+    "href": "gasoline_web_nocode.html#top-05-states-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with lowest gasoline prices",
+    "text": "Top 05 States with lowest gasoline prices\nThe following table presents a snapshot of the States with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nTAMAULIPAS\n$21.22\n$23.10\n$1.87\n8.79%\n\n\nCOAHUILA DE ZARAGOZA\n$22.25\n$23.12\n$0.87\n4.01%\n\n\nCHIHUAHUA\n$21.47\n$23.36\n$1.89\n8.90%\n\n\nNUEVO LEON\n$21.41\n$23.40\n$1.99\n9.32%\n\n\nVERACRUZ DE IGNACIO DE LA LLAVE\n$21.59\n$23.44\n$1.86\n8.62%\n\n\n\n\n\n\nTable 3: Top 05 States with lowest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_nocode.html#top-05-municipalities-with-highest-gasoline-prices",
+    "href": "gasoline_web_nocode.html#top-05-municipalities-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with highest gasoline prices",
+    "text": "Top 05 Municipalities with highest gasoline prices\nThe following table presents a snapshot of the Municipalities with highest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nNUEVA ITALIA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nZIRACUARETIRO, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nGABRIEL ZAMORA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nHUIRAMBA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nNAHUATZEN, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\n\n\n\n\nTable 4: Top 05 Municipalities with highest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web_nocode.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "href": "gasoline_web_nocode.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with lowest gasoline prices",
+    "text": "Top 05 Municipalities with lowest gasoline prices\nThe following table presents a snapshot of the Municipalities with lowest gasoline prices in Mexico.\n\n\n\n\n\n\n\n\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nANAHUAC, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nCD. GUERRERO, TAMAULIPAS\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nLAMPAZOS DE NARANJO, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nALLENDE, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\nMORELOS, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\n\n\n\n\nTable 5: Top 05 Municipalities with lowest prices",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Gasoline Prices in Mexico"
+    ]
+  },
+  {
+    "objectID": "gasoline_web.html",
+    "href": "gasoline_web.html",
+    "title": "Gasoline Prices in Mexico",
+    "section": "",
+    "text": "Show code\nimport polars as pl\nimport duckdb as db\nimport plotly.express as px\nfrom plotnine import *"
+  },
+  {
+    "objectID": "gasoline_web.html#top-05-states-with-highest-gasoline-prices",
+    "href": "gasoline_web.html#top-05-states-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with highest gasoline prices",
+    "text": "Top 05 States with highest gasoline prices\n\n\nShow code\n(\n    states\n        .top_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 States with highest prices\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nQUINTANA ROO\n$21.46\n$24.80\n$3.34\n15.55%\n\n\nYUCATAN\n$21.46\n$24.79\n$3.33\n15.52%\n\n\nNAYARIT\n$22.54\n$24.76\n$2.23\n9.90%\n\n\nGUERRERO\n$22.37\n$24.76\n$2.39\n10.67%\n\n\nSINALOA\n$22.36\n$24.72\n$2.36\n10.59%"
+  },
+  {
+    "objectID": "gasoline_web.html#top-05-states-with-lowest-gasoline-prices",
+    "href": "gasoline_web.html#top-05-states-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 States with lowest gasoline prices",
+    "text": "Top 05 States with lowest gasoline prices\n\n\nShow code\n(\n    states\n        .bottom_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 States with lowest prices\n\n\nstate\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nTAMAULIPAS\n$21.22\n$23.10\n$1.87\n8.79%\n\n\nCOAHUILA DE ZARAGOZA\n$22.25\n$23.12\n$0.87\n4.01%\n\n\nCHIHUAHUA\n$21.47\n$23.36\n$1.89\n8.90%\n\n\nNUEVO LEON\n$21.41\n$23.40\n$1.99\n9.32%\n\n\nVERACRUZ DE IGNACIO DE LA LLAVE\n$21.59\n$23.44\n$1.86\n8.62%"
+  },
+  {
+    "objectID": "gasoline_web.html#top-05-municipalities-with-highest-gasoline-prices",
+    "href": "gasoline_web.html#top-05-municipalities-with-highest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with highest gasoline prices",
+    "text": "Top 05 Municipalities with highest gasoline prices\n\n\nShow code\n(\n    municipalities\n        .top_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 Municipalities with highest prices\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nNUEVA ITALIA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nZIRACUARETIRO, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nGABRIEL ZAMORA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nHUIRAMBA, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%\n\n\nNAHUATZEN, MICHOACAN DE OCAMPO\n$22.52\n$25.17\n$2.65\n11.78%"
+  },
+  {
+    "objectID": "gasoline_web.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "href": "gasoline_web.html#top-05-municipalities-with-lowest-gasoline-prices",
+    "title": "Gasoline Prices in Mexico",
+    "section": "Top 05 Municipalities with lowest gasoline prices",
+    "text": "Top 05 Municipalities with lowest gasoline prices\n\n\nShow code\n(\n    municipalities\n        .bottom_k(5, by='sale_price')\n        .to_pandas()\n        .style\n        .hide()    \n        .format({'gasoline_cost': '${:,.2f}',\n                 'sale_price': '${:.2f}',\n                 'profit': '${:.2f}',\n                 'profit%': '{:.2%}',})\n)\n\n\n\n\n\nTop 05 Municipalities with lowest prices\n\n\nmun_state\ngasoline_cost\nsale_price\nprofit\nprofit%\n\n\n\n\nANAHUAC, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nCD. GUERRERO, TAMAULIPAS\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nLAMPAZOS DE NARANJO, NUEVO LEON\n$20.57\n$20.74\n$0.17\n0.84%\n\n\nALLENDE, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%\n\n\nMORELOS, COAHUILA DE ZARAGOZA\n$22.59\n$21.02\n$-1.57\n-6.94%"
+  }
+]

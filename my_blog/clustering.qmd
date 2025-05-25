@@ -33,7 +33,6 @@ format:
       - right=40mm
       - heightrounded
     fontsize: 10pt
-jupyter: python3
 ---
 
 

@@ -29,7 +29,6 @@ format:
     highlight-style: arrow
     execute:
       echo: true
-jupyter: python3
 ---
 
 

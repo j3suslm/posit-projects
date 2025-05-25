@@ -9,7 +9,6 @@ format:
   html:
     toc: true
     toc-title: Table of Contents
-jupyter: python3
 ---
 
 

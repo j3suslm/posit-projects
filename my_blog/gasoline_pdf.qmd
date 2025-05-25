@@ -26,7 +26,6 @@ format:
       - top=20mm
       - bottom=20mm
       - heightrounded
-jupyter: python3
 ---
 
 

@@ -24,7 +24,6 @@ format:
       side: left
       width: normal
     footer: © 2025
-jupyter: python3
 ---
 
 # Overview {.smaller}

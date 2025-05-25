@@ -3,6 +3,16 @@ title: Jesus LM
 subtitle: "*Economist & Data Scientist*"
 about:
   template: solana
+  links:
+    - icon: person-vcard-fill
+      text: Resume
+      href: resume.qmd
+    - icon: envelope-fill
+      text: email
+      href: mailto:js.okay891@passinbox.com?subject=Information%20request%20
+    - icon: chat-dots-fill
+      text: Telegram
+      href: https://t.me/j3suslm
 ---
 
 <!-- Use 03 spaces to create new line -->

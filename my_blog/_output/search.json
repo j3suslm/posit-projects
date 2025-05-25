@@ -718,9 +718,9 @@
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Jesus L. Monroy",
+    "title": "Jesus LM",
     "section": "",
-    "text": "📍 Mexico City | 🖂 e-mail | 💬 Telegram\n\n\nEconomist & Data Scientist\n\n\nI’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. I use Python, SQL, and Tableau to transform raw data into clear, actionable data products (webpages, slideshows, dashboards) that support decision-making, occasionally incorporating regression and classification analyses. Background in Economics (BA), Information Technology (MA) and Data Science & Machine Learning (Certification). Committed to fostering data literacy, I share some posts on Learning Data and T3CH via Medium.\n\n\nProfessional Experience\n\n\n\nAtos | Reporting Team Information Analyst May 2024 - Mar 2025\n\n\n\nUsed Snowpark and Python for data exploration, transformation, and analysis, enabling scalable data workflows.\n\n\nDesigned intuitive Tableau dashboards to empower end-users with data-driven insights.\n\n\nCreated compelling interactive visualizations and web reports using Python to drive informed decision-making.\n\n\nCollaborated with cross-functional teams to understand business needs and translate them into data solutions.\n\n\nDeveloped engaging web slideshows with interactive tables and charts using Python to effectively communicate data-driven stories to diverse audiences.\n\n\n\n\n\nPeople Media Solutions | IMSS Tableau Analyst Jun 2023 - Feb 2024\n\n\n\nUsed SQL for data manipulation and analysis, enabling data-driven decision-making.\n\n\nCreated visually appealing and informative dashboards using Tableau.\n\n\nCreated clear and concise documentation for digital products using Markdown.\n\n\nAutomated reports using Python, transitioning from manual spreadsheets and slideshows to webpages.\n\n\n\n\n\nPepsi | Digital Transformation Sales Digitalization Specialist Mar 2023 - May 2023\n\n\n\nEnhanced data-driven decision-making by building interactive dashboards with Looker Studio and Google Analytics.\n\n\nUtilized SQL queries to extract, clean, and analyze relevant data from various sources.\n\n\nDeveloped a repository with Python-based web reports for stakeholders.\n\n\n\n\n\nSecretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional Information Analyst Jan 2010 - Dec 2022\n\n\n\nUsed SQL for data collection and transformation.\n\n\nCreated data pipelines with Python and Google apps for management reporting.\n\n\nDesigned interactive dashboards using Looker Studio for monitoring of operational performance.\n\n\nParticipated in meetings with diverse managers to understand business problems and propose data solutions.\n\n\nCreated a digital map of operational facilities using Python, providing an interactive visual of key locations.\n\n\nCollaborated in the implementation of Google Forms and Google Sheets to streamline data collection.\n\n\nDeveloped a digital newspaper for communication among personnel, fostering an engaged workforce.\n\n\nI was promoted as deputy director of the analytical area, improving data governance and literacy.\n\n\n\n\nEducation\n\n\n\n\n\nUniversity\n\n\nCareer\n\n\nPeriod\n\n\n\n\n\n\nMIT-IDSS\n\n\nData Science & Machine Learning Certification\n\n\nmar - jun 2024\n\n\n\n\nUMOV Academy\n\n\nMaster of Information Technology\n\n\n2022 - 2023\n\n\n\n\nUniversidad Autonoma de Puebla\n\n\nBachelor of Economics\n\n\n2001 - 2006\n\n\n\n\n\nSkills\n\n\n\n\nSQL\n\n\nPython\n\n\nTableau\n\n\nMarkdown\n\n\nGit & Github\n\n\nProblem-solving\n\n\nCollaboration\n\n\nTime management\n\n\nBusiness acumen\n\n\nStorytelling\n\n\n\n\nContact\n\n\nPortfolio | Blog | Linkedin | Medium"
+    "text": "I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. I use Python, SQL, and Tableau to transform raw data into clear, actionable data products (webpages, slideshows, dashboards) that support decision-making, occasionally incorporating regression and classification analyses.\nBackground in Economics (BA), Information Technology (MA) and Data Science & Machine Learning (Certification). Committed to fostering data literacy, I share some posts on Learning Data and T3CH via Medium."
   },
   {
     "objectID": "duckdb_bi.html",
@@ -769,5 +769,40 @@
       "Reports",
       "Understanding Spotify User Behavior"
     ]
+  },
+  {
+    "objectID": "resume.html#economist-data-scientist",
+    "href": "resume.html#economist-data-scientist",
+    "title": "Jesus LM",
+    "section": "",
+    "text": "I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. I use Python, SQL, and Tableau to transform raw data into clear, actionable data products (webpages, slideshows, dashboards) that support decision-making, occasionally incorporating regression and classification analyses.\nBackground in Economics (BA), Information Technology (MA) and Data Science & Machine Learning (Certification). Committed to fostering data literacy, I share some posts on Learning Data and T3CH via Medium."
+  },
+  {
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Jesus LM",
+    "section": "Professional Experience",
+    "text": "Professional Experience\nAtos | Reporting Team\nInformation Analyst\nMay 2024 - Mar 2025\n\nUsed Snowpark and Python for data exploration, transformation, and analysis, enabling scalable data workflows.\nDesigned intuitive Tableau dashboards to empower end-users with data-driven insights.\nCreated compelling interactive visualizations and web reports using Python to drive informed decision-making.\nCollaborated with cross-functional teams to understand business needs and translate them into data solutions.\nDeveloped engaging web slideshows with interactive tables and charts using Python to effectively communicate data-driven stories to diverse audiences.\n\nPeople Media Solutions | IMSS\nTableau Analyst\nJun 2023 - Feb 2024\n\nUsed SQL for data manipulation and analysis, enabling data-driven decision-making.\nCreated visually appealing and informative dashboards using Tableau.\nCreated clear and concise documentation for digital products using Markdown.\nAutomated reports using Python, transitioning from manual spreadsheets and slideshows to webpages.\n\nPepsi | Digital Transformation\nSales Digitalization Specialist\nMar 2023 - May 2023\n\nEnhanced data-driven decision-making by building interactive dashboards with Looker Studio and Google Analytics.\nUtilized SQL queries to extract, clean, and analyze relevant data from various sources.\nDeveloped a repository with Python-based web reports for stakeholders.\n\nSecretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional\nInformation Analyst\nJan 2010 - Dec 2022\n\nUsed SQL for data collection and transformation.\nCreated data pipelines with Python and Google apps for management reporting.\nDesigned interactive dashboards using Looker Studio for monitoring of operational performance.\nParticipated in meetings with diverse managers to understand business problems and propose data solutions.\nCreated a digital map of operational facilities using Python, providing an interactive visual of key locations.\nCollaborated in the implementation of Google Forms and Google Sheets to streamline data collection.\nDeveloped a digital newspaper for communication among personnel, fostering an engaged workforce.\nI was promoted as deputy director of the analytical area, improving data governance and literacy."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Jesus LM",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\nUniversity\n\n\nCareer\n\n\nPeriod\n\n\n\n\n\n\nMIT-IDSS\n\n\nData Science & Machine Learning Certification\n\n\nmar - jun 2024\n\n\n\n\nUMOV Academy\n\n\nMaster of Information Technology\n\n\n2022 - 2023\n\n\n\n\nUniversidad Autonoma de Puebla\n\n\nBachelor of Economics\n\n\n2001 - 2006"
+  },
+  {
+    "objectID": "resume.html#contact",
+    "href": "resume.html#contact",
+    "title": "Jesus LM",
+    "section": "Contact",
+    "text": "Contact\nLinkedin | Medium | Twitter |"
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Jesus LM",
+    "section": "Skills",
+    "text": "Skills\n\nSQL\nPython\nTableau\nMarkdown\nGit & Github\nProblem-solving\nCollaboration\nTime management\nBusiness acumen\nStorytelling"
   }
 ]

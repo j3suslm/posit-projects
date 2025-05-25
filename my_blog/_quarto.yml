@@ -1,31 +1,39 @@
 project:
   type: website
   output-dir: _output
+
 website:
   title: "Jesus LM"
-  back-to-top-navigation: false
   page-navigation: true
   page-footer:
     background: "#f8f8f8"
-    center: 
-      #- text: "License"
-      #  href: license.qmd
-      - text: "&emsp; &#169; 2025 All Rights Reserved"
-  navbar:
-    title: My Blog
-    background: primary
-    search: true
-    right:
-      - href: https://tinyurl.com/jesus-portfolio
-        text: Portfolio
-      - href: https://tinyurl.com/jesus-tableau
-        text: Tableau
+    center:
+      - text: Tableau
+        href: https://tinyurl.com/jesus-tableau
+      - text: "License"
+        href: license.qmd
+      - text: "&emsp; &copy; 2025 &emsp;"
       - icon: medium
         href: https://medium.com/@jesuslm
       - icon: linkedin
         href: https://www.linkedin.com/in/j3sus-lm
       - icon: twitter
         href: https://x.com/j3suslm
+
+  navbar:
+    title: Home
+    background: primary
+    search: true
+    right:
+      - href: https://tinyurl.com/jesus-portfolio
+        text: Portfolio
+      - icon: medium
+        href: https://medium.com/@jesuslm
+      - icon: linkedin
+        href: https://www.linkedin.com/in/j3sus-lm
+      - icon: twitter
+        href: https://x.com/j3suslm
+  
   sidebar:
     style: "docked"
     border: false
@@ -64,18 +72,21 @@ website:
           href: gasoline_web_nocode.qmd
         - text: Farmacias Similares Locations
           href: farmacias_similares.qmd
-      - section: Dashboards
-        contents:
-        - text: Gasoline Prices in Mexico
-          href: gasoline_dashboard.qmd
-        - text: Farmacias Similares Dashboard
-          href: https://j3suslm-fsdashboard.evidence.app
-        - text: Mexico City Crime Dashboard
-          href: https://j3susl-monroy.evidence.app
       - section: Slideshows
         contents:
         - text: Gasoline Prices in Mexico
           href: gasoline_web_slides.qmd
+      - section: Dashboards
+        contents:
+        - text: Gasoline Prices in Mexico
+          href: gasoline_dashboard.qmd
+      - section: Other Resources
+        contents:
+        - text: Farmacias Similares Dashboard
+          href: https://j3suslm-fsdashboard.evidence.app
+        - text: Mexico City Crime Dashboard
+          href: https://j3susl-monroy.evidence.app
+
 format:
   html:
     page-layout: full

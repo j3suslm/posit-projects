@@ -1,188 +1,59 @@
----
-title: Jesus L. Monroy
-about:
-  template: solana
----
+## Economist & Data Scientist
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-        h1 {
-            color: #051a35;
-            text-align: center;
-        }
-        
-        h2, h3, h4 {
-            color: #051a35;
-        }
-        
-        body {
-            font-family: "Open Sans";
-            font-size: 12pt;
-            line-height: 1.5;
-            margin: 20px;
-            color: #292829;
-            max-width: 1200;
-            margin: 0 auto;
-            padding-bottom: 10pt;
-            padding-left: 10pt;
-            padding-right: 10pt;
-            background-color: white;
-        }
-
-        a {
-            color:#0e335f;
-            text-decoration: none;
-            font-size: 14pt;
-        }
-        
-        code {
-            color: rgb(0, 105, 105);
-            font-size: 13pt;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        hr {
-            border: 0;
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
-        }
-        
-        .two-column-list ul {
-            padding-left: 10;
-            margin: 0;
-            column-count: 2; /* Specify the number of columns */
-            column-gap: 0px; /* Optional: Add spacing between columns */
-        }
-      
-        .two-column-list li {
-            break-inside: avoid; /* Prevent items from breaking across columns */
-        }
-
-        .experience-item {
-            margin-bottom: 20px;
-        }
-        
-        .experience-title {
-            font-weight: bold;
-            color: #051a35;
-        }
-        
-        .experience-subtitle {
-            font-style: italic;
-            font-weight: bold;
-            color: #403f3f;
-        }
-        
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        th {
-            background-color: #f2f2f2;
-        }
-        
-        .skills-list {
-            padding: 0;
-            list-style-type: none;
-        }
-        
-        .skills-list li {
-            display: inline-block;
-            margin-right: 10px;
-            padding: 5px 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        
-        .contact-links a {
-            margin-right: 15px;
-        }
-    </style>
-</head>
-<body>
-<hr>
-
-<p style="text-align: center; color: #051a35">
-📍 <a href="https://www.google.com/maps/place/Mexico+City" target="_blank">Mexico City</a> |
-🖂 <a href="mailto:js.okay891@passinbox.com" target="_blank">e-mail</a> |
-💬 <a href="https://t.me/j3suslm" target="_blank">Telegram</a>
-</p>
-    
-<h2>Economist &amp; Data Scientist</h2>
-<p style="text-align: justify;">
 I've applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. 
-I use <code>Python</code>, <code>SQL</code>, and <code>Tableau</code> to transform raw data into clear, actionable data products 
-<em>(webpages, slideshows, dashboards)</em> that support decision-making, occasionally incorporating regression and classification analyses.<br>
-Background in <strong>Economics</strong> (BA), <strong>Information Technology</strong> (MA) and <strong>Data Science & Machine Learning</strong> (Certification).
-Committed to fostering data literacy, I share some posts on <code>Learning Data</code> and <code>T3CH</code> via <a href="https://medium.com/@jesus_lmonroy" target="_blank">Medium</a>.
-</p>
-    
-<h2>Professional Experience</h2>
-<div class="experience-item">
-<p><span class="experience-title">Atos | Reporting Team</span><br>
-<span class="experience-subtitle">Information Analyst</span><br>
-<i>May 2024 - Mar 2025</i></p>
-<ul>
-<li>Used <code>Snowpark</code> and <code>Python</code> for data exploration, transformation, and analysis, enabling scalable data workflows.</li>
-<li>Designed intuitive <code>Tableau</code> dashboards to empower end-users with data-driven insights.</li>
-<li>Created compelling interactive visualizations and web reports using <code>Python</code> to drive informed decision-making.</li>
-<li>Collaborated with cross-functional teams to understand business needs and translate them into data solutions.</li>
-<li>Developed engaging <i>web slideshows with interactive tables and charts</i> using <code>Python</code> to effectively communicate data-driven stories to diverse audiences.</li>
-</ul>
-</div>
-<div class="experience-item">
-<p><span class="experience-title">People Media Solutions | IMSS</span><br>
-<span class="experience-subtitle">Tableau Analyst</span><br>
-<i>Jun 2023 - Feb 2024</i></p>
-<ul>
-<li>Used <code>SQL</code> for data manipulation and analysis, enabling data-driven decision-making.</li>
-<li>Created visually appealing and informative dashboards using <code>Tableau</code>.</li>
-<li>Created clear and concise <em>documentation</em> for digital products using <code>Markdown</code>.</li>
-<li>Automated reports using <code>Python</code>, transitioning from manual spreadsheets and slideshows to <em>webpages</em>.</li>
-</ul>
-</div>
-<div class="experience-item">
-<p><span class="experience-title">Pepsi | Digital Transformation</span><br>
-<span class="experience-subtitle">Sales Digitalization Specialist</span><br>
-<i>Mar 2023 - May 2023</i></p>
-<ul>
-<li>Enhanced data-driven decision-making by building interactive <em>dashboards</em> with <code>Looker Studio</code> and <code>Google Analytics</code>.</li>
-<li>Utilized <code>SQL</code> queries to extract, clean, and analyze relevant data from various sources.</li>
-<li>Developed a repository with <code>Python</code>-based <em>web reports</em> for stakeholders.</li>
-</ul>
-</div>
-<div class="experience-item">
-<p><span class="experience-title">Secretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional</span><br>
-<span class="experience-subtitle">Information Analyst</span><br>
-<i>Jan 2010 - Dec 2022</i></p>
-<ul>
-<li>Used <code>SQL</code> for data collection and transformation.</li>
-<li>Created data pipelines with <code>Python</code> and <em>Google apps</em> for management reporting.</li>
-<li>Designed interactive dashboards using <code>Looker Studio</code> for monitoring of operational performance.</li>
-<li>Participated in meetings with diverse managers to understand business problems and propose data solutions.</li>
-<li>Created a digital map of operational facilities using <code>Python</code>, providing an interactive visual of key locations.</li>
-<li>Collaborated in the implementation of <code>Google Forms</code> and <code>Google Sheets</code> to streamline data collection.</li>
-<li>Developed a digital <em>newspaper</em> for communication among personnel, fostering an engaged workforce.</li>
-<li>I was promoted as <b>deputy director</b> of the <em>analytical area</em>, improving data governance and literacy.</li>
-</ul>
-</div>
-    
-<h2>Education</h2>
+I use `Python`, `SQL`, and `Tableau` to transform raw data into clear, actionable data products 
+*(webpages, slideshows, dashboards)* that support decision-making, occasionally incorporating regression and classification analyses.
 
+Background in **Economics** (BA), **Information Technology** (MA) and **Data Science & Machine Learning** (Certification).
+Committed to fostering data literacy, I share some posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesus_lmonroy).
+   
+## Professional Experience
+
+Atos | Reporting Team   
+*Information Analyst*   
+May 2024 - Mar 2025
+
+
+- Used `Snowpark` and `Python` for data exploration, transformation, and analysis, enabling scalable data workflows.
+- Designed intuitive `Tableau` dashboards to empower end-users with data-driven insights.
+- Created compelling interactive visualizations and web reports using `Python` to drive informed decision-making.
+- Collaborated with cross-functional teams to understand business needs and translate them into data solutions.
+- Developed engaging *web slideshows with interactive tables and charts* using `Python` to effectively communicate data-driven stories to diverse audiences.
+
+People Media Solutions | IMSS   
+*Tableau Analyst*   
+Jun 2023 - Feb 2024
+
+- Used `SQL` for data manipulation and analysis, enabling data-driven decision-making.
+- Created visually appealing and informative dashboards using `Tableau`.
+- Created clear and concise *documentation* for digital products using `Markdown`.
+- Automated reports using `Python`, transitioning from manual spreadsheets and slideshows to *webpages*.
+
+Pepsi | Digital Transformation   
+*Sales Digitalization Specialist*   
+Mar 2023 - May 2023
+
+- Enhanced data-driven decision-making by building interactive *dashboards* with `Looker Studio` and `Google Analytics`.
+- Utilized `SQL` queries to extract, clean, and analyze relevant data from various sources.
+- Developed a repository with *Python*-based *web reports* for stakeholders.
+
+Secretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional   
+*Information Analyst*   
+Jan 2010 - Dec 2022
+
+- Used `SQL` for data collection and transformation.
+- Created data pipelines with `Python` and *Google apps* for management reporting.
+- Designed interactive dashboards using `Looker Studio` for monitoring of operational performance.
+- Participated in meetings with diverse managers to understand business problems and propose data solutions.
+- Created a digital map of operational facilities using <code>Python</code>, providing an interactive visual of key locations.
+- Collaborated in the implementation of `Google Forms` and `Google Sheets` to streamline data collection.
+- Developed a digital *newspaper* for communication among personnel, fostering an engaged workforce.
+- I was promoted as **deputy director** of the *analytical area*, improving data governance and literacy.
+
+    
+## Education
+
+<div>
 <table>
 <thead>
 <tr>
@@ -209,32 +80,23 @@ Committed to fostering data literacy, I share some posts on <code>Learning Data<
 </tr>
 </tbody>
 </table>
-    
-<h2>Skills</h2>
-
-<div class="two-column-list">
-<ul>
-<li>SQL</li>
-<li>Python</li>
-<li>Tableau</li>
-<li>Markdown</li>
-<li>Git & Github</li>
-<li>Problem-solving</li>
-<li>Collaboration</li>
-<li>Time management</li>
-<li>Business acumen</li>
-<li>Storytelling</li>
-</ul>
 </div>
 
-<h2>Contact</h2>
-<p>
-<a href="https://tinyurl.com/jesus-portfolio" target="_blank">Portfolio</a> |
-<a href="https://tinyurl.com/jesus-blog" target="_blank">Blog</a> |
-<a href="https://www.linkedin.com/in/j3sus-lm" target="_blank">Linkedin</a> |
-<a href="https://medium.com/@jesuslm" target="_blank">Medium</a>
-</p>
-    
-</body>
+## Skills
 
-</html>
+- SQL
+- Python
+- Tableau
+- Markdown
+- Git & Github
+- Problem-solving
+- Collaboration
+- Time management
+- Business acumen
+- Storytelling
+
+## Contact
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Medium](https://medium.com/@jesuslm) |
+[Twitter](https://x.com/j3suslm) |

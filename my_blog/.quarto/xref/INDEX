@@ -1,101 +1,71 @@
 {
-  "index.qmd": {
-    "index.html": "29df5b58"
-  },
-  "license.md": {
-    "license.html": "6a5042e4"
-  },
-  "license.qmd": {
-    "license.html": "d46bf989"
-  },
-  "resume.qmd": {
-    "resume.html": "e06d1290"
-  },
-  "resume2.qmd": {
-    "resume2.html": "462382ba"
-  },
-  "evidence.qmd": {
-    "evidence.html": "e870ca0f"
-  },
-  "judiciary_elections.qmd": {
-    "judiciary_elections.html": "0946fbcc"
-  },
-  "bi_as_code.qmd": {
-    "bi_as_code.html": "cdb80b59"
-  },
-  "docs_as_code.qmd": {
-    "docs_as_code.html": "a90d9d01"
-  },
-  "slides_as_code.qmd": {
-    "slides_as_code.html": "66afe095"
-  },
-  "national-guard.qmd": {
-    "national-guard.html": "0831bb25"
-  },
-  "national_guard.qmd": {
-    "national_guard.html": "5f748911"
-  },
-  "public security.qmd": {
-    "public security.html": "e69ea2bf"
-  },
-  "public_security.qmd": {
-    "public_security.html": "0e6c3179"
-  },
-  "social_security_mexico.qmd": {
-    "social_security_mexico.html": "ebaf3ffd"
-  },
-  "duckdb_bi.qmd": {
-    "duckdb_bi.html": "1e36ecee"
-  },
-  "duckdb_gsheets.qmd": {
-    "duckdb_gsheets.html": "99f91009"
-  },
-  "evidence copy.qmd": {
-    "evidence copy.html": "d9376ea8"
-  },
-  "clustering.qmd": {
-    "clustering.tex": "6a50944a"
-  },
-  "plotnine.qmd": {
-    "plotnine.html": "1c5f2a16"
-  },
   "spotify.qmd": {
-    "spotify.html": "902faa3c"
-  },
-  "spotify_pdf.qmd": {
-    "spotify_pdf.tex": "8c210972"
-  },
-  "farmacias_similares.qmd": {
-    "farmacias_similares.html": "c8da864f"
-  },
-  "gasoline-dashboard.qmd": {
-    "gasoline-dashboard.html": "c5c2af71"
-  },
-  "gasoline-web.qmd": {
-    "gasoline-web.html": "a398ea39"
-  },
-  "gasoline-web-nocode.qmd": {
-    "gasoline-web-nocode.html": "05d92f22"
-  },
-  "gasoline-web-slides.qmd": {
-    "gasoline-web-slides.html": "78891bdd"
-  },
-  "gasoline-pdf.qmd": {
-    "gasoline-pdf.tex": "8635cc9a"
+    "spotify.html": "104fb21a"
   },
   "gasoline_web_slides.qmd": {
-    "gasoline_web_slides.html": "3ce60760"
+    "gasoline_web_slides.html": "ef9a0232"
   },
   "gasoline_web_nocode.qmd": {
-    "gasoline_web_nocode.html": "4d9ce5a9"
+    "gasoline_web_nocode.html": "97253448"
   },
   "gasoline_pdf.qmd": {
-    "gasoline_pdf.tex": "3b9a5e33"
+    "gasoline_pdf.tex": "4257b3b7"
+  },
+  "slides_as_code.qmd": {
+    "slides_as_code.html": "e1ba0661"
+  },
+  "license.qmd": {
+    "license.html": "90cff91a"
   },
   "gasoline_web.qmd": {
-    "gasoline_web.html": "aee4287a"
+    "gasoline_web.html": "44844a2a"
+  },
+  "bi_as_code.qmd": {
+    "bi_as_code.html": "a03432ea"
+  },
+  "clustering.qmd": {
+    "clustering.tex": "f89a7b66"
+  },
+  "judiciary_elections.qmd": {
+    "judiciary_elections.html": "43006cc0"
+  },
+  "national_guard.qmd": {
+    "national_guard.html": "b3da9fbd"
+  },
+  "social_security_mexico.qmd": {
+    "social_security_mexico.html": "1f4148cb"
+  },
+  "evidence.qmd": {
+    "evidence.html": "af80b115"
+  },
+  "resume.qmd": {
+    "resume.html": "a96ba7ca"
+  },
+  "duckdb_gsheets.qmd": {
+    "duckdb_gsheets.html": "f3659229"
+  },
+  "spotify_pdf.qmd": {
+    "spotify_pdf.tex": "d5e1740e"
+  },
+  "plotnine.qmd": {
+    "plotnine.html": "d3e19e0a"
   },
   "gasoline_dashboard.qmd": {
-    "gasoline_dashboard.html": "5acef315"
+    "gasoline_dashboard.html": "eded8064"
+  },
+  "public_security.qmd": {
+    "public_security.html": "6b1834b0"
+  },
+  "duckdb_bi.qmd": {
+    "duckdb_bi.html": "fb9f3f5f"
+  },
+  "farmacias_similares.qmd": {
+    "farmacias_similares.html": "50d51d48"
+  },
+  "docs_as_code.qmd": {
+    "docs_as_code.html": "4ce54407"
+  },
+  "index.qmd": {
+    "index.html": "2ea2dbc8"
   }
 }

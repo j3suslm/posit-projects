@@ -48,6 +48,7 @@ format:
 code-line-numbers: false
 code-copy: false
 code-overflow: wrap
+jupyter: python3
 ---
 
 

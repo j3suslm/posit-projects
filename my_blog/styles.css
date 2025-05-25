@@ -1,6 +1,7 @@
 /* css styles */
 
 h1, h2, h3 {
+    font-family: "Open Sans";
     color: #34495e;
     text-align: left;
 }
@@ -10,7 +11,6 @@ body {
     font-size: 12pt;
     color:  #4d5656 ;
     line-height: 1.5;
-    max-width: 1150px;
 }
 
 p {
@@ -24,7 +24,7 @@ a {
 
 code {
     color: rgb(44, 161, 161);
-    font-size: 12;
+    font-size: 12pt;
 }
 
 a:hover {

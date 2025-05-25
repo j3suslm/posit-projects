@@ -17,6 +17,7 @@ format:
       - Medium
       - icon: medium
         href: https://medium.com/@jesuslm
+jupyter: python3
 ---
 
 ```{python}

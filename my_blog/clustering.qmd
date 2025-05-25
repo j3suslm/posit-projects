@@ -33,8 +33,8 @@ format:
       - right=40mm
       - heightrounded
     fontsize: 10pt
+jupyter: python3
 ---
-
 
 # Cluster Analysis and Clustering
 
@@ -42,8 +42,7 @@ format:
 
 This process includes not only **clustering** —*the application of algorithms like k-means, DBSCAN, or hierarchical clustering to group data*— but also the subsequent analysis of the identified groups' characteristics and properties, ultimately informing decision-making in domains such as marketing (*customer and product segmentation*) and finance (*fraud detection*).
 
-*While clustering is a key step in cluster analysis, the terms are not synonymous*.
-cluster analysis is the broader framework that includes interpretation and action based on the discovered groups.
+*While clustering is a key step in cluster analysis, the terms are not synonymous*. cluster analysis is the broader framework that includes interpretation and action based on the discovered groups.
 
 This example is inspired in Machine Learning Mastery blog [@carrascosa2024].
 
@@ -92,10 +91,8 @@ df.head()
 
 The dataset needs no furhter cleaning, so we just have to do the next steps:
 
-- Feature selection: select relevant numerical attributes for clustering.
-- Normalization: scale the values of attributes.
-This will be helpful for the effectiveness of the clustering algorithm.
-\
+-   Feature selection: select relevant numerical attributes for clustering.
+-   Normalization: scale the values of attributes. This will be helpful for the effectiveness of the clustering algorithm.\
 
 ```{python}
 # Select relevant features for clustering
@@ -108,16 +105,13 @@ X_scaled = scaler.fit_transform(X)
 
 ## Model selection
 
-Many clustering algorithms require setting configuration parameters, often termed *hyperparameters* in machine learning. 
+Many clustering algorithms require setting configuration parameters, often termed *hyperparameters* in machine learning.
 
 Specifically, the *k-means algorithm*, requires that we predetermine the number of *clusters* (K) to be identified.
 
-In some cases, domain expertise or existing knowledge about the problem and data can provide an approximate value for K.
-However, when such guidance is lacking, the **Elbow Method** offers a more systematic alternative to trial and error.
+In some cases, domain expertise or existing knowledge about the problem and data can provide an approximate value for K. However, when such guidance is lacking, the **Elbow Method** offers a more systematic alternative to trial and error.
 
-*This method involves repeatedly applying the k-means algorithm with a range of increasing K values and then plotting the inertia for each result*.
-Inertia serves as a metric for cluster quality, with lower values signifying more well-defined clusters. 
-The goal is to find a clustering solution with both low inertia and a reasonable number of clusters. 
+*This method involves repeatedly applying the k-means algorithm with a range of increasing K values and then plotting the inertia for each result*. Inertia serves as a metric for cluster quality, with lower values signifying more well-defined clusters. The goal is to find a clustering solution with both low inertia and a reasonable number of clusters.
 
 Consequently, when the inertia values for various K are visualized as a curve, the point on the curve closest to the origin (0,0), representing the trade-off between low inertia and low K, often suggests a good choice for the number of clusters.
 
@@ -145,8 +139,7 @@ plt.show()
 ```
 
 \
-Now that we have determined the optimal k, we can proceed to create the kmeans model using $k=5$.
-\
+Now that we have determined the optimal k, we can proceed to create the kmeans model using $k=5$.\
 
 ```{python}
 # Apply K-means with K=5
@@ -193,15 +186,13 @@ Clustering is a valuable tool for data exploration and discovery. By uncovering 
 
 # Reference
 
-- Carrascosa, Ivan Palomares. 2025. “[The Beginner’s Guide to Clustering with Python](https://machinelearningmastery.com/the-beginners-guide-to-clustering-with-python).” 
-Practical Machine Learning.
+-   Carrascosa, Ivan Palomares. 2025. “[The Beginner’s Guide to Clustering with Python](https://machinelearningmastery.com/the-beginners-guide-to-clustering-with-python).” Practical Machine Learning.
 
 # Contact
+
 <!-- use 03 spaces and the sentence end to create a new line -->
-**Jesus L. Monroy**  
+
+**Jesus L. Monroy**\
 *Economist & Data Scientist*
 
-[Portfolio](https://tinyurl.com/jesus-portfolio) |
-[Medium](https://medium.com/@jesuslm) | 
-[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
-[Twitter](https://x.com/j3suslm)
+[Portfolio](https://tinyurl.com/jesus-portfolio) \| [Medium](https://medium.com/@jesuslm) \| [Linkedin](https://www.linkedin.com/in/j3sus-lm) \| [Twitter](https://x.com/j3suslm)

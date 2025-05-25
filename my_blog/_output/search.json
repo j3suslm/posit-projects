@@ -745,5 +745,29 @@
       "Posts",
       "Docs as Code"
     ]
+  },
+  {
+    "objectID": "spotify.html",
+    "href": "spotify.html",
+    "title": "Understanding Spotify User Behavior",
+    "section": "",
+    "text": "Figure 1: Spotify, a leading digital music, podcast, and video streaming service, has revolutionized the way individuals consume audio content. By offering a vast library of on-demand content through a freemium model, Spotify has significantly shifted music consumption from ownership to access. Spotify’s expansion into podcasting and other audio content reflects its ambition to become a comprehensive audio platform.",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Understanding Spotify User Behavior"
+    ]
+  },
+  {
+    "objectID": "spotify.html#database-connection",
+    "href": "spotify.html#database-connection",
+    "title": "Understanding Spotify User Behavior",
+    "section": "Database connection",
+    "text": "Database connection\nDuckdb is a powerful tool for data analysts and developers who need to perform fast and efficient analytical queries on large datasets, especially in environments where simplicity and portability are crucial.\n\n\nShow code\n# database connection\ntoken = os.getenv('MD_TOKEN')\nconn = db.connect(f\"md:?motherduck_token={token}\")\n# create dataframe\ndf = conn.sql('select * from projects.spotify_history').pl()\nconn.close()\n\n\nPolars is a modern DataFrame library designed for speed and efficiency, offering a compelling alternative to traditional data manipulation tools.",
+    "crumbs": [
+      "Portfolio",
+      "Reports",
+      "Understanding Spotify User Behavior"
+    ]
   }
 ]

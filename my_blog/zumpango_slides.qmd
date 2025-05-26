@@ -1,0 +1,117 @@
+---
+title: Zumpango Lake
+author: Jesus L. Monroy <br> Economist & Data Scientist
+date: '2024-05-20'
+date-format: 'MMM, YYYY'
+format:
+  revealjs:
+    theme: simple
+    smaller: true
+    center-title-slide: true
+    embed-resources: true
+    preview-links: auto
+    incremental: true
+    footer: © All rights reserved
+    transition: slide
+    background-transition: fade
+    transition-speed: slow
+    navigation-mode: vertical
+    controls: true
+    controls-layout: bottom-right
+    controls-tutorial: true
+    touch: true
+    menu:
+      side: left
+      width: normal
+jupyter: python3
+---
+
+---
+
+::: {#fig1"}
+
+![](images/zumpango-dry.png)
+
+Zumpango Lake
+
+:::
+
+## Overview {.center .smaller}
+
+- The Zumpango lake is technically a regulatory vessel, with a capacity of 100 million cubic meters of water and an approximate surface area of 1,853 hectares.
+
+- The main reason for the construction of this regulatory vessel was at the time to be able to provide water to the agricultural centers of the Zumpango-Nextlalpan-Teoloyucan region.
+
+## Important Events {.center .smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* In 2023, the Zumpango Lake stopped having water and is now almost entirely covered by crassipes water lily.
+* This site was a tourist attraction that provided employment to dozens of families in the region, who served restaurants, shops and boat services to tourists who came every weekend, but today everything is abandoned.
+:::
+
+::: {.column width="50%"}
+
+* The more than 2 thousand hectares in which the lake extended are now easily traversable on foot, since the water level dropped so much in 2023 that it ended up drying up.
+* Between January and February 2024, large fires consumed dry grasslands and lilies, leaving poor air quality in the surrounding areas.
+:::
+
+::::
+
+```{python}
+#| echo: false
+#| output-location: slide
+import numpy as np
+import pandas as pd
+from datawrapper import Datawrapper
+import warnings
+import os
+from dotenv import load_dotenv
+load_dotenv('.env')
+warnings.filterwarnings('ignore')
+```
+
+```{python}
+#| echo: false
+# Access datawrapper
+token = os.getenv('DATAWRAPPER_API')
+dw = Datawrapper(token)
+```
+
+```{python}
+#| echo: true
+#| output-location: slide
+dw.display_chart('yeXJQ')
+```
+
+---
+
+::: {#fig1"}
+
+![](images/zumpango-ok.png)
+
+Zumpango Lake Air View
+
+:::
+
+## Resources {.center .smaller}
+
+{{< video https://www.youtube.com/watch?v=lZEQ1s-dxdU width="800" height="450" >}}
+
+## References
+
+- “Adios a la Laguna de Zumpango; esta seca desde hace un año” in La Jornada, (2024)
+
+- Lake Zumpango in Wikipedia, (2023)
+
+## Contact {.nostretch .center .smaller}
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) |
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Twitter](https://x.com/j3suslm)
+

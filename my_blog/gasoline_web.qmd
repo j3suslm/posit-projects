@@ -299,8 +299,9 @@ The future of gasoline prices in Mexico remains uncertain, but one thing is clea
 
 # Contact
 
-**Jesus L. Monroy**
-<br>
+**Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-[Medium](https://medium.com/@jesuslm) | [Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm)
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

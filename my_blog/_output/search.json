@@ -782,14 +782,14 @@
     "href": "resume.html#professional-experience",
     "title": "Jesus LM",
     "section": "Professional Experience",
-    "text": "Professional Experience\nAtos | Reporting Team\nInformation Analyst\nMay 2024 - Mar 2025\n\nUsed Snowpark and Python for data exploration, transformation, and analysis, enabling scalable data workflows.\nDesigned intuitive Tableau dashboards to empower end-users with data-driven insights.\nCreated compelling interactive visualizations and web reports using Python to drive informed decision-making.\nCollaborated with cross-functional teams to understand business needs and translate them into data solutions.\nDeveloped engaging web slideshows with interactive tables and charts using Python to effectively communicate data-driven stories to diverse audiences.\n\nPeople Media Solutions | IMSS\nTableau Analyst\nJun 2023 - Feb 2024\n\nUsed SQL for data manipulation and analysis, enabling data-driven decision-making.\nCreated visually appealing and informative dashboards using Tableau.\nCreated clear and concise documentation for digital products using Markdown.\nAutomated reports using Python, transitioning from manual spreadsheets and slideshows to webpages.\n\nPepsi | Digital Transformation\nSales Digitalization Specialist\nMar 2023 - May 2023\n\nEnhanced data-driven decision-making by building interactive dashboards with Looker Studio and Google Analytics.\nUtilized SQL queries to extract, clean, and analyze relevant data from various sources.\nDeveloped a repository with Python-based web reports for stakeholders.\n\nSecretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional\nInformation Analyst\nJan 2010 - Dec 2022\n\nUsed SQL for data collection and transformation.\nCreated data pipelines with Python and Google apps for management reporting.\nDesigned interactive dashboards using Looker Studio for monitoring of operational performance.\nParticipated in meetings with diverse managers to understand business problems and propose data solutions.\nCreated a digital map of operational facilities using Python, providing an interactive visual of key locations.\nCollaborated in the implementation of Google Forms and Google Sheets to streamline data collection.\nDeveloped a digital newspaper for communication among personnel, fostering an engaged workforce.\nI was promoted as deputy director of the analytical area, improving data governance and literacy."
+    "text": "Professional Experience\n\nAtos | Reporting Team\nInformation Analyst\nMay 2024 - Mar 2025\n\nUsed Snowpark and Python for data exploration, transformation, and analysis, enabling scalable data workflows.\nDesigned intuitive Tableau dashboards to empower end-users with data-driven insights.\nCreated compelling interactive visualizations and web reports using Python to drive informed decision-making.\nCollaborated with cross-functional teams to understand business needs and translate them into data solutions.\nDeveloped engaging web slideshows with interactive tables and charts using Python to effectively communicate data-driven stories to diverse audiences.\n\n\n\nPeople Media Solutions | IMSS\nTableau Analyst\nJun 2023 - Feb 2024\n\nUsed SQL for data manipulation and analysis, enabling data-driven decision-making.\nCreated visually appealing and informative dashboards using Tableau.\nCreated clear and concise documentation for digital products using Markdown.\nAutomated reports using Python, transitioning from manual spreadsheets and slideshows to webpages.\n\n\n\nPepsi | Digital Transformation\nSales Digitalization Specialist\nMar 2023 - May 2023\n\nEnhanced data-driven decision-making by building interactive dashboards with Looker Studio and Google Analytics.\nUtilized SQL queries to extract, clean, and analyze relevant data from various sources.\nDeveloped a repository with Python-based web reports for stakeholders.\n\n\n\nSecretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional\nInformation Analyst\nJan 2010 - Dec 2022\n\nUsed SQL for data collection and transformation.\nCreated data pipelines with Python and Google apps for management reporting.\nDesigned interactive dashboards using Looker Studio for monitoring of operational performance.\nParticipated in meetings with diverse managers to understand business problems and propose data solutions.\nCreated a digital map of operational facilities using Python, providing an interactive visual of key locations.\nCollaborated in the implementation of Google Forms and Google Sheets to streamline data collection.\nDeveloped a digital newspaper for communication among personnel, fostering an engaged workforce.\nI was promoted as deputy director of the analytical area, improving data governance and literacy."
   },
   {
     "objectID": "resume.html#education",
     "href": "resume.html#education",
     "title": "Jesus LM",
     "section": "Education",
-    "text": "Education\n\n\n\n\n\nUniversity\n\n\nCareer\n\n\nPeriod\n\n\n\n\n\n\nMIT-IDSS\n\n\nData Science & Machine Learning Certification\n\n\nmar - jun 2024\n\n\n\n\nUMOV Academy\n\n\nMaster of Information Technology\n\n\n2022 - 2023\n\n\n\n\nUniversidad Autonoma de Puebla\n\n\nBachelor of Economics\n\n\n2001 - 2006"
+    "text": "Education\n\n\n\nUniversity\nCareer\nPeriod\n\n\n\n\nMIT-IDSS\nData Science & Machine Learning Certification\nmar - jun 2024\n\n\nUMOV Academy\nMaster of Information Technology\n2022 - 2023\n\n\nUniversity of Puebla\nBachelor of Economics\n2001 - 2006"
   },
   {
     "objectID": "resume.html#contact",
@@ -803,6 +803,243 @@
     "href": "resume.html#skills",
     "title": "Jesus LM",
     "section": "Skills",
-    "text": "Skills\n\nSQL\nPython\nTableau\nMarkdown\nGit & Github\nProblem-solving\nCollaboration\nTime management\nBusiness acumen\nStorytelling"
+    "text": "Skills\n\n\n\nSQL\nPython\nTableau\nMarkdown\nGit & Github\n\n\n\nProblem-solving\nCollaboration\nTime management\nBusiness acumen\nStorytelling"
+  },
+  {
+    "objectID": "resume.html#tools",
+    "href": "resume.html#tools",
+    "title": "Jesus LM",
+    "section": "Tools",
+    "text": "Tools\n\nSQL | Python | Tableau | Markdown | Git & Github"
+  },
+  {
+    "objectID": "resume.html#section",
+    "href": "resume.html#section",
+    "title": "Jesus LM",
+    "section": "",
+    "text": "SQL | Python | Tableau | Markdown | Git & Github"
+  },
+  {
+    "objectID": "resume.html#skills-1",
+    "href": "resume.html#skills-1",
+    "title": "Jesus LM",
+    "section": "Skills",
+    "text": "Skills\n\nProblem-solving | Collaboration | Time management | Business acumen | Storytelling"
+  },
+  {
+    "objectID": "water_collection_slides.html#summary",
+    "href": "water_collection_slides.html#summary",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Summary",
+    "text": "Summary\n\n\nRainwater harvesting is a sustainable and effective way to manage water resources in Mexico.\nBy promoting water conservation and increasing water security, these systems offer a path towards a more water-resilient future.",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#what-is-scall",
+    "href": "water_collection_slides.html#what-is-scall",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "What is SCALL?",
+    "text": "What is SCALL?\n\nRainwater harvesting systems are a prominent water collection method in Mexico, especially in areas facing water scarcity. These systems, called “Sistemas de Captación de Agua de Lluvia” (SCALL) offer several benefits:\n\n\nReduced strain on aquifers: By collecting rainwater, these systems decrease reliance on groundwater sources, which are often overexploited.\nImproved water security: Especially in peri-urban areas, rainwater harvesting provides a more dependable water source, particularly during dry spells.\nCost-effective solution: Rainwater harvesting can significantly reduce water bills for households.\nEmpowering communities: Programs like “Agua a tu Casa” in Mexico City train women to install and maintain these systems, fostering economic opportunities.",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#environment-setting",
+    "href": "water_collection_slides.html#environment-setting",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Environment setting",
+    "text": "Environment setting\nImport libraries\n\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport duckdb as db\nimport os\nfrom dotenv import load_dotenv\nload_dotenv('.env')\nimport folium\nfrom folium.plugins import Fullscreen\nplt.style.use('ggplot')\n\nLoad dataset\n\n# database connection\ntoken = os.getenv('MD_TOKEN')\nconn = db.connect(f\"md:?motherduck_token={token}\")\n# create dataframe\ndf = conn.sql('select * from projects.water_collection').df()\nconn.close()",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#dataset-preview",
+    "href": "water_collection_slides.html#dataset-preview",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Dataset preview",
+    "text": "Dataset preview\nDataset extract\n\ndf.columns = ['file', 'village', 'scall', 'territory', 'facility_date', 'capacity', 'alcaldia',\n              'suburb', 'latitude','longitude']\ndf.head(3)\n\n\n\n\n\n\n\n\nfile\nvillage\nscall\nterritory\nfacility_date\ncapacity\nalcaldia\nsuburb\nlatitude\nlongitude\n\n\n\n\n0\n1-MEMEMA-MIA-22\nSAN ANTONIO TECOMITL\nBARRIO XALTIPAC\nNO APLICA\n2022-05-02\n2500\nMILPA ALTA\nSAN ANTONIO TECOMITL (PBLO)\n19.219028\n-98.991283\n\n\n1\n2-RUCOAL-MIA-22\nSAN ANTONIO TECOMITL\nBARRIO TENANTITLA\nNO APLICA\n2022-05-07\n2500\nMILPA ALTA\nSAN ANTONIO TECOMITL (PBLO)\n19.219880\n-99.002227\n\n\n2\n3-GAALRA-MIA-22\nSAN ANTONIO TECOMITL\nBARRIO XALTIPAC\nNO APLICA\n2022-07-21\n2500\nMILPA ALTA\nSAN ANTONIO TECOMITL (PBLO)\n19.218343\n-98.997507",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#descriptive-statitistics",
+    "href": "water_collection_slides.html#descriptive-statitistics",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Descriptive Statitistics",
+    "text": "Descriptive Statitistics\nSummary of basic stats\n\ndf.describe(include='number')\n\n\n\n\n\n\n\n\ncapacity\nlatitude\nlongitude\n\n\n\n\ncount\n16971.000000\n16971.000000\n16971.000000\n\n\nmean\n2200.218019\n19.244556\n-99.057861\n\n\nstd\n574.321315\n0.169027\n0.069845\n\n\nmin\n1100.000000\n0.000000\n-99.245452\n\n\n25%\n2500.000000\n19.192449\n-99.089082\n\n\n50%\n2500.000000\n19.218752\n-99.029098\n\n\n75%\n2500.000000\n19.274890\n-99.003864\n\n\nmax\n2500.000000\n19.578064\n-98.961553",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#installed-capacity-by-alcaldia",
+    "href": "water_collection_slides.html#installed-capacity-by-alcaldia",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Installed Capacity by Alcaldia",
+    "text": "Installed Capacity by Alcaldia\nWe will group capacity by alcaldia\n\nalcaldias = (\n    df.groupby('alcaldia')['capacity']\n        .agg('sum')\n        .to_frame()\n        .reset_index()\n        .sort_values('capacity')\n)",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#installed-capacity-by-village",
+    "href": "water_collection_slides.html#installed-capacity-by-village",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Installed Capacity by Village",
+    "text": "Installed Capacity by Village\n\nvillages = (\n    df.groupby('village')['capacity']\n        .agg('sum')\n        .to_frame()\n        .reset_index()\n        .sort_values('capacity')\n)",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#installed-capacity-by-month",
+    "href": "water_collection_slides.html#installed-capacity-by-month",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Installed Capacity by Month",
+    "text": "Installed Capacity by Month\n\nmonths = (\n    df.groupby(pd.Grouper(key='facility_date', freq=\"ME\"))\n    ['capacity'].sum()\n                .to_frame()\n                .reset_index()\n)",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#villages-with-installations",
+    "href": "water_collection_slides.html#villages-with-installations",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Villages with Installations",
+    "text": "Villages with Installations\n\nzones = (\n    df.groupby('village')[['capacity','latitude','longitude']]\n        .agg({'capacity':'sum','latitude':'mean','longitude':'mean'})\n        .reset_index(drop=False)\n)\n\n\n\n&lt;folium.plugins.fullscreen.Fullscreen at 0x78c585ddec90&gt;",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#references",
+    "href": "water_collection_slides.html#references",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "References",
+    "text": "References\n\nSedema\nDataset",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#resources",
+    "href": "water_collection_slides.html#resources",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "water_collection_slides.html#contact",
+    "href": "water_collection_slides.html#contact",
+    "title": "Water Collection System in Mexico City - 2022",
+    "section": "Contact",
+    "text": "Contact\nJesus L. Monroy\nEconomist & Data Scientist\nLinkedin | Medium | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "Water Collection"
+    ]
+  },
+  {
+    "objectID": "zumpango_slides.html#overview",
+    "href": "zumpango_slides.html#overview",
+    "title": "Zumpango Lake",
+    "section": "Overview",
+    "text": "Overview\n\nThe Zumpango lake is technically a regulatory vessel, with a capacity of 100 million cubic meters of water and an approximate surface area of 1,853 hectares.\nThe main reason for the construction of this regulatory vessel was at the time to be able to provide water to the agricultural centers of the Zumpango-Nextlalpan-Teoloyucan region.",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "RIP Lake Zumpango, Mexico"
+    ]
+  },
+  {
+    "objectID": "zumpango_slides.html#important-events",
+    "href": "zumpango_slides.html#important-events",
+    "title": "Zumpango Lake",
+    "section": "Important Events",
+    "text": "Important Events\n\n\n\nIn 2023, the Zumpango Lake stopped having water and is now almost entirely covered by crassipes water lily.\nThis site was a tourist attraction that provided employment to dozens of families in the region, who served restaurants, shops and boat services to tourists who came every weekend, but today everything is abandoned.\n\n\n\nThe more than 2 thousand hectares in which the lake extended are now easily traversable on foot, since the water level dropped so much in 2023 that it ended up drying up.\nBetween January and February 2024, large fires consumed dry grasslands and lilies, leaving poor air quality in the surrounding areas.\n\n\n\ndw.display_chart('yeXJQ')",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "RIP Lake Zumpango, Mexico"
+    ]
+  },
+  {
+    "objectID": "zumpango_slides.html#important-events-output",
+    "href": "zumpango_slides.html#important-events-output",
+    "title": "Zumpango Lake",
+    "section": "Important Events",
+    "text": "Important Events",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "RIP Lake Zumpango, Mexico"
+    ]
+  },
+  {
+    "objectID": "zumpango_slides.html#resources",
+    "href": "zumpango_slides.html#resources",
+    "title": "Zumpango Lake",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "RIP Lake Zumpango, Mexico"
+    ]
+  },
+  {
+    "objectID": "zumpango_slides.html#references",
+    "href": "zumpango_slides.html#references",
+    "title": "Zumpango Lake",
+    "section": "References",
+    "text": "References\n\n“Adios a la Laguna de Zumpango; esta seca desde hace un año” in La Jornada, (2024)\nLake Zumpango in Wikipedia, (2023)",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "RIP Lake Zumpango, Mexico"
+    ]
+  },
+  {
+    "objectID": "zumpango_slides.html#contact",
+    "href": "zumpango_slides.html#contact",
+    "title": "Zumpango Lake",
+    "section": "Contact",
+    "text": "Contact\nJesus L. Monroy\nEconomist & Data Scientist\nMedium | Linkedin | Twitter",
+    "crumbs": [
+      "Portfolio",
+      "Slideshows",
+      "RIP Lake Zumpango, Mexico"
+    ]
   }
 ]

@@ -1,3 +1,15 @@
+---
+include-in-header:
+  text: |
+    <style type="text/css">
+      h2, .h2 {
+        border-bottom: none;
+      }
+    </style>
+---
+
+<!--- ☝🏻 The above latex script removes borderlines below h2 headings --->
+
 ## Economist & Data Scientist
 
 I've applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. 
@@ -9,10 +21,9 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
    
 ## Professional Experience
 
-Atos | Reporting Team   
-*Information Analyst*   
-May 2024 - Mar 2025
-
+#### Atos | Reporting Team
+**Information Analyst**   
+*May 2024 - Mar 2025*
 
 - Used `Snowpark` and `Python` for data exploration, transformation, and analysis, enabling scalable data workflows.
 - Designed intuitive `Tableau` dashboards to empower end-users with data-driven insights.
@@ -20,26 +31,26 @@ May 2024 - Mar 2025
 - Collaborated with cross-functional teams to understand business needs and translate them into data solutions.
 - Developed engaging *web slideshows with interactive tables and charts* using `Python` to effectively communicate data-driven stories to diverse audiences.
 
-People Media Solutions | IMSS   
-*Tableau Analyst*   
-Jun 2023 - Feb 2024
+#### People Media Solutions | IMSS
+**Tableau Analyst**   
+*Jun 2023 - Feb 2024*
 
 - Used `SQL` for data manipulation and analysis, enabling data-driven decision-making.
 - Created visually appealing and informative dashboards using `Tableau`.
 - Created clear and concise *documentation* for digital products using `Markdown`.
 - Automated reports using `Python`, transitioning from manual spreadsheets and slideshows to *webpages*.
 
-Pepsi | Digital Transformation   
-*Sales Digitalization Specialist*   
-Mar 2023 - May 2023
+#### Pepsi | Digital Transformation
+**Sales Digitalization Specialist**   
+*Mar 2023 - May 2023*
 
 - Enhanced data-driven decision-making by building interactive *dashboards* with `Looker Studio` and `Google Analytics`.
 - Utilized `SQL` queries to extract, clean, and analyze relevant data from various sources.
 - Developed a repository with *Python*-based *web reports* for stakeholders.
 
-Secretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional   
-*Information Analyst*   
-Jan 2010 - Dec 2022
+#### Secretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional
+**Information Analyst**   
+*Jan 2010 - Dec 2022*
 
 - Used `SQL` for data collection and transformation.
 - Created data pipelines with `Python` and *Google apps* for management reporting.
@@ -49,51 +60,38 @@ Jan 2010 - Dec 2022
 - Collaborated in the implementation of `Google Forms` and `Google Sheets` to streamline data collection.
 - Developed a digital *newspaper* for communication among personnel, fostering an engaged workforce.
 - I was promoted as **deputy director** of the *analytical area*, improving data governance and literacy.
-
     
 ## Education
 
-<div>
-<table>
-<thead>
-<tr>
-<th>University</th>
-<th>Career</th>
-<th>Period</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MIT-IDSS</td>
-<td><a href="https://tinyurl.com/jesus-lm-certification" target="_blank">Data Science & Machine Learning Certification</a></td>
-<td>mar - jun 2024</td>
-</tr>
-<tr>
-<td>UMOV Academy</td>
-<td>Master of Information Technology</td>
-<td>2022 - 2023</td>
-</tr>
-<tr>
-<td>Universidad Autonoma de Puebla</td>
-<td>Bachelor of Economics</td>
-<td>2001 - 2006</td>
-</tr>
-</tbody>
-</table>
-</div>
+|University|Career|Period|
+|---|---|---|
+|MIT-IDSS|[Data Science & Machine Learning Certification](https://tinyurl.com/jesus-lm-certification)|mar - jun 2024|
+|UMOV Academy|Master of Information Technology|2022 - 2023|
+|University of Puebla|Bachelor of Economics|2001 - 2006|
+
+: {.striped .hover}
 
 ## Skills
 
+:::: {.columns}
+
+::: {.column width="40%"}
 - SQL
 - Python
 - Tableau
 - Markdown
 - Git & Github
+:::
+
+::: {.column width="40%"}
 - Problem-solving
 - Collaboration
 - Time management
 - Business acumen
 - Storytelling
+:::
+
+::::
 
 ## Contact
 

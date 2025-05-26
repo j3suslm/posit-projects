@@ -192,7 +192,9 @@ Clustering is a valuable tool for data exploration and discovery. By uncovering 
 
 <!-- use 03 spaces and the sentence end to create a new line -->
 
-**Jesus L. Monroy**\
+**Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-[Portfolio](https://tinyurl.com/jesus-portfolio) \| [Medium](https://medium.com/@jesuslm) \| [Linkedin](https://www.linkedin.com/in/j3sus-lm) \| [Twitter](https://x.com/j3suslm)
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

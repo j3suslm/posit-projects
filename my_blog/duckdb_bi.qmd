@@ -145,4 +145,6 @@ DuckDB and Evidence.dev are democratizing data analysis, empowering individuals 
 **Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-[Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm) | [Twitter](https://x.com/j3suslm)
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

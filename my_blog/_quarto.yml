@@ -76,6 +76,10 @@ website:
         contents:
         - text: Gasoline Prices in Mexico
           href: gasoline_web_slides.qmd
+        - text: Water Collection Systems in Mexico
+          href: water_collection_slides.qmd
+        - text: RIP Lake Zumpango, Mexico
+          href: zumpango_slides.qmd
       - section: Dashboards
         contents:
         - text: Gasoline Prices in Mexico

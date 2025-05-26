@@ -1,0 +1,283 @@
+---
+title: Water Collection System in Mexico City - 2022
+title-slide-attributes:
+  data-background-color: '#ececec'
+author: '**Jesus L. Monroy** <br> Economist & Data Scientist'
+date: '2024-03-28'
+date-format: 'MMM D, YYYY'
+format:
+  revealjs:
+    transition: slide
+    transition-speed: slow
+    code-copy: false
+    theme: default
+    smaller: true
+    footer: © 2024 All rights reserved
+execute:
+  echo: true
+  output: true
+jupyter: python3
+---
+
+## Summary
+
+![](https://www.ucol.mx/content/enterate/image/Sistema_de_captaci__n_de_agua_de_lluvia.jpg)
+
+- Rainwater harvesting is a sustainable and effective way to manage water resources in Mexico.
+
+- By promoting water conservation and increasing water security, these systems offer a path towards a more water-resilient future.
+
+## What is SCALL?
+
+<br>
+
+Rainwater harvesting systems are a prominent water collection method in Mexico, especially in areas facing water scarcity. These systems, called **"Sistemas de Captación de Agua de Lluvia"** (SCALL) offer several benefits:
+
+<br>
+
+- Reduced strain on aquifers: By collecting rainwater, these systems decrease reliance on groundwater sources, which are often overexploited.
+- Improved water security:  Especially in peri-urban areas, rainwater harvesting provides a more dependable water source, particularly during dry spells.
+- Cost-effective solution:  Rainwater harvesting can significantly reduce water bills for households.
+- Empowering communities:  Programs like "Agua a tu Casa" in Mexico City train women to install and maintain these systems, fostering economic opportunities.
+
+## Environment setting
+
+Import libraries
+
+```{python}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import duckdb as db
+import os
+from dotenv import load_dotenv
+load_dotenv('.env')
+import folium
+from folium.plugins import Fullscreen
+plt.style.use('ggplot')
+```
+
+Load dataset
+
+```{python}
+#| output: false
+
+# database connection
+token = os.getenv('MD_TOKEN')
+conn = db.connect(f"md:?motherduck_token={token}")
+# create dataframe
+df = conn.sql('select * from projects.water_collection').df()
+conn.close()
+```
+
+## Dataset preview
+
+Dataset extract
+
+```{python}
+df.columns = ['file', 'village', 'scall', 'territory', 'facility_date', 'capacity', 'alcaldia',
+              'suburb', 'latitude','longitude']
+df.head(3)
+```
+
+## Descriptive Statitistics
+
+Summary of basic stats
+
+```{python}
+df.describe(include='number')
+```
+
+```{python}
+#| echo: false
+
+df['facility_date'] = pd.to_datetime(df['facility_date'])
+```
+
+```{python}
+#| echo: false
+
+start = df['facility_date'].min().strftime('%d/%m/%Y')
+```
+
+```{python}
+#| echo: false
+
+end = df['facility_date'].max().strftime('%d/%m/%Y')
+```
+
+## Installed Capacity by Alcaldia
+
+We will group capacity by alcaldia
+
+```{python}
+alcaldias = (
+    df.groupby('alcaldia')['capacity']
+        .agg('sum')
+        .to_frame()
+        .reset_index()
+        .sort_values('capacity')
+)
+```
+
+```{python}
+#| echo: false
+
+alcaldias['capacity'] = alcaldias['capacity']/1_000_000
+```
+
+---
+
+```{python}
+#| echo: false
+
+alcaldias.plot.barh(x='alcaldia', y='capacity', legend=None, figsize=(10,6), color='#800020')
+plt.title('Installed Capacity by Alcaldía', fontsize=16)
+plt.xlabel('Capacity (million of liters)')
+plt.ylabel('')
+plt.show()
+```
+
+## Installed Capacity by Village
+
+```{python}
+villages = (
+    df.groupby('village')['capacity']
+        .agg('sum')
+        .to_frame()
+        .reset_index()
+        .sort_values('capacity')
+)
+```
+
+```{python}
+#| echo: false
+
+villages['capacity'] = villages['capacity']/1_000_000
+```
+
+---
+
+```{python}
+#| echo: false
+
+villages.plot.barh(x='village', y='capacity', legend=None, figsize=(10,8), color='#800020')
+plt.title('Installed Capacity by Village', fontsize=16)
+plt.xlabel('Capacity (million of liters)')
+plt.ylabel('')
+plt.yticks(fontsize=6.5)
+plt.show()
+```
+
+## Installed Capacity by Month
+
+```{python}
+months = (
+    df.groupby(pd.Grouper(key='facility_date', freq="ME"))
+    ['capacity'].sum()
+                .to_frame()
+                .reset_index()
+)
+```
+
+```{python}
+#| echo: false
+
+months['capacity'] = months['capacity']/1_000_000
+```
+
+---
+
+```{python}
+#| echo: false
+
+months.plot(x='facility_date', y='capacity', legend=None, figsize=(10,6), color='#800020')
+plt.title('Installed Capacity for Water Collection by Month', fontsize=(18))
+plt.ylabel('Capacity (million of liters)')
+plt.xlabel('')
+plt.show()
+```
+
+## Villages with Installations
+
+```{python}
+zones = (
+    df.groupby('village')[['capacity','latitude','longitude']]
+        .agg({'capacity':'sum','latitude':'mean','longitude':'mean'})
+        .reset_index(drop=False)
+)
+```
+
+```{python}
+#| echo: false
+
+map = folium.Map(
+    location=[19.26, -99.11],
+    zoom_start=11.49,
+    control_scale=False,
+)
+# Layers
+Zones = folium.FeatureGroup(name='<u><b>Instalacion</b></u>', show=True)
+map.add_child(Zones)
+#draw marker with symbol you want at base
+my_symbol_css_class= """ <style>
+.fa-mysymbol3:before {
+    font-family: Arial; 
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background-color:'';
+    border-radius: 10px; 
+    white-space: pre;
+    content: 'P';
+    }
+</style>    
+        """
+# the below is just add above  CSS class to folium root map      
+map.get_root().html.add_child(folium.Element(my_symbol_css_class))
+# then we just create marker and specific your css class in icon like below
+for i in zones.index:
+   html=f"""
+        <p style="font-size: 14px;">{zones.iloc[i]['village']}</font></p>
+        <p style="font-size: 14px;">Capacity: {zones.iloc[i]['capacity']}</font></p>
+        """
+   iframe = folium.IFrame(html=html, width=200, height=130)
+   popup = folium.Popup(iframe, max_width=250)
+   folium.Marker(
+        location = [zones.iloc[i]['latitude'], zones.iloc[i]['longitude']],
+        icon = folium.Icon(color='darkred', prefix='fa', icon='fa-mysymbol3'),
+        popup = popup,
+        tooltip = zones.iloc[i]['village']
+    ).add_to(Zones)
+folium.plugins.Fullscreen().add_to(map)
+```
+
+---
+
+```{python}
+map
+```
+
+::: aside
+You can hover over the icons on the map to get further information and zoom in or out
+:::
+
+## References
+
+- [Sedema](https://datos.cdmx.gob.mx/organization/secretaria-de-medio-ambiente)
+
+- [Dataset](https://datos.cdmx.gob.mx/dataset/scall)
+
+## Resources
+
+{{< video https://www.youtube.com/watch?v=CusJatEze2w&t=3s width="800" height="500" >}}
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

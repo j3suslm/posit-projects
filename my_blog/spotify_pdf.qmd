@@ -479,7 +479,9 @@ The appearance of certain genres or moods within the top 05 songs for a specific
 
 # Contact
 
-**Jesus L. Monroy**  
+**Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-[Medium](https://medium.com/@jesuslm) | [Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm)
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) | 
+[Medium](https://medium.com/@jesuslm) | 
+[Twitter](https://x.com/j3suslm)

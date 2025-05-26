@@ -5,7 +5,7 @@
 **Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-![](https://www.nber.org/sites/default/files/styles/promo/public/2024-05/w32227.jpg?itok=95qwLsy3)
+![](https://www.nber.org/sites/default/files/styles/promo/public/2024-05/w32227.jpg?itok=95qwLsy3){width=90%}
 <div class="note">
 <p style="text-align:center;">[Image by NBER](https://www.nber.org/digest/202406/reduced-medicaid-access-increased-crime)</p>
 </div>

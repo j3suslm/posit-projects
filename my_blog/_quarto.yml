@@ -35,10 +35,11 @@ website:
         href: https://x.com/j3suslm
   
   sidebar:
+    collapse-level: 1
     style: "docked"
     border: false
     contents:
-      - section: Posts
+      - section: Articles
         contents:
         - text: "BI with SQL & Markdown"
           href: evidence.qmd
@@ -90,6 +91,12 @@ website:
           href: https://j3suslm-fsdashboard.evidence.app
         - text: Mexico City Crime Dashboard
           href: https://j3susl-monroy.evidence.app
+        - text: Why BI tools Fall short
+          href: https://j3suslm.github.io/Projects/posts/why_bi_tools_fall_short_github.html
+        - text: Window Functions in SQL
+          href: https://j3suslm.github.io/Projects/posts/sql_wf_github.html
+        - text: Dashboards vs Web reports
+          href: https://j3suslm.github.io/Projects/posts/reporting_github.html#1  
 
 format:
   html:

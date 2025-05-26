@@ -6,7 +6,7 @@
 **Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-![](https://www.arecadata.com/content/images/size/w960/2024/01/Group-6--1-.png)
+![](https://www.arecadata.com/content/images/size/w960/2024/01/Group-6--1-.png){width=80%}   
 Source: https://www.arecadata.com/sql-for-google-sheets-with-duckdb
 
 # Introduction

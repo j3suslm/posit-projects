@@ -7,7 +7,7 @@
 *Economist & Data Scientist*
 <!-- use 03 spaces in markdown to create a new line -->
 
-![](https://motherduck-com-web-prod.s3.amazonaws.com/assets/img/large_duckdb_bi_as_code_blog_88b8acbf7f.png)
+![](https://motherduck-com-web-prod.s3.amazonaws.com/assets/img/large_duckdb_bi_as_code_blog_88b8acbf7f.png){width=80%}
 
 # Overview
 

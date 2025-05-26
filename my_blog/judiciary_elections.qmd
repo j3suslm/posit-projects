@@ -4,7 +4,7 @@
 **Jesus L. Monroy**   
 *Economist & Data Scientist*
         
-![](images/choice.png)
+![](images/choice.png){width=60%}
 
 # Overview
 

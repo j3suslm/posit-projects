@@ -10,6 +10,8 @@ include-in-header:
 
 <!--- ☝🏻 The above latex script removes borderlines below h2 headings --->
 
+[Home](index.qmd)
+
 ## Economist & Data Scientist
 
 I've applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. 

@@ -5,7 +5,7 @@
 **Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-![](https://ibero.mx/sites/default/files/prensaymultimedios/gn_mexico.jpg)
+![](https://ibero.mx/sites/default/files/prensaymultimedios/gn_mexico.jpg){width=90%}
 
 # Introduction
 

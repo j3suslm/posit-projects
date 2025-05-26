@@ -5,7 +5,7 @@
 **Jesus L. Monroy**   
 *Economist & Data Scientist*
 
-![](https://slidemodel.com/wp-content/uploads/00-conference-presentation-slides-cover.png)
+![](https://slidemodel.com/wp-content/uploads/00-conference-presentation-slides-cover.png){width=80%}
 
 # Introduction
 

@@ -14,7 +14,7 @@ import os
 from dotenv import load_dotenv
 import plotly.express as px
 from pathlib import Path
-load_dotenv('.env')
+load_dotenv('../.env')
 
 # create app
 app = Dash()

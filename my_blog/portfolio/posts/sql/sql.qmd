@@ -1,0 +1,314 @@
+---
+title: "Diving into the World of SQL"
+author: "Jesus L. Monroy"
+date: "2022-12-14"
+categories: [sql]
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAQ5eAmeonULJ3BbLe_Sq2vOhGFTKClnc2Dg&s
+---
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShU838qbe1n5QDF_gybNK2WiMngRGg-xwbDg&s)
+
+### Your Key to Data Analytics
+
+In today's data-driven world, the ability to access, manipulate, and understand information is paramount.
+At the heart of this capability lies SQL (Structured Query Language), a powerful and versatile language designed specifically for interacting with databases.
+Whether you're a seasoned data analyst, a budding developer, or simply someone curious about how data is managed, understanding SQL is a valuable asset.  
+
+## What is SQL?
+
+`SQL` stands for Structured Query Language. It is a standardized language for managing data in relational databases.
+Think of a relational database as a highly organized digital filing cabinet, where information is stored in tables with rows and columns.
+SQL provides the tools to not only retrieve specific data from these tables but also to create, modify, and delete tables and their contents.  
+
+## Why Learn SQL?
+
+The widespread adoption of relational databases like MySQL, PostgreSQL, Microsoft SQL Server, and Oracle Database makes SQL a highly sought-after skill.
+Learning SQL opens doors to a variety of opportunities, including:  
+
+- Data Analysis
+
+SQL allows you to extract meaningful insights from vast datasets, identify trends, and generate reports that drive business decisions.   
+
+- Database Administration
+
+Managing and maintaining databases, ensuring data integrity, and optimizing performance often requires a deep understanding of SQL.  
+
+- Web Development
+
+Many web applications rely on databases to store and retrieve information. SQL is essential for building dynamic websites and applications.  
+
+- Data Science
+
+SQL is a fundamental tool for data scientists, enabling them to clean, prepare, and explore data before applying more advanced statistical and machine learning techniques.  
+
+## Key SQL Concepts:
+
+SQL is built around a set of commands that allow you to perform various operations. Here are some of the most important concepts:  
+
+- SELECT
+
+This command is used to retrieve data from one or more tables based on specified criteria. You can select specific columns, filter data using conditions, and sort the results. For example: SELECT name, age FROM users WHERE city = 'New York';   
+
+- INSERT
+
+This command adds new rows of data into a table. For example: INSERT INTO users (name, age, city) VALUES ('John Doe', 30, 'London');  
+
+- UPDATE
+
+This command modifies existing data in a table. For example: UPDATE users SET age = 31 WHERE name = 'John Doe';  
+
+- DELETE
+
+This command removes rows from a table. For example: DELETE FROM users WHERE age = 65;  
+
+- CREATE
+
+This command is used to create new database objects, such as tables, views, and indexes.
+
+- DROP: This command deletes existing database objects.  
+
+## Tasks performed with SQL
+
+- Create and drop tables
+- Insert and update records
+- Retrieve data
+- Delete data
+- Manage permissions
+- Create views and procedures
+
+## Advanced tasks in SQL
+
+- JOINs: Combining data from multiple tables based on related columns.
+- Subqueries: Embedding queries within other queries to perform more sophisticated data retrieval.  
+- Aggregate Functions: Performing calculations on groups of data, such as calculating averages, sums, and counts.  
+- Window functions: 
+
+## Example queries
+
+```sql
+-- COUNT CUSTOMERS
+SELECT COUNT(1) AS customers
+FROM addresses
+;
+```
+
+```sql
+-- GET RETAIL SALES DATASET
+SELECT p.id_purchase
+	, d.priceInfo
+	, d.quantity
+	, s.id_shopper
+	, s.id_region
+	, r.description AS region
+	, s.id_territory
+	, t.description AS territory
+	, s.id_store
+	, b.description AS store
+	, s.NUD
+	, s.shop
+	, s.route
+	, s.purchase_date
+	, p.cancel
+FROM purchases AS p
+INNER JOIN purchase_details AS d ON p.id_purchase = d.id_purchase 
+INNER JOIN shops AS s ON p.id_shopper = s.id_shopper
+INNER JOIN territories AS t ON s.id_territory = t.id_territory
+INNER JOIN stores AS b ON s.id_store = b.id_store
+INNER JOIN regions AS r ON s.id_region = r.id_region
+;
+```
+
+```sql
+-- GET PURCHASES BY CUSTOMER
+SELECT o.no_order
+	, o.id_order_status
+	, e.description
+	, o.id_social_network
+	, CASE
+		WHEN o.id_social_network = 1 THEN 'I'
+		WHEN o.id_social_network = 2 THEN 'F'
+		ELSE 'W'
+	END AS origin
+	, o.quantity 
+	, o.total AS total_order
+	, o.purchase_date
+	, d.route AS delivery_route
+	, d.id_store 
+	, d.nud
+	, d.email 
+	, d.phone 
+FROM orders o
+LEFT JOIN orderStatus e ON o.id_order_status = e.id_order_status
+LEFT JOIN addresses d ON o.id_address = d.id_address
+WHERE 1 = 1
+-- AND DATE(fs_ConvertDateToMexico(o.purchase_date))
+-- BETWEEN '2023-04-01' AND '2023-04-30'
+;
+```
+
+```sql
+-- GET UNIQUE BRANDS
+SELECT DISTINCT g.brand_code as Brand_Code
+, g.brand_name as Brand_Name
+, g.style_num_offset as Style_Num_Offset
+, g.active as Active
+, g.parent_brand as Parent_Brand
+, g.reporting_brand as Reporting_Brand
+FROM
+tp_brand g
+;
+```
+
+```sql
+-- GET FACTORY DATA WITH NULL COUNTRY OR CITY
+SELECT CONVERT(e.id,char) as Factory_Id
+, e.factory_name  as PO_FTY
+, ifnull(e.factory_city,'No City') as City
+, ifnull(e.factory_country,'No Country') as Country
+FROM
+tp_factories e
+;
+```
+
+```sql
+-- INSER DATA INTO TABLE
+insert into CatAlumnos
+values(‘Juan’, ‘Perez’, ‘Huerta’, 1990-02-25, 2, ‘a’)
+;
+```
+
+```sql
+/* GET STUDENT AGE POSTGRES FUNCTION */
+WITH cte_ages AS (
+	SELECT name, age(CURRENT_DATE, bod) AS student_age
+	FROM students
+)
+SELECT name, age
+FROM ages
+WHERE age < 18
+;
+```
+
+```sql
+-- CREATE VIEW IN SQL SERVER
+CREATE VIEW student_profiles AS
+	SELECT concat(name, ' ' surname) AS student_name,
+/* Using SQL Server datediff function to reckon age */
+	DATEDIFF(YY, getdate(), bod) as age
+	FROM students
+	ORDER BY name
+;
+```
+
+```sql
+/* CONCAT AND CAST DATA TYPES */
+SELECT 
+  concat('gsn','_', cast(campaign_id as text)) AS id_gsn
+, start_date
+, end_date 
+, clicks
+, views
+FROM table_2
+TOP 5
+;
+```
+
+```sql
+/* CREATE A UNION OF TABLES FROM 02 TEMP TABLES (CTEs) */
+WITH table_2_temp AS (
+SELECT
+  concat('gsn', '_', cast(campaign_id as text)) AS id_gsn
+, start_date 
+, end_date
+, clicks
+, views
+FROM table_2
+)
+, table_3_temp AS (
+SELECT 
+concat('fbn', '_', cast(campaign_id as text)) AS id_fbn
+, start_date
+, end_date 
+, clicks
+, views
+FROM table_3
+WHERE cliks > 0
+)
+SELECT 
+  t2.id_gsn
+FROM table_2_temp t2
+UNION ALL
+SELECT 
+  t3.id_fbn
+FROM table_3_temp t3
+;
+```
+
+```sql
+/* Window functions
+Add row numbers to the placings table */
+SELECT
+	'year'
+	, host_country
+	, first_place
+	, total_goals
+	, row_number() OVER() AS row_num
+FROM world_cup_placings
+;
+
+/* Using SUM() within our window function */
+SELECT
+	"year"
+	, host_country
+	, first_place
+	, total_goals
+	, SUM(total_goals) OVER() AS all_goals
+FROM world_cup_placings
+;
+
+/* Computing the average number of goals */
+SELECT
+	"year"
+	, host_country
+	, first_place
+	, total_goals
+	, round(avg(total_goals) OVER(), 0) AS mean_goals
+FROM world_cup_placings
+;
+```
+
+```sql
+-- Big Query platform
+-- covid cases in North America 2020-2023
+with years as (
+	select country_region
+		, extract(year from date) as year
+		, sum(confirmed) as total_confirmed
+		, sum(deaths) as total_deaths
+		, sum(cast(recovered as integer)) as total_recovered
+		, sum(active) as total_active
+	from `big-query.public-data.covid19_jhu_csse.summary`
+	where country_region in ('Mexico', 'US', 'Canada')
+	group by 1, 2
+	order by 1, 2
+)
+select *
+from (
+	select 
+		year
+		, country_region
+		, total_confirmed
+	from years
+)
+pivot(sum(total_confirmed) as confirmed for year in (2020, 2021, 2022, 2023))
+;
+```
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) |
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Twitter](https://x.com/j3suslm)

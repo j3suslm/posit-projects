@@ -25,7 +25,7 @@ website:
     background: primary
     search: true
     right:
-      - href: https://tinyurl.com/jesus-portfolio
+      - href: portfolio/index.qmd
         text: Portfolio
       - icon: medium
         href: https://medium.com/@jesuslm

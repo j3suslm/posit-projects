@@ -1,0 +1,29 @@
+---
+title: Sports Commerce
+author: "Jesus L. Monroy"
+date: "2024-12-05"
+date-format: MMM, YYYY
+page-layout: full
+categories: [tableau]
+image: https://cdn.prod.website-files.com/642be774eb6485060db4898f/647731b03f3cad7c4fff9a44_sports%20ecom%20(940%20%C3%97%20600px)%20(1000%20%C3%97%20642px).png
+---
+
+## Overview
+
+This dashboard was designed to show sales by store and time intervals.
+
+- **Data Sources**: The data mainly come from sales department.
+- **Key Metrics**: The dashboard shows sales by stores, quantities of items sold and sales by time.
+- **Visualizations**: The types of charts used are time series for behavior, bar charts for categories.
+- **Target Audience**: The dashboard was designed for sales department team with a sales target parameter to analyze which stores exceeds the target and which keeps below.
+
+<div class='tableauPlaceholder' id='viz1711562427024' style='position: relative'><noscript><a href='#'><img alt='Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;decathlon_17115588860200&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='decathlon_17115588860200&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;decathlon_17115588860200&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div> <script type='text/javascript'> var divElement = document.getElementById('viz1711562427024'); var vizElement = divElement.getElementsByTagName('object')[0]; if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='850px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='850px';} else { vizElement.style.width='90%';vizElement.style.height='850px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';     vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) |
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Twitter](https://x.com/j3suslm)

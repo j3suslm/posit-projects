@@ -1,0 +1,29 @@
+---
+title: Mexico City Crime Incidence 2019-2024
+author: "Jesus L. Monroy"
+date: "2025-03-21"
+date-format: MMM, YYYY
+page-layout: full
+categories: [tableau]
+image: https://insightcrime.org/wp-content/uploads/2015/10/en-15-10-28-Mexico-City-Blessings.jpg
+---
+
+## Overview
+
+This dashboard was designed to track crime incidence in Mexico City during 2019-2024 by time, gender, age, mayorship and neighborhood.
+
+- **Data Sources**: The data comes from Mexico City Open Data Webpage.
+- **Key Metrics**: The dashboard shows crime KPIs.
+- **Visualizations**: The types of charts used are bar and map charts.
+- **Target Audience**: The dashboard was designed for crime incidence follow-up.
+
+<div class='tableauPlaceholder' id='viz1743196072226' style='position: relative'><noscript><a href='#'><img alt='Delitos Reportados en Ciudad de Mexico Ene 2019 - Sept 2024(Puedes interactuar con los diferentes graficos filtrando el valor que desees) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;IncidenciaDelictivaCdMx2019-2024&#47;covid2024&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IncidenciaDelictivaCdMx2019-2024&#47;varios' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;IncidenciaDelictivaCdMx2019-2024&#47;varios&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div> <script type='text/javascript'> var divElement = document.getElementById('viz1743196072226'); var vizElement = divElement.getElementsByTagName('object')[0]; if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='850px';} else if ( divElement.offsetWidth > 500) {vizElement.style.width='1200px';vizElement.style.height='850px';} else { vizElement.style.width='1200px50%';vizElement.style.height='850px';} var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) |
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Twitter](https://x.com/j3suslm)

@@ -1,0 +1,66 @@
+---
+title: "Creating Slides with Python and Quarto"
+author: 'Jesus L. Monroy'
+date: 2024-03-28
+date-format: medium
+categories: [python]
+image: images/slides.png
+---
+
+> Quarto offers a powerful and versatile tool for data scientists to create  presentations with code that are informative, transparent, reproducible, and visually appealing.
+
+### Why a Data Scientist Should Use Code for Presentations
+
+<br>
+
+`Quarto` offers some compelling advantages for data scientists:
+
+- **Seamless Integration with Data Analysis**
+
+Data scientists live in the world of code. Quarto presentations allow you to embed code chunks directly into your slides. This means you can present your analysis, results, and visualizations alongside the code that generated them. This fosters transparency, reproducibility, and allows the audience to  delve deeper if interested.
+
+- **Rich Visualization with Dynamic Power**
+
+While PowerPoint offers charts, Quarto leverages the power of data science  libraries like ggplot2 or Plotly. These libraries create high-quality, customizable visualizations that can even be interactive. Imagine letting your audience explore different data subsets through your slides!
+
+- **Version Control and Collaboration**
+
+Data scientists often work in teams and iterate on their analysis. Quarto integrates  perfectly with version control systems like Git. This allows for easy tracking of changes, collaboration on presentations, and rollback if needed (a huge benefit over email attachments and multiple PowerPoint versions).
+
+- **Reproducible Presentations**
+
+Quarto presentations are built from a single source document. This means any  changes to the data or code will automatically update throughout the slides. This ensures consistency and eliminates the risk of errors creeping in as you  modify visuals across multiple slides.
+
+- **Beautiful and Diverse Outputs**
+
+Quarto is not limited to just slides. The same document can be easily exported to various formats like PDF, HTML websites, or even interactive web apps. This allows you to tailor the output to your audience's needs and preferences.
+
+---
+
+```{=html}
+<iframe width="800" height="600" src="https://j3sus.quarto.pub/water-collection-system-in-mexico-city---2022/" title="Water Collection System in Mexico"></iframe>
+```
+
+::: {.callout-note}
+## Info
+You just have to move with your keyboard right arrow -> to see presentation or click on the hamburger menu to get more options.
+:::
+
+---
+
+```{=html}
+<iframe width="800" height="600" src="https://j3sus.quarto.pub/goodbye-lake-zumpango" title="Zumpango Lake"></iframe>
+```
+
+::: {.callout-note}
+## Info
+You just have to move with your keyboard right arrow -> to see presentation or click on the hamburger menu to get more options.
+:::
+
+## Contact
+
+**Jesus L. Monroy**
+<br>
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) | [Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm)

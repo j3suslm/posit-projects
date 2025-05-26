@@ -1,0 +1,57 @@
+---
+title: Looker Studio
+author: "Jesus L. Monroy"
+date: "2023-02-25"
+categories: [looker-studio]
+image: https://miro.medium.com/v2/resize:fit:640/format:webp/1*2p9WOnuFtBf-M1ZsVEBDgQ.png
+---
+
+## Summary
+
+We used `Looker Studio` to present results about customer behavior and online sales and conversions from Google Analytics.
+
+`Google Analytics` is a powerful tool for any business, but it becomes especially crucial for e-commerce businesses. It provides a wealth of data and insights into how customers interact with your online store, allowing you to optimize your website and marketing efforts to drive sales.
+
+<br>
+
+```{=html}
+<iframe width="800" height="800" src="https://lookerstudio.google.com/embed/reporting/643c9671-290b-453e-a2f5-b92a855f46c6/page/xc8vB" title="Looker Studio Example"></iframe>
+```
+
+## E-Commerce Weekly Dashboard
+
+- **Project Goal**: This dashboard was designed to track the principal indicators about e-commerce from websites and mobile apps.
+- **Data Sources**: The data mainly come from Google Analytics tracking websites and mobile apps.
+- **Key Metrics**: The dashboard shows users, new users, pageviews, sessions, orders, revenue and conversion rates.
+- **Visualizations**: The types of charts used are time series for behavior, KPI cards, bar charts for categories and tables for detailed information. 
+
+- **Target Audience**: The dashboard was designed for marketing managers and their teams.
+
+![](weekly.png){width=1100}
+
+<br>
+
+## E-Commerce Weekly Report
+
+- **Project Goal**: This report was designed to track the principal indicators about e-commerce from websites and mobile apps.
+- **Data Sources**: The data mainly come from Google Analytics tracking websites and mobile apps.
+- **Key Metrics**: The report shows users, new users, pageviews, sessions, orders, revenue and conversion rates by year and month.
+- **Visualizations**: The types of charts used are sparklines for behavior of the different metrics. 
+- **Target Audience**: The report was designed for the marketing team for operational monitoring.
+
+![](ga.png){width=900}
+
+<!-- end -->
+
+## References
+
+- [Advantages of Looker Studio](https://www.linkedin.com/pulse/how-looker-studio-better-tool-compared-other-tools-eaglytics-co/)
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) |
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Twitter](https://x.com/j3suslm)

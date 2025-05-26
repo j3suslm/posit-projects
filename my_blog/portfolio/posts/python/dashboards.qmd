@@ -1,0 +1,59 @@
+---
+title: "Creating Dashboards with Python"
+subtitle: 'Unleash the Power of Python'
+abstract: "Python, a versatile programming language, empowers you to create interactive dashboards that unlock the hidden potential of your data."
+author: 'Jesus L. Monroy'
+date: 2024-04-12
+date-format: medium
+categories: [python]
+image: images/dashboard.png
+---
+
+### Benefits of Creating Dashboards with Python
+
+<br>
+
+- Customization
+
+Unlike pre-built tools, Python allows you to tailor dashboards to your specific needs. Present the data exactly how you want, focusing on the metrics that matter most.
+
+- Interactivity
+
+Python lets you create dynamic dashboards where users can explore data, filter information, and drill down for deeper analysis. This fosters engagement and a more intuitive understanding of the data.
+
+- Python's Ecosystem
+
+Python boasts a rich landscape of libraries like Plotly, Altair and Pyshiny. These libraries provide a plethora of visualization options, enabling you to create clear, compelling, and informative charts, graphs, and other visual elements.
+
+- Efficiency
+
+Python streamlines the process of data manipulation and analysis. Automate repetitive tasks and integrate data from various sources, saving you valuable time and effort.
+
+- Open-Source
+
+Being open-source, Python offers significant cost savings compared to proprietary dashboarding tools. Plus, the large and active Python community provides ample resources and support to help you on your journey.
+
+- Sharability
+
+Python-built dashboards are readily shareable across your organization. Disseminate valuable insights to colleagues and stakeholders, fostering better collaboration and data-driven decision-making.
+
+By leveraging Python for dashboard creation, you gain control, flexibility, and a powerful toolset to unlock the true potential of your data. Get ready to transform information into clear, actionable insights that drive informed decisions and positive outcomes.
+
+---
+
+```{=html}
+<iframe width="800" height="700" src="https://j3sus.quarto.pub/car-sales-dashboard/" title="Dashboard example"></iframe>
+```
+
+::: {.callout-note}
+## Info
+You can interact with the dashboard herein or you can click [here](https://j3sus.quarto.pub/car-sales-dashboard/) to open in a new page.
+:::
+
+## Contact
+
+**Jesus L. Monroy**
+<br>
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) | [Linkedin](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm)

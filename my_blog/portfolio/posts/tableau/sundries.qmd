@@ -1,0 +1,55 @@
+---
+title: Tableau Charts example
+author: "Jesus L. Monroy"
+date: "2023-02-11"
+date-format: MMM, YYYY
+page-layout: full
+categories: [tableau]
+image: https://thinklytics.com/wp-content/uploads/2017/07/tableau-logo-tableau-software.jpg
+---
+
+## Summary
+
+In this section we present some examples of charts created with `Tableau`.
+
+Keep in mind that dashboards are instrinsically "exploratory", i.e. *you need to actively explore and interact by yourself with dashboards*. 
+There is no guided path.
+
+## Dynamics of Personnel Deployed in Mexico
+
+{{< video Mapa-2015-2018.mp4 width="1000" height="600" >}}
+
+::: {.callout-note}
+### Note
+Click below to wath the video
+:::
+
+## Example of cloud chart
+
+![](cloud.png){width=1000}
+
+## Profits by year and category
+
+![](categories.png){width=1000}
+
+## Profit/Loss by sub-category
+
+![](subcategories.png){width=1000}
+
+## Profit/Loss in function of minimum expected level by category
+
+![](time-series.png){width=1000}
+
+## Identification of products by profit or loss contribution
+
+![](products.png){width=1000}
+
+
+## Contact
+
+**Jesus L. Monroy**   
+*Economist & Data Scientist*
+
+[Medium](https://medium.com/@jesuslm) |
+[Linkedin](https://www.linkedin.com/in/j3sus-lm) |
+[Twitter](https://x.com/j3suslm)

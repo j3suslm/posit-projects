@@ -23,7 +23,16 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
    
 ## Professional Experience
 
-#### Atos | Reporting Team
+#### Secretariado Ejecutivo del Sistema Nacional de Seguridad Publica
+**Deputy Director of Public Policy**   
+*Jun 2025 -*
+
+- Design and implement `SQL` queries and `Python` scripts for efficient *data collection, cleaning, transformation, and analysis of statistical and geospatial analysis* from diverse sources.
+- Automate the generation of *reports and presentations* to effectively communicate public policy performance in public security.
+- Developed detailed documentation using `Markdown` for the development and usage of *digital solutions*.
+- Engage with cross-functional stakeholders to facilitate continuous *evaluation of public policy* initiatives.
+
+#### Atos Consulting
 **Information Analyst**   
 *May 2024 - Mar 2025*
 
@@ -33,7 +42,7 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
 - Collaborated with cross-functional teams to understand business needs and translate them into data solutions.
 - Developed engaging *web slideshows with interactive tables and charts* using `Python` to effectively communicate data-driven stories to diverse audiences.
 
-#### People Media Solutions | IMSS
+#### Grupo PM Soluciones
 **Tableau Analyst**   
 *Jun 2023 - Feb 2024*
 
@@ -42,7 +51,7 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
 - Created clear and concise *documentation* for digital products using `Markdown`.
 - Automated reports using `Python`, transitioning from manual spreadsheets and slideshows to *webpages*.
 
-#### Pepsi | Digital Transformation
+#### Pepsi (Digital Transformation)
 **Sales Digitalization Specialist**   
 *Mar 2023 - May 2023*
 
@@ -50,7 +59,7 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
 - Utilized `SQL` queries to extract, clean, and analyze relevant data from various sources.
 - Developed a repository with *Python*-based *web reports* for stakeholders.
 
-#### Secretaria de Seguridad y Proteccion Ciudadana | Guardia Nacional
+#### Guardia Nacional
 **Information Analyst**   
 *Jan 2010 - Dec 2022*
 

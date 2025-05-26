@@ -35,6 +35,7 @@ website:
         href: https://x.com/j3suslm
   
   sidebar:
+    foreground: primary
     collapse-level: 1
     style: "docked"
     border: false

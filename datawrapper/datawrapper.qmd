@@ -112,7 +112,7 @@ Teachers and students can use Datawrapper to create interactive visualizations t
 from datawrapper import Datawrapper
 import numpy as np
 import pandas as pd
-import json
+import duckdb as db
 import os
 from dotenv import load_dotenv
 load_dotenv('.env')

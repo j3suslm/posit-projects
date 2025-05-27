@@ -141,7 +141,7 @@ dw = Datawrapper(token)
 #| output: false
 
 
-with duckdb.connect(database="presidents.db") as conn:
+with db.connect(database="presidents.db") as conn:
 ...     conn.sql(
 ...         """
 ...         SELECT last_name, first_name

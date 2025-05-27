@@ -140,16 +140,6 @@ dw = Datawrapper(token)
 #| echo: true
 #| output: false
 
-
-with db.connect(database="presidents.db") as conn:
-...     conn.sql(
-...         """
-...         SELECT last_name, first_name
-...         FROM presidents
-...         WHERE last_name = 'Adams'
-...         """
-...     )
-
 # database connection
 md = os.getenv('MD_TOKEN')
 with db.connect(f"md:?motherduck_token={md}") as conn:

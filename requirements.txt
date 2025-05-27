@@ -20,6 +20,6 @@ requests
 folium
 great-tables
 tabulate
-google.oauth2
+google-auth
 gspread
 

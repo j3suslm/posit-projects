@@ -1,0 +1,593 @@
+---
+title: LM Family Pets Reporting
+author-title: Author
+author: Jesus L. Monroy
+abstract: |
+  In this report we can get last events about diseases, vaccines, surgeries, weight and esthetics for family pets.
+published-title: Published
+date: last-modified
+date-format: MMM, YYYY
+toc: true
+toc-depth: 4
+toc-expand: 3
+toc-title: Table of Contents
+toc-location: left
+execute:
+  echo: false
+format:
+  html:
+    grid:
+      sidebar-width: 150px
+      body-width: 1000px
+      margin-width: 150px
+    embed-resources: true
+    reference-location: margin
+    fig-cap-location: margin
+    toc: true
+    number-sections: false
+    colorlinks: true
+    code-line-numbers: false
+    code-overflow: wrap
+    css: styles.css
+jupyter: python3
+---
+
+
+- [How to Analyze Data in Google Sheets With Python: A Step-By-Step Guide](https://www.datacamp.com/tutorial/how-to-analyze-data-in-google-sheets-with-python-a-step-by-step-guide)
+
+```{python}
+## Environment settings
+
+# import libraries
+import numpy as np
+import pandas as pd
+import polars as pl
+import duckdb as db
+import plotly.express as px
+import json
+import os
+from dotenv import load_dotenv
+load_dotenv('.env')
+from pathlib import Path
+from google.oauth2 import service_account
+import gspread
+```
+
+```{python}
+# paste json creds in .env file in one line and call it
+google_json = os.environ["GOOGLE_JSON"]
+```
+
+```{python}
+# read creds and scope
+service_account_info = json.loads(google_json)
+credentials = service_account.Credentials.from_service_account_info(service_account_info)
+scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+creds_with_scope = credentials.with_scopes(scope)
+client = gspread.authorize(creds_with_scope)
+```
+
+```{python}
+# read spreadsheet workbook
+spreadsheet = client.open_by_url('https://docs.google.com/spreadsheets/d/1QsLumUcRfUJWYSEMDWGhpsq4s-b0MZYleD3vsCQIhDc/edit?gid=121103298#gid=121103298')
+
+# select sheet
+worksheet = spreadsheet.get_worksheet(0)
+
+# read data
+data = worksheet.get_all_records()
+
+# create dataframe
+df_pd = pd.DataFrame.from_dict(data)
+```
+
+```{python}
+df_pd.columns
+```
+
+```{python}
+df = df_pd[['Fecha','Nombre','Categoria','Descripcion','Peso']]
+df.loc[:, 'Peso'] = pd.to_numeric(df['Peso'], errors='coerce')
+```
+
+## Data source
+
+```{python}
+# convert to polars
+df = pl.from_pandas(df)
+```
+
+```{python}
+# dataset manipulation
+df = (
+    df.with_columns(
+        #convert fields to date, float and int
+        Fecha=pl.col('Fecha').str.to_date(),
+        Peso=pl.col('Peso').cast(pl.Float64, strict=False),
+    )
+)
+```
+
+```{python}
+#| label: tbl-preview
+#| tbl-cap: Pets Data Source Preview
+#| tbl-cap-location: margin
+
+(
+    df
+        .head()
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            'Costo':'${:,.0f}',
+            }
+        ).hide(axis='index')
+)
+```
+
+```{python}
+#| output: false
+
+## Creating tables
+### Get categories
+
+df['Categoria'].unique().to_list()
+```
+
+```{python}
+def create_tables(df: pl.DataFrame, category_col: str, output_prefix: str = "category_"):
+    """
+    Creates tables from a Polars DataFrame based on unique categories in a specific column.
+
+    Args:
+        df: The Polars DataFrame.
+        category_col: The name of the column containing the categories.
+        output_prefix: Prefix to add to the subtable names (default: "category_").
+
+    Returns:
+        A dictionary where keys are category names and values are the corresponding subtables (DataFrames).
+    """
+
+    if category_col not in df.columns:
+        raise ValueError(f"Category column '{category_col}' not found in DataFrame.")
+
+    categories = df[category_col].unique().to_list() # create a list of categories
+    tables = {} # create a dict
+
+    for category in categories:
+        table_name = f"{output_prefix}{category}"
+        tables[table_name] = df.filter(pl.col(category_col) == category)
+
+    return tables
+```
+
+```{python}
+tables = create_tables(df, 'Categoria', 'categoria_')
+```
+
+```{python}
+#| output: false
+
+### Categories 
+
+list(tables.keys())
+```
+
+```{python}
+enfermedades = tables.get('categoria_Enfermedad')
+```
+
+```{python}
+vacunas = tables.get('categoria_Vacuna')
+```
+
+```{python}
+peso = tables.get('categoria_Peso')
+```
+
+```{python}
+estetica = tables.get('categoria_Estetica')
+```
+
+```{python}
+cirugias = tables.get('categoria_Cirugia')
+```
+
+```{python}
+terapias = tables.get('categoria_Fisioterapia')
+```
+
+```{python}
+# motherduck database cloud
+token = os.getenv('MD_TOKEN')
+```
+
+```{python}
+# connect to motherduck cloud
+md_conn = db.connect(f'md:?motherduck_token={token}')
+```
+
+```{python}
+### Ingest tables cloud
+
+# upload tables function
+def upload_table(database, schema, table_name, source):
+  """
+  Creates a table in DuckDB using variables for table name, and source coming from csv, parquet, etc.
+
+  Args:
+    table_name: The name of the table to create (string).
+    source: The file that contains data, e.g, csv, parquet, etc.
+  """
+  
+  # create table query
+  create_table_sql = f"create or replace table {database}.{schema}.{table_name} as select * from {source}"
+
+  try:
+    md_conn.execute(create_table_sql)
+
+    print(f"Table '{table_name}' uploaded successfully!")
+
+  except db.Error as e:
+    print(f"Error in uploading table: {e}")
+```
+
+```{python}
+#| output: false
+upload_table('family_lm', 'main', 'enfermedades', 'enfermedades')
+```
+
+```{python}
+#| output: false
+upload_table('family_lm', 'main', 'vacunas', 'vacunas')
+```
+
+```{python}
+#| output: false
+upload_table('family_lm', 'main', 'peso', 'peso')
+```
+
+```{python}
+#| output: false
+upload_table('family_lm', 'main', 'estetica', 'estetica')
+```
+
+```{python}
+#| output: false
+upload_table('family_lm', 'main', 'cirugias', 'cirugias')
+```
+
+```{python}
+#| output: false
+upload_table('family_lm', 'main', 'terapias', 'terapias')
+```
+
+```{python}
+# close connection
+md_conn.close()
+```
+
+## Reporting
+
+### Last year surgeries
+
+```{python}
+from datetime import datetime, timedelta
+
+# create today date
+today = datetime.now()
+# substract one year from today date aprox
+last_year = today - timedelta(weeks=52)
+```
+
+```{python}
+#| label: tbl-surgeries
+#| tbl-cap: Pets Surgeries
+#| tbl-cap-location: margin
+
+( 
+    cirugias
+        .select(pl.exclude('Costo','Dias','Peso'))
+        .filter(pl.col('Fecha') >= last_year)
+        .sort(pl.col('Fecha'), descending=True)
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            'Peso':'{:,.0f}',
+            }
+        ).hide(axis='index')
+)
+```
+
+### Last month therapies
+
+```{python}
+#| label: tbl-terapies
+#| tbl-cap: Pets Terapies
+#| tbl-cap-location: margin
+
+(
+    terapias
+        .select(pl.exclude('Costo','Dias','Peso'))
+        .filter(pl.col('Fecha') >= (today-timedelta(weeks=4)))
+        .sort(pl.col('Fecha'), descending=True)
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            }
+        ).hide(axis='index')
+)
+```
+
+### Last month diseases
+
+```{python}
+#| label: tbl-diseases
+#| tbl-cap: Pets Diseases
+#| tbl-cap-location: margin
+
+(
+    enfermedades
+        .select(pl.exclude('Costo','Dias','Peso'))
+        .filter(pl.col('Fecha') >= (today-timedelta(weeks=4)))
+        .sort(pl.col('Fecha'), descending=True)
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            }
+        ).hide(axis='index')
+)
+```
+
+### Last month grooming
+
+```{python}
+#| label: tbl-esthetics
+#| tbl-cap: Pets Esthetics
+#| tbl-cap-location: margin
+
+(
+    estetica
+        .select(pl.exclude('Costo','Dias','Peso'))       
+        .filter(pl.col('Fecha') >= (today-timedelta(weeks=4)))
+        .sort(pl.col('Fecha'), descending=True)
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            }
+        ).hide(axis='index')
+)
+```
+
+### Last month weights
+
+```{python}
+#| label: tbl-weights
+#| tbl-cap: Pets Weights
+#| tbl-cap-location: margin
+
+(
+    peso
+        .select(pl.exclude('Costo','Dias'))
+        .filter(pl.col('Fecha') >= (today-timedelta(weeks=4)))
+        .sort(pl.col('Fecha'), descending=True)
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            'Peso':'{:,.2f}',
+            }
+        ).hide(axis='index')
+)
+```
+
+### Last vaccines
+
+```{python}
+#| label: tbl-vaccines
+#| tbl-cap: Pets Vaccines
+#| tbl-cap-location: margin
+
+(
+    vacunas
+        .select(pl.exclude('Costo','Dias','Peso'))
+        .sort(pl.col('Fecha'), descending=True)
+        .tail(4)
+        .to_pandas()
+        .style.format(
+            {
+            'Fecha':'{:%b %d, %Y}',
+            }
+        ).hide(axis='index')
+)
+```
+
+```{python}
+#weights
+reyna = peso.filter(pl.col('Nombre')=='Reyna').sort('Fecha')
+pelusa = peso.filter(pl.col('Nombre')=='Pelusa').sort('Fecha')
+gunther = peso.filter(pl.col('Nombre')=='Gunther').sort('Fecha')
+dino = peso.filter(pl.col('Nombre')=='Dino').sort('Fecha')
+naty = peso.filter(pl.col('Nombre')=='Naty').sort('Fecha')
+js = peso.filter(pl.col('Nombre')=='Jesus').sort('Fecha')
+```
+
+## Weight
+
+```{python}
+#| label: fig-reyna-weight
+#| fig-cap: Reyna's Weight
+#| fig-cap-location: margin
+
+fig = px.line(reyna,
+              x='Fecha',
+              y='Peso',
+              hover_data=['Fecha','Peso',],
+              height=500,
+              width=830,
+              template='ggplot2',)
+
+fig.update_layout(
+    xaxis=dict(title=dict(text='')),
+    yaxis=dict(title=dict(text='Peso')),
+    yaxis_range=[0, 12],
+    plot_bgcolor='#ececec',
+    title=dict(text="Evolucion del peso de Reyna", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
+    )
+
+fig.update_traces(line_color='#9A607F',
+                  line={'width':3},
+                  )
+
+fig.show()
+```
+
+```{python}
+#| label: fig-pelusa-weight
+#| fig-cap: Pelusa's Weight
+#| fig-cap-location: margin
+
+fig = px.line(pelusa,
+              x='Fecha',
+              y='Peso',
+              hover_data=['Fecha','Peso',],
+              height=500,
+              width=830,
+              template='ggplot2',)
+
+fig.update_layout(
+    xaxis=dict(title=dict(text='')),
+    yaxis=dict(title=dict(text='Peso')),
+    yaxis_range=[0, 12],
+    plot_bgcolor='#ececec',
+    title=dict(text="Evolucion del peso de Pelusa", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
+    )
+
+fig.update_traces(line_color='#9A607F',
+                  line={'width':3},
+                  )
+
+fig.show()
+```
+
+```{python}
+#| label: fig-gunther
+#| fig-cap: Gunther's Weight
+#| fig-cap-location: margin
+
+fig = px.line(gunther,
+              x='Fecha',
+              y='Peso',
+              hover_data=['Fecha','Peso',],
+              height=500,
+              width=830,
+              template='ggplot2',)
+
+fig.update_layout(
+    xaxis=dict(title=dict(text='')),
+    yaxis=dict(title=dict(text='Peso')),
+    yaxis_range=[0, 10],
+    plot_bgcolor='#ececec',
+    title=dict(text="Evolucion del peso de Gunther", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
+    )
+
+fig.update_traces(line_color='#576E79',
+                  line={'width':3},
+                  )
+
+
+fig.show()
+```
+
+```{python}
+#| label: fig-dino
+#| fig-cap: Dino's Weight
+#| fig-cap-location: margin
+
+fig = px.line(dino,
+              x='Fecha',
+              y='Peso',
+              hover_data=['Fecha','Peso',],
+              height=500,
+              width=830,
+              template='ggplot2',)
+
+fig.update_layout(
+    xaxis=dict(title=dict(text='')),
+    yaxis=dict(title=dict(text='Peso')),
+    yaxis_range=[0, 5],
+    plot_bgcolor='#ececec',
+    title=dict(text="Evolucion del peso de Dino", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
+    )
+
+fig.update_traces(line_color='#576E79',
+                  line={'width':3},
+                  )
+
+
+fig.show()
+```
+
+```{python}
+#| label: fig-naty
+#| fig-cap: Naty's Weight
+#| fig-cap-location: margin
+
+fig = px.line(naty,
+              x='Fecha',
+              y='Peso',
+              hover_data=['Fecha','Peso',],
+              height=500,
+              width=830,
+              template='ggplot2',)
+
+fig.update_layout(
+    xaxis=dict(title=dict(text='')),
+    yaxis=dict(title=dict(text='Peso')),
+    yaxis_range=[0, 70],
+    plot_bgcolor='#ececec',
+    title=dict(text="Evolucion del peso de Naty", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
+    )
+
+fig.update_traces(line_color='#9A607F',
+                  line={'width':3},
+                  )
+
+
+fig.show()
+```
+
+```{python}
+#| label: fig-jesus
+#| fig-cap: Jesus' Weight
+#| fig-cap-location: margin
+
+fig = px.line(js,
+              x='Fecha',
+              y='Peso',
+              hover_data=['Fecha','Peso',],
+              height=500,
+              width=830,
+              template='ggplot2',)
+
+fig.update_layout(
+    xaxis=dict(title=dict(text='')),
+    yaxis=dict(title=dict(text='Peso')),
+    yaxis_range=[0, 90],
+    plot_bgcolor='#ececec',
+    title=dict(text="Evolucion del peso de Jesus", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
+    )
+
+fig.update_traces(line_color='#576E79',
+                  line={'width':3},
+                  )
+
+
+fig.show()
+```
+

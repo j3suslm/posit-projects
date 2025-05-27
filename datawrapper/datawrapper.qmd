@@ -27,11 +27,7 @@ format:
   html:
     other-links:
       - text: My Portfolio
-        href: https://tinyurl.com/jesus-portfolio
-    code-links:
-      - text: Code
-        icon: file-code
-        href: https://github.com/j3suslm/posit-projects/blob/main/datawrapper-pdf/report.qmd
+        href: https://tinyurl.com/jesuslm-website
     code-fold: show
     code-summary: Show code
     code-tools:
@@ -131,9 +127,9 @@ warnings.filterwarnings('ignore')
 #| output: false
 
 # read credentials
-token = os.getenv('datawrapper_api')
+token = os.getenv('DATAWRAPPER_API')
 # Acces datawrapper
-dw = Datawrapper(access_token = token)
+dw = Datawrapper(token)
 ```
 
 [This paper is based on my Medium article [Datawrapper: A Powerful Tool for Creating Stunning Data Visualizations](https://medium.com/learning-data/datawrapper-a-powerful-tool-for-creating-stunning-data-visualizations-1dc194e57b7b)]{.aside}
@@ -143,13 +139,19 @@ dw = Datawrapper(access_token = token)
 ```{python}
 #| echo: true
 #| output: false
-df = pd.read_csv('data/data.csv', sep=";",)
+
+# database connection
+md = os.getenv('MD_TOKEN')
+conn = db.connect(f"md:?motherduck_token={md}")
+# create dataframe
+df = conn.sql('select * from projects.datawrapper_data').df()
+conn.close()
 ```
 
 ```{python}
-#| tbl-label: tbl-people
 #| tbl-cap: Where people live in by type of area
 #| tbl-cap-location: margin
+#| tbl-label: tbl-people
 
 from IPython.display import Markdown, display
 from tabulate import tabulate

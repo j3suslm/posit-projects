@@ -1,0 +1,25 @@
+---
+jupyter: python3
+---
+
+```{python}
+import duckdb as db
+import os
+from dotenv import load_dotenv
+load_dotenv('.env')
+```
+
+```{python}
+# database connection
+token = os.getenv('MD_TOKEN')
+conn = db.connect(f"md:?motherduck_token={token}")
+```
+
+```{python}
+conn.sql(f"create or replace table projects.datawrapper_data as select * from  'data.csv'")
+```
+
+```{python}
+conn.close()
+```
+

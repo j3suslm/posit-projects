@@ -1,24 +1,16 @@
 ---
 title: Jesus LM
 subtitle: "*Economist & Data Scientist*"
-about:
-  template: solana
-  links:
-    - icon: person-vcard-fill
-      text: Resume
-      href: resume.qmd
-    - icon: envelope-fill
-      text: email
-      href: mailto:js.okay891@passinbox.com?subject=Information%20request%20
-    - icon: chat-dots-fill
-      text: Telegram
-      href: https://t.me/j3suslm
+page-layout: article
 ---
 
 <!-- Use 03 spaces to create new line -->
-I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare.
 
-I use `Python`[^1], `SQL`, and `Tableau` to transform raw data into clear, actionable data products (*webpages, slideshows, interactive reports*) that support decision-making, occasionally incorporating regression and classification analyses.
+I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare.
+Currently working at the **Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública** as *Deputy Director of Public Policy*.
+
+
+Use `Python`[^1] and `SQL` to collect, transform and analyze statistical and geospatial data in order to generate actionable data products (*webpages, slideshows, dashboards*), occasionally incorporating regression and classification analyses, that support decision-making about evaluation of public security policy initiatives.
 
 Committed to fostering data literacy, I share data posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesuslm)
 
@@ -26,6 +18,6 @@ Background in `Economics` (BA), `Information Technology` (MA) and `Data Science`
 
 Vegan.
 
-![](https://static.vecteezy.com/system/resources/previews/011/599/360/non_2x/newspaper-with-the-headline-news-and-glasses-and-coffee-cup-on-wooden-table-daily-newspaper-mock-up-concept-photo.jpg){width=50%}
+![Mexico City Crime Map](images/mexico-city-crime-map.png){fig-align="left" width=50% .lightbox}
 
 [^1]: numpy, pandas, polars, duckdb, matplotlib, seaborn, plotly, folium, dash, shiny, statsmodels, sckitlearn.

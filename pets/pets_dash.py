@@ -1,8 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# import libraries
-from dash import Dash, html, dcc
+# Import libraries
+from dash import Dash, html, dcc, dash_table
 from dash.dependencies import Input, Output
 from dash.exceptions import PreventUpdate
 
@@ -10,72 +7,116 @@ import numpy as np
 import pandas as pd
 import polars as pl
 import duckdb as db
-import os
-from dotenv import load_dotenv
 import plotly.express as px
 from pathlib import Path
-load_dotenv('../.env')
+import os
+from dotenv import load_dotenv
+load_dotenv('.env')
 
-# create app
-app = Dash()
 
-# database connection
-# motherduck
-token = os.getenv('MD_TOKEN')
-conn = db.connect(f"md:?motherduck_token={token}")
-weights = conn.sql('select * from family_lm.main.peso').pl()
-conn.close()
+# Create app
+# Added suppress_callback_exceptions=True to allow elements to be updated
+# even if they are not present on the initial page load.
+app = Dash(__name__, suppress_callback_exceptions=True)
 
+# Database connection
+try:
+    # database connection
+    # motherduck
+    token = os.getenv('MD_TOKEN')
+    conn = db.connect(f"md:?motherduck_token={token}")   
+    weights = conn.sql('select Fecha, Nombre, Categoria, Peso from pets.weigh').pl()
+    conn.close()
+except Exception as e:
+    print(f"Error connecting to database or fetching data: {e}")
+    # Initialize an empty Polars DataFrame if there's a DB issue
+    weights = pl.DataFrame({"Fecha": [], "Nombre": [], "Categoria": [], "Peso": []})
+
+# Layout
 app.layout = html.Div([
-    html.H1('LM Family Pets Dashboard', style={"font-family":"Open Sans", "color":"#3F5661",}),
+    # Title
+    html.H1('LM Family Pets', className='app-title'),
+    # Paragraph
     dcc.Markdown('''
         *In this report we will show the last events about diseases, vaccines, surgeries,
         weight and grooming for family pets*.
-    '''),
+    ''', className='app-intro'),
     html.Br(),
-    'Pick a name',
+    # Dropdown menu
+    html.Label('Pick a pet', className='dropdown-label'),
     dcc.Dropdown(
-        options=weights['Nombre'].unique().to_list(),
-        value='Reyna',
-        id='pets-dropdown'
+        options=[{'label': name, 'value': name} for name in weights['Nombre'].unique().to_list()],
+        value='Reyna', # Default value
+        id='pets-dropdown',
+        clearable=False # Prevents the user from clearing the selection
     ),
-    html.H3(id='pets-output'),
+    html.Br(),
+    # table
+    html.H3(id='pets-output', className='section-title'),
     dcc.Graph(id="graph"),
-    html.H1('Contact', style={"font-family":"Open Sans", "color": "#3F5661"}),     
-    html.P('Jesus L. Monroy', style={"font-family":"Open Sans", 
-                                     'font-weight':'bold'}), 
-    html.I('Economist & Data Scientist', style={"font-family":"Open Sans"})
-])
+    html.Br(),
+    html.H3(id='table-title', className='section-title'),
+    html.Div(id='pets-table', className='table-container'), # Wrap DataTable in a Div
+    # Footer
+    html.H1('Contact', className='contact-title'),
+    html.P('Jesus L. Monroy', className='contact-name'),
+    html.I('Economist & Data Scientist', className='contact-role')
+], className='main-container') # Add a class to the main container
 
+# Callback to update graph and table
 @app.callback(
     Output("pets-output", "children"),
     Output("graph", "figure"),
-    Input("pets-dropdown", "value")
+    Output("table-title", "children"),
+    Output("pets-table", "children"),
+    Input("pets-dropdown", "value"),
 )
-
-def plot_pets(pet):
+def update_pets_data(pet):
     if not pet:
         raise PreventUpdate
-    filtered = weights.filter(pl.col('Nombre')==pet)
+    # Filter data for the selected pet
+    filtered_weights = weights.filter(pl.col('Nombre') == pet)
+    # Generate graph
     fig = px.line(
-        filtered,
+        filtered_weights,
         x='Fecha',
         y='Peso',
-        hover_data=['Fecha','Peso',],
+        hover_data=['Fecha', 'Peso'],
         height=500,
+        title=f"Evolución del Peso de {pet.title()}"
     )
     fig.update_layout(
         xaxis=dict(title=dict(text='')),
         yaxis=dict(title=dict(text='Peso')),
-        #yaxis_range=[0, 80],
         plot_bgcolor='#ececec',
+        title_x=0.5 # Center the title
     )
-    fig.update_traces(line_color='#9A607F', line={'width':3})
+    fig.update_traces(line_color='#9A607F', line={'width': 3})
 
-    title = f"Evolucion del Peso de {pet.title()}"
-    return title, fig
+    # Prepare data for the table
+    # Convert filtered Polars DataFrame to Pandas for Dash DataTable
+    table_df = filtered_weights.to_pandas()
 
-# run app
+    table_component = dash_table.DataTable(
+        columns=[{"name": i, "id": i} for i in table_df.columns],
+        data=table_df.to_dict("records"),
+        export_format="csv",
+        style_table={'overflowX': 'auto'}, # Allow horizontal scrolling for large tables
+        style_header={
+            'backgroundColor': '#9A607F',
+            'color': 'white',
+            'fontWeight': 'bold'
+        },
+        style_data_conditional=[
+            {
+                'if': {'row_index': 'odd'},
+                'backgroundColor': 'rgb(248, 248, 248)'
+            }
+        ]
+    )
+
+    return f"Evolution of Weight for {pet.title()}", fig, f"Weight Records for {pet.title()}", table_component
+
+# Run app
 if __name__ == "__main__":
-    app.run_server()
-
+    app.run_server(debug=True) # Set debug=True for development

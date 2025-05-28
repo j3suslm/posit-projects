@@ -25,7 +25,7 @@ try:
     # motherduck
     token = os.getenv('MD_TOKEN')
     conn = db.connect(f"md:?motherduck_token={token}")   
-    weights = conn.sql('select Fecha, Nombre, Categoria, Peso from pets.weigh').pl()
+    weights = conn.sql('select Fecha, Nombre, Categoria, Peso from family_lm.peso').pl()
     conn.close()
 except Exception as e:
     print(f"Error connecting to database or fetching data: {e}")

@@ -44,26 +44,29 @@ app.layout = html.Div([
     ''', className='app-intro'),
     html.Br(),
     # Dropdown menu
-    html.Label('Pick a pet', className='dropdown-label'),
+    html.Div([html.Label(html.P('Pick a pet', className='dropdown-label')),
     dcc.Dropdown(
         options=[{'label': name, 'value': name} for name in weights['Nombre'].unique().to_list()],
         value='Reyna', # Default value
         id='pets-dropdown',
-        clearable=False # Prevents the user from clearing the selection
-    ),
+        clearable=False, # Prevents the user from clearing the selection
+    )], style={'width':'30%',}),
     html.Br(),
     # table
     html.H3(id='pets-output', className='section-title'),
     dcc.Graph(id="graph"),
     html.Br(),
-    html.H3(id='table-title', className='section-title'),
+    html.Div([html.H3(id='table-title', className='section-title'),
     html.Div(id='pets-table', className='table-container'), # Wrap DataTable in a Div
+    ], style={'width': '90%', 
+            #'display': 'flex', <- to make table narrower
+            'align-items': 'center', 'justify-content': 'center'}),
     # Footer
     html.H1('Contact', className='contact-title', style={'color':' #2e4053', 'font-size':'200%'}),
-    html.P('Jesus L. Monroy', className='contact-name', style={'color':'#4d5656', 'font-size':'120%'}),
-    html.I('Economist & Data Scientist', className='contact-role', style={'color':'#4d5656', 'font-size':'120%'})
+    html.P('Jesus L. Monroy', className='contact-name', style={'color':'#4d5656', 'font-size':'110%'}),
+    html.I('Economist & Data Scientist', className='contact-role', style={'color':'#4d5656', 'font-size':'110%'})
 ], className='main-container',
-    style={'backgroundColor':'#f8f8f8'}) # Add a class to the main container
+    style={'backgroundColor':'#f8f8f8',}) # Add a class to the main container
 
 # Callback to update graph and table
 @app.callback(
@@ -86,7 +89,7 @@ def update_pets_data(pet):
         y='Peso',
         hover_data=['Fecha', 'Peso'],
         height=500,
-        #title=f"Evolución del Peso de {pet.title()}"
+        title=f"Evolution of Weight for {pet.title()}"
     )
     fig.update_layout(
         xaxis=dict(title=dict(text='')),
@@ -106,11 +109,19 @@ def update_pets_data(pet):
         data=table_df.to_dict("records"),
         export_format="csv",
         style_table={'overflowX': 'auto'}, # Allow horizontal scrolling for large tables
+        #fill_width=False,
         style_header={
             'backgroundColor': '#2e4053',
             'color': 'white',
             'fontWeight': 'bold'
         },
+        style_cell={
+            'padding-right': '10px',
+            'padding-left': '10px',
+            'text-align': 'center',
+            'marginLeft': 'auto',
+            'marginRight': 'auto'
+            },
         style_data_conditional=[
             {
                 'if': {'row_index': 'odd'},
@@ -119,17 +130,7 @@ def update_pets_data(pet):
         ]
     )
 
-    def render_content(tab):
-        if tab == 'tab-1':
-            return html.Div([
-                html.H3('Tab content 1')
-            ])
-        elif tab == 'tab-2':
-            return html.Div([
-                html.H3('Tab content 2')
-            ])
-
-    return f"Evolution of Weight for {pet.title()}", fig, f"Weight Records for {pet.title()}", table_component
+    return f"", fig, f"", table_component
 
 # Run app
 if __name__ == "__main__":

@@ -1,13 +1,46 @@
 ---
-include-in-header:
-  text: |
-    <style type="text/css">
-      h2, .h2 {
-        border-bottom: none;
-      }
-    </style>
+format:
+  html:
+    mainfont: Open Sans
+    page-layout: article
+    grid:
+      sidebar-width: 250px
+      body-width: 800px
+      margin-width: 200px
+      gutter-width: 1.5em
+    theme:
+      - flatly
+    css: styles.css
+    toc: true
+    toc-title: Table of Contents
+    toc-expand: 3
+    toc-depth: 3
+    include-in-header:
+      text: |
+        <style type="text/css">
+          h2, .h2 {
+          border-bottom: none;
+          }
+        </style>
+  pdf:
+    font-family: Open Sans
+    fontsize: 10pt
+    colorlinks: true
+    papersize: letter
+    documentclass: scrartcl
+    geometry:
+      - top=20mm
+      - bottom=20mm
+      - left=25mm
+      - right=30mm
+      - heightrounded
+    theme:
+      - flatly
+    css: styles.css
 ---
 <!--- ☝🏻 The above latex script removes borderlines below h2 headings --->
+
+## Jesus LM
 
 ## Economist & Data Scientist
 
@@ -105,4 +138,4 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) |
 [Medium](https://medium.com/@jesuslm) |
-[Twitter](https://x.com/j3suslm) |
+[Twitter](https://x.com/j3suslm)

@@ -6,11 +6,9 @@ page-layout: article
 
 <!-- Use 03 spaces to create new line -->
 
-I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare.
-Currently working at the **Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública** as *Deputy Director of Public Policy*.
+I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. Use `Python`[^1] and `SQL` to collect, transform and analyze raw data from diverse sources in order to generate actionable data products (*webpages, slideshows, dashboards*), occasionally incorporating regression and classification analyses, that support decision-making.
 
-
-Use `Python`[^1] and `SQL` to collect, transform and analyze statistical and geospatial data in order to generate actionable data products (*webpages, slideshows, dashboards*), occasionally incorporating regression and classification analyses, that support decision-making about evaluation of public security policy initiatives.
+Currently working at the **Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública** as *Deputy Director of Public Policy* applying the above skills to evaluate public security policy initiatives.
 
 Committed to fostering data literacy, I share data posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesuslm)
 

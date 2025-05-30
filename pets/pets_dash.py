@@ -135,3 +135,4 @@ def update_pets_data(pet):
 # Run app
 if __name__ == "__main__":
     app.run_server(debug=True) # Set debug=True for development
+

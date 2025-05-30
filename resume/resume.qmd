@@ -44,12 +44,11 @@ format:
 
 ## Economist & Data Scientist
 
-I've applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. 
-I use `Python`, `SQL`, and `Tableau` to transform raw data into clear, actionable data products 
-*(webpages, slideshows, dashboards)* that support decision-making, occasionally incorporating regression and classification analyses.
+For over a decade, I've leveraged data analysis and visualization to deliver strategic value across diverse sectors like public security, e-commerce, and healthcare. I use `Python` and `SQL` and `Tableau` to collect, transform, and analyze raw data, creating actionable data products such as *webpages, slideshows, and dashboards*, ocasionally including *regression* and *classification* analyses to support informed decision-making.
 
-Background in **Economics** (BA), **Information Technology** (MA) and **Data Science & Machine Learning** (Certification).
-Committed to fostering data literacy, I share some posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesus_lmonroy).
+Background in `Economics` (BA), `Information Technology` (MA) and `Data Science & Machine Learning` (Certification).
+
+Committed to fostering data literacy, I share some data posts on **Learning Data** and **T3CH** via [Medium](https://medium.com/@jesuslm).
    
 ## Professional Experience
 

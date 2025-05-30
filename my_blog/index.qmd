@@ -6,16 +6,16 @@ page-layout: article
 
 <!-- Use 03 spaces to create new line -->
 
-I’ve applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. Use `Python`[^1] and `SQL` to collect, transform and analyze raw data from diverse sources in order to generate actionable data products (*webpages, slideshows, dashboards*), occasionally incorporating regression and classification analyses, that support decision-making.
-
-Currently working at the **Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública** as *Deputy Director of Public Policy* applying the above skills to evaluate public security policy initiatives.
-
-Committed to fostering data literacy, I share data posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesuslm)
+For over a decade, I've leveraged data analysis and visualization to deliver strategic value across diverse sectors like public security, e-commerce, and healthcare. I use `Python`[^1] and `SQL` to collect, transform, and analyze raw data, creating actionable data products such as *webpages, slideshows, and dashboards*, ocasionally including *regression* and *classification* analyses to support informed decision-making.
 
 Background in `Economics` (BA), `Information Technology` (MA) and `Data Science` and `Machine Learning` (Certification).
+
+Committed to fostering data literacy, I share some data posts on **Learning Data** and **T3CH** via [Medium](https://medium.com/@jesuslm).
+
+Currently serving as **Deputy Director of Public Policy** at the **Executive Secretariat of the National Public Security System**, responsible for applying analytical skills to assess public security policy initiatives.
 
 Vegan.
 
 ![Mexico City Crime Map](images/mexico-city-crime-map.png){fig-align="left" width=50% .lightbox}
 
-[^1]: numpy, pandas, polars, duckdb, matplotlib, seaborn, plotly, folium, dash, shiny, statsmodels, sckitlearn.
+[^1]: Including libraries such as numpy, pandas, polars, duckdb, seaborn, plotly, folium, dash and sckitlearn

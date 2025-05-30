@@ -9,14 +9,15 @@ include-in-header:
 ---
 <!--- ☝🏻 The above latex script removes borderlines below h2 headings --->
 
+## Jesus LM
+
 ## Economist & Data Scientist
 
-I've applied data analysis and visualization to drive strategic value for 10+ years across industries like public security, e-commerce, and healthcare. 
-I use `Python`, `SQL`, and `Tableau` to transform raw data into clear, actionable data products 
-*(webpages, slideshows, dashboards)* that support decision-making, occasionally incorporating regression and classification analyses.
+For over a decade, I've leveraged data analysis and visualization to deliver strategic value across diverse sectors like public security, e-commerce, and healthcare. I use `Python` and `SQL` and `Tableau` to collect, transform, and analyze raw data, creating actionable data products such as *webpages, slideshows, and dashboards*, ocasionally including *regression* and *classification* analyses to support informed decision-making.
 
-Background in **Economics** (BA), **Information Technology** (MA) and **Data Science & Machine Learning** (Certification).
-Committed to fostering data literacy, I share some posts on `Learning Data` and `T3CH` via [Medium](https://medium.com/@jesus_lmonroy).
+Background in `Economics` (BA), `Information Technology` (MA) and `Data Science & Machine Learning` (Certification).
+
+Committed to fostering data literacy, I share some data posts on **Learning Data** and **T3CH** via [Medium](https://medium.com/@jesuslm).
    
 ## Professional Experience
 
@@ -24,7 +25,7 @@ Committed to fostering data literacy, I share some posts on `Learning Data` and 
 **Deputy Director of Public Policy**   
 *Jun 2025 -*
 
-- Design and implement `SQL` queries and `Python` scripts for efficient *data collection, cleaning, transformation, and analysis of statistical and geospatial analysis* from diverse sources.
+- Design and implement `SQL` queries and `Python` scripts for *data collection, cleaning, transformation, and analysis of statistical and geospatial analysis* from diverse sources.
 - Automate the generation of *reports and presentations* to effectively communicate public policy performance in public security.
 - Developed detailed documentation using `Markdown` for the development and usage of *digital solutions*.
 - Engage with cross-functional stakeholders to facilitate continuous *evaluation of public policy* initiatives.

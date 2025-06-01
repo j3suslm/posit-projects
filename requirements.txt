@@ -22,4 +22,5 @@ great-tables
 tabulate
 google-auth
 gspread
-
+shiny
+shinywidgets

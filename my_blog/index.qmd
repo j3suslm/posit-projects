@@ -18,4 +18,4 @@ Vegan.
 
 ![Mexico City Crime Map](images/mexico-city-crime-map.png){fig-align="left" width=50% .lightbox}
 
-[^1]: Including libraries such as numpy, pandas, polars, duckdb, seaborn, plotly, folium, dash and sckitlearn
+[^1]: Including libraries such as numpy, pandas, polars, duckdb, seaborn, plotly, folium, shiny, sckitlearn

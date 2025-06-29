@@ -15,7 +15,7 @@ Many of these projects are published on Posit, allowing for interactive explorat
 
 ## Projects
 
-**Project 1: [Stunning Visualizations with Datawrapper](https://jesuslm-datawrapper.share.connect.posit.cloud)**
+**Project 1: [Stunning Visualizations with Datawrapper](https://jesuslm-my-website.share.connect.posit.cloud/portfolio/posts/python/datawrapper_api.html)**
     
   * Description
       
@@ -29,7 +29,7 @@ Many of these projects are published on Posit, allowing for interactive explorat
     `Python`, `Datawrapper`, `pandas`, `tabulate`
 
 
-**Project 2: [Gasoline Prices in Mexico Dashboard](https://jesuslm-gasoline-prices-dashboard.share.connect.posit.cloud)**
+**Project 2: [Gasoline Prices in Mexico Dashboard](https://jesuslm-my-website.share.connect.posit.cloud/gasoline_dashboard.html)**
     
   * Description
       
@@ -40,7 +40,7 @@ Many of these projects are published on Posit, allowing for interactive explorat
     
     `Python`, `Quarto`, `polars`, `duckdb`, `plotnine`
 
-**Project 3: [Plotnine: ggplot2 for Python](https://connect.posit.cloud/jesuslm/content/0196d1d2-c45f-f92d-b619-8965153755dd)**
+**Project 3: [Plotnine: ggplot2 for Python](https://jesuslm-my-website.share.connect.posit.cloud/plotnine.html)**
 
   * Description
     
@@ -65,4 +65,4 @@ Here are some of the key skills demonstrated in these projects:
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm) | [Blog](https://j3suslm.github.io/posts)
+[LinkedIn](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm)

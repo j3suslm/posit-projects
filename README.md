@@ -70,13 +70,13 @@ Here are some of the key skills demonstrated in these projects:
 
 <img src="https://chris-ayers.com/assets/images/marp-logo.png" alt="Marp" width="300">
 
-* [SQL Window Functions Case Example](https://j3suslm.github.io/Projects/posts/sql_wf_github.html)
+* [SQL Window Functions Case Example](https://j3suslm.github.io/posit-projects/marp_projects/github_sql_window_function/sql_wf_github.html)
 
-* [Why BI Tools Fall Short](https://j3suslm.github.io/Projects/posts/why_bi_tools_fall_short_github.html)
+* [Why BI Tools Fall Short](https://j3suslm.github.io/posit-projects/marp_projects/why_bi_tools_fall_short_github.html)
 
-* [Dashboards vs Web Reports](https://j3suslm.github.io/Projects/posts/reporting_github.html)
+* [Dashboards vs Web Reports](https://j3suslm.github.io/posit-projects/marp_projects/github_dashboards_vs_reports/reporting_github.html)
 
-* [Costo Anual Total (CAT)](https://j3suslm.github.io/Projects/posts/cat_slides_github.html)
+* [Costo Anual Total (CAT)](https://j3suslm.github.io/posit-projects/marp_projects/github_cat/cat_slides_github.html)
 
 
 ## Contact

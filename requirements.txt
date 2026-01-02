@@ -27,3 +27,5 @@ shinywidgets
 geopandas
 shapely
 matplotlib
+folium
+mapclassify

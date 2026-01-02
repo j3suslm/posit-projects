@@ -1,4 +1,5 @@
 jupyter
+nbformat
 gspread
 google-auth
 plotly

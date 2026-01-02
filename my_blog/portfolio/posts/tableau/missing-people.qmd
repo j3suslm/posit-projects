@@ -5,7 +5,7 @@ date: "2023-10-11"
 date-format: MMM, YYYY
 page-layout: full
 categories: [tableau]
-image: https://i0.wp.com/facesofconflict.crisisgroup.org/wp-content/uploads/2024/05/Muro.jpg
+image: https://i.ytimg.com/vi/gLGQY8dsJnQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBKAjGpuIQtUbya9JyYcqiPVvNS8g
 ---
 
 ## Overview

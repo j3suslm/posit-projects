@@ -5,7 +5,7 @@ date: "2024-11-11"
 date-format: MMM, YYYY
 page-layout: full
 categories: [tableau]
-image: https://micrositios.inai.org.mx/gobiernoabierto/wp-content/uploads/2020/04/Banner_1A.png
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrLroJ5kCwXq5MADOkTatSakCYUAF42fSFw&s
 ---
 
 ## Overview

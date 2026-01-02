@@ -264,10 +264,9 @@ months = (
 top_artists = (
     df
         .group_by('year','artist_name')
-        .agg(pl.len())
-        .sort(by=['year','len'], descending=True)
-        .select(
-            pl.all().top_k_by('len', k=5).over('year')
+        .agg(pl.len().alias('count'))
+        .filter(
+            pl.col('count').rank(descending=True, method='dense').over('year') <= 5
         )
         .group_by('year')
         .agg(pl.col('artist_name'))
@@ -306,10 +305,9 @@ top_artists = (
 top_albums = (
     df
         .group_by('year','album_name')
-        .agg(pl.len())
-        .sort(by=['year','len'], descending=True)
-        .select(
-            pl.all().top_k_by('len', k=5).over('year')
+        .agg(pl.len().alias('count'))
+        .filter(
+            pl.col('count').rank(descending=True, method='dense').over('year') <= 5
         )
         .group_by('year')
         .agg(pl.col('album_name'))
@@ -348,10 +346,9 @@ top_albums = (
 top_songs = (
     df
         .group_by('year','track_name')
-        .agg(pl.len())
-        .sort(by=['year','len'], descending=True)
-        .select(
-            pl.all().top_k_by('len', k=5).over('year')
+        .agg(pl.len().alias('count'))
+        .filter(
+            pl.col('count').rank(descending=True, method='dense').over('year') <= 5
         )
         .group_by('year')
         .agg(pl.col('track_name'))

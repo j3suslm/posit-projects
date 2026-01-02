@@ -3,12 +3,9 @@ pandas
 polars
 pyarrow
 plotnine
-duckdb==1.2
+duckdb
 seaborn
-ipywidgets
 jupyter
-ipykernel
-voila
 itables
 datawrapper
 tabulate
@@ -17,11 +14,7 @@ pathlib
 dash
 scikit-learn
 requests
-folium
 great-tables
-tabulate
-google-auth
-gspread
 shiny
 shinywidgets
 geopandas

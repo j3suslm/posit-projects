@@ -1,5 +1,6 @@
 jupyter
 nbformat
+ipykernel
 gspread
 google-auth
 plotly

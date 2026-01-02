@@ -46,8 +46,8 @@ import duckdb as db
 import plotly.express as px
 import json
 import os
-from dotenv import load_dotenv
-load_dotenv('.env')
+#from dotenv import load_dotenv
+#load_dotenv('.env')
 from pathlib import Path
 from google.oauth2 import service_account
 import gspread

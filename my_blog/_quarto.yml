@@ -93,11 +93,11 @@ website:
         - text: Mexico City Crime Dashboard
           href: https://j3susl-monroy.evidence.app
         - text: Why BI tools Fall short
-          href: https://j3suslm.github.io/Projects/posts/why_bi_tools_fall_short_github.html
+          href: https://j3suslm.github.io/posit-projects/marp_projects/why_bi_tools_fall_short_github.html
         - text: Window Functions in SQL
-          href: https://j3suslm.github.io/Projects/posts/sql_wf_github.html
+          href: https://j3suslm.github.io/posit-projects/marp_projects/github_sql_window_function/sql_wf_github.html
         - text: Dashboards vs Web reports
-          href: https://j3suslm.github.io/Projects/posts/reporting_github.html#1  
+          href: https://j3suslm.github.io/posit-projects/marp_projects/github_dashboards_vs_reports/reporting_github.html
 
 format:
   html:

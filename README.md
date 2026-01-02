@@ -5,11 +5,13 @@
 **_Economist & Data Scientist_**
 
 I've applied data analysis and visualization to drive strategic value for 10+ years across industries like *public security*, *e-commerce*, and *healthcare*.
+
 I use `Python`, `SQL`, and `Tableau` to transform raw data into clear, actionable data products (*webpages, slideshows, dashboards*) that support decision-making, occasionally incorporating regression and classification analyses.
+
 Background in **Economics** (BA), **Information Technology** (MA) and **Data Science & Machine Learning** (Certification).
 Committed to fostering data literacy, I share some posts on Learning Data and T3CH via [Medium](https://medium.com/@jesuslm). 
 
-This repository contains a collection of projects showcasing my skills in data analysis, machine learning, and data visualization.
+This repository contains a collection of projects on data analysis, machine learning, and data visualization.
 Many of these projects are published on Posit, allowing for interactive exploration of the analyses.
 
 
@@ -63,6 +65,27 @@ Here are some of the key skills demonstrated in these projects:
 * Cloud Computing: Posit Cloud
 * Other Relevant Skills: git, github, bash, markdown
 
+
+## Posts
+
+<img src="https://chris-ayers.com/assets/images/marp-logo.png" alt="Marp" width="300">
+
+* [SQL Window Functions Case Example](https://j3suslm.github.io/Projects/posts/sql_wf_github.html)
+
+* [Why BI Tools Fall Short](https://j3suslm.github.io/Projects/posts/why_bi_tools_fall_short_github.html)
+
+* [Dashboards vs Web Reports](https://j3suslm.github.io/Projects/posts/reporting_github.html)
+
+* [Costo Anual Total (CAT)](https://j3suslm.github.io/Projects/posts/cat_slides_github.html)
+
+
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/j3sus-lm) | [Medium](https://medium.com/@jesuslm)
+[Portfolio](https://jesuslm-my-website.share.connect.posit.cloud) | [LinkedIn](https://www.linkedin.com/in/j3sus-lm) | [Twitter](https://x.com/j3suslm) | [Medium](https://medium.com/@jesuslm)
+
+© 2026 All Rights Reserved
+
+![python](https://img.shields.io/badge/Top_language:-Python-blue?logo=github)
+![sql](https://img.shields.io/badge/Top_language:-SQL-yellow?logo=github)
+![tableau](https://img.shields.io/badge/Top_visualization:-Tableau-brown?logo=github)
+![ubuntu](https://img.shields.io/badge/Top_OS:-Ubuntu-brown?logo=github)

@@ -6,16 +6,61 @@ page-layout: article
 
 <!-- Use 03 spaces to create new line -->
 
-For over a decade, I've leveraged data analysis and visualization to deliver strategic value across diverse sectors like public security, e-commerce, and healthcare. I use `Python`[^1] and `SQL` to collect, transform, and analyze raw data, creating actionable data products such as *webpages, slideshows, and dashboards*, ocasionally including *regression* and *classification* analyses to support informed decision-making.
+I'm a professional with +10 years of experience applying data analysis in sectors like public security, e-commerce, and healthcare. Passionate about creating tools that make data accessible and impactful.
 
 Background in `Economics` (BA), `Information Technology` (MA) and `Data Science` and `Machine Learning` (Certification).
 
 Committed to fostering data literacy, I share some data posts on **Learning Data** and **T3CH** via [Medium](https://medium.com/@jesuslm).
 
-Currently serving as **Deputy Director of Public Policy** at the **Executive Secretariat of the National Public Security System**, responsible for applying analytical skills to assess public security policy initiatives.
 
-Vegan.
+### Philosophy: Data as Code
+
+In my work at the intersection of economics and data science, I advocate for a "Data as Code" approach.
+While traditional BI tools (like Tableau or Power BI) are useful for quick visualizations, they often create "information silos" that are difficult to version-control, audit, or automate.
+
+My workflow is built on three core pillars:
+
+- **Reproducibility**: Whether it's a security report or an economic forecast, the path from raw data to final insight must be scripted and version-controlled via Git. If a result isn't reproducible, it isn't reliable for policy-making.
+
+- **Modern Data Stack**: I leverage high-performance tools like DuckDB and Polars to process large datasets locally and efficiently. This reduces infrastructure costs and allows for "BI-as-Code" using frameworks like Evidence.app.
+
+- **Narrative-Driven Analytics**: Data is only as good as the story it tells. I use Quarto to blend deep statistical analysis with clear, executive-level prose, ensuring that technical findings lead to actionable policy decisions.
+
+
+Some of the Python libraries I use include:
+
+:::: {.columns}
+
+::: {.column width="20%"}
+- duckdb
+- snowflake
+- BigQuery
+- Postgresql
+- MySQL
+- Oracle
+- SQLServer
+
+:::
+
+::: {.column width="20%"}
+- polars
+- pandas
+- plotly
+- scikit-learn
+- folium 
+- streamlit
+- shiny
+:::
+
+::: {.column width="60%"}
+<!-- empty column to create gap -->
+:::
+
+::::
+
 
 ![Mexico City Crime Map](images/mexico-city-crime-map.png){fig-align="left" width=50% .lightbox}
 
-[^1]: Including libraries such as numpy, pandas, polars, duckdb, seaborn, plotly, folium, shiny, sckitlearn
+![Python](https://img.shields.io/badge/Python-blue)
+![SQL](https://img.shields.io/badge/SQL-brown)
+![bash](https://img.shields.io/badge/Bash-28282b) 

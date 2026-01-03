@@ -6,6 +6,8 @@ page-layout: article
 
 <!-- Use 03 spaces to create new line -->
 
+### About me
+
 I'm a professional with +10 years of experience applying data analysis in sectors like public security, e-commerce, and healthcare. Passionate about creating tools that make data accessible and impactful.
 
 Background in `Economics` (BA), `Information Technology` (MA) and `Data Science` and `Machine Learning` (Certification).
@@ -27,7 +29,7 @@ My workflow is built on three core pillars:
 - **Narrative-Driven Analytics**: Data is only as good as the story it tells. I use Quarto to blend deep statistical analysis with clear, executive-level prose, ensuring that technical findings lead to actionable policy decisions.
 
 
-Some of the Python libraries I use include:
+### Libraries most used
 
 :::: {.columns}
 
@@ -59,7 +61,10 @@ Some of the Python libraries I use include:
 ::::
 
 
+### Mexico City Crime Brief
+
 ![Mexico City Crime Map](images/mexico-city-crime-map.png){fig-align="left" width=50% .lightbox}
+
 
 ![Python](https://img.shields.io/badge/Python-blue)
 ![SQL](https://img.shields.io/badge/SQL-brown)

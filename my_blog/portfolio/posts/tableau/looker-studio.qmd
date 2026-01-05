@@ -1,6 +1,6 @@
 ---
 title: Looker Studio
-author: "Jesus L. Monroy"
+author: "Jesus LM"
 date: "2023-02-25"
 categories: [looker-studio]
 image: https://miro.medium.com/v2/resize:fit:640/format:webp/1*2p9WOnuFtBf-M1ZsVEBDgQ.png
@@ -49,7 +49,7 @@ We used `Looker Studio` to present results about customer behavior and online sa
 
 ## Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

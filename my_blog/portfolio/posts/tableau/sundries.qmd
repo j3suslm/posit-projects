@@ -1,6 +1,6 @@
 ---
 title: Tableau Charts example
-author: "Jesus L. Monroy"
+author: "Jesus LM"
 date: "2023-02-11"
 date-format: MMM, YYYY
 page-layout: full
@@ -47,7 +47,7 @@ Click below to wath the video
 
 ## Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

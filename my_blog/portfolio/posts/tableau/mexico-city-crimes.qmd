@@ -1,6 +1,6 @@
 ---
 title: Mexico City Crime Incidence 2019-2024
-author: "Jesus L. Monroy"
+author: "Jesus LM"
 date: "2025-03-21"
 date-format: MMM, YYYY
 page-layout: full
@@ -21,7 +21,7 @@ This dashboard was designed to track crime incidence in Mexico City during 2019-
 
 ## Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

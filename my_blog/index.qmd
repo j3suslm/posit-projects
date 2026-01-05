@@ -6,36 +6,39 @@ page-layout: article
 
 <!-- Use 03 spaces to create new line -->
 
-### About me
+## About me
 
-I'm a professional with +10 years of experience applying data analysis in sectors like public security, e-commerce, and healthcare. Passionate about creating tools that make data accessible and impactful.
+I'm a professional with +10 years of experience applying data analysis in sectors like *public security, e-commerce, and healthcare*. Passionate about creating tools that make data accessible and impactful. I primarily use `SQL`, `Python` and `Tableau`.
 
 Background in `Economics` (BA), `Information Technology` (MA) and `Data Science` and `Machine Learning` (Certification).
 
 Committed to fostering data literacy, I share some data posts on **Learning Data** and **T3CH** via [Medium](https://medium.com/@jesuslm).
 
 
-### Philosophy: Data as Code
+## Data as Code Philosophy
 
-In my work at the intersection of economics and data science, I advocate for a "Data as Code" approach.
-While traditional BI tools (like Tableau or Power BI) are useful for quick visualizations, they often create "information silos" that are difficult to version-control, audit, or automate.
+With a background of economics and data science, I advocate for a *Data as Code* approach.
+While traditional BI tools (like Tableau or Power BI) are useful for quick visualizations, they often create *information silos* that are difficult to version-control, audit, or automate.
 
-My workflow is built on three core pillars:
+My workflow is built on 03 core pillars:
 
-- **Reproducibility**: Whether it's a security report or an economic forecast, the path from raw data to final insight must be scripted and version-controlled via Git. If a result isn't reproducible, it isn't reliable for policy-making.
+- **Reproducibility**: Whether it's a executive report or an economic forecast model, the path from raw data to final insight must be scripted and version-controlled via Git. *If a result isn't reproducible, it isn't reliable*.
 
-- **Modern Data Stack**: I leverage high-performance tools like DuckDB and Polars to process large datasets locally and efficiently. This reduces infrastructure costs and allows for "BI-as-Code" using frameworks like Evidence.app.
+- **Modern Data Stack**: I leverage high-performance tools like DuckDB and Polars to process large datasets locally and efficiently. This reduces infrastructure costs and allows for "BI-as-Code" using frameworks like Streamlit or Shiny.
 
-- **Narrative-Driven Analytics**: Data is only as good as the story it tells. I use Quarto to blend deep statistical analysis with clear, executive-level prose, ensuring that technical findings lead to actionable policy decisions.
+- **Narrative-Driven Analytics**: Data is only as good as the story it tells. I elaborate statistical analysis with clear, executive-level prose *documents* and *slideshows*, ensuring that technical findings lead to actionable decisions.
 
 
-### Libraries most used
+## IT Tools
 
 :::: {.columns}
 
 ::: {.column width="20%"}
-- duckdb
-- snowflake
+
+**Databases**
+
+- Duckdb
+- Snowflake
 - BigQuery
 - Postgresql
 - MySQL
@@ -45,6 +48,9 @@ My workflow is built on three core pillars:
 :::
 
 ::: {.column width="20%"}
+
+**Python libraries**
+
 - polars
 - pandas
 - plotly
@@ -52,18 +58,30 @@ My workflow is built on three core pillars:
 - folium 
 - streamlit
 - shiny
+
 :::
 
 ::: {.column width="60%"}
-<!-- empty column to create gap -->
+
+**Other**
+
+- Tableau
+- Power BI
+- Evidence.app
+- MS-Office (Word, Excel, Powerpoint, Access)
+- Google Apps (Sheets, Docs, Slides, Forms, Gemini, etc)
+- Jira, Trello
+- Git, Github, Bash
+
 :::
 
 ::::
 
 
-### Mexico City Crime Brief
+## Mexico City Crime Visualization
 
-![Mexico City Crime Map](images/mexico-city-crime-map.png){fig-align="left" width=50% .lightbox}
+![Mexico City Crime according to the Official Stats. Issues and Figures, 2019-2024   
+Available at: https://j3susl-monroy.evidence.app](images/mexico-city-crime-map.png){fig-align="left" width=70% .lightbox}
 
 
 ![Python](https://img.shields.io/badge/Python-blue)

@@ -1,6 +1,6 @@
 ---
 title: US Sales Dashboard
-author: "Jesus L. Monroy"
+author: "Jesus LM"
 date: "2023-08-11"
 date-format: MMM, YYYY
 page-layout: full
@@ -22,7 +22,7 @@ This dashboard was designed to track sales, profits and customers by categories,
 
 ## Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

@@ -1,6 +1,6 @@
 ---
 title: "Creating Slides with Python and Quarto"
-author: 'Jesus L. Monroy'
+author: 'Jesus LM'
 date: 2024-03-28
 date-format: medium
 categories: [python]
@@ -59,7 +59,7 @@ You just have to move with your keyboard right arrow -> to see presentation or c
 
 ## Contact
 
-**Jesus L. Monroy**
+**Jesus LM**
 <br>
 *Economist & Data Scientist*
 

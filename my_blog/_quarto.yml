@@ -8,11 +8,11 @@ website:
   page-footer:
     background: "#f8f8f8"
     center:
-      - text: Tableau
-        href: https://tinyurl.com/jesus-tableau
       - text: "License"
         href: license.qmd
       - text: "&emsp; &copy; 2025 &emsp;"
+      - icon: speedometer2
+        href: https://tinyurl.com/jesus-tableau
       - icon: medium
         href: https://medium.com/@jesuslm
       - icon: linkedin
@@ -27,6 +27,8 @@ website:
     right:
       - href: portfolio/index.qmd
         text: Portfolio
+      - href: https://tinyurl.com/jesus-tableau
+        text: Tableau
       - icon: medium
         href: https://medium.com/@jesuslm
       - icon: linkedin
@@ -40,7 +42,7 @@ website:
     style: "docked"
     border: false
     contents:
-      - section: Articles
+      - section: Reports
         contents:
         - text: "BI with SQL & Markdown"
           href: evidence.qmd
@@ -62,8 +64,6 @@ website:
           href: national_guard.qmd
         - text: The Economist & Data Scientist Role in Public Security
           href: public_security.qmd
-      - section: Reports
-        contents:
         - text: Cluster analysis with Python and Polars
           href: clustering.qmd
         - text: Plotting with ggplot2 in Python
@@ -80,24 +80,29 @@ website:
           href: gasoline_web_slides.qmd
         - text: Water Collection Systems in Mexico
           href: water_collection_slides.qmd
-        - text: RIP Lake Zumpango, Mexico
-          href: zumpango_slides.qmd
-      - section: Dashboards
-        contents:
-        - text: Gasoline Prices in Mexico
-          href: gasoline_dashboard.qmd
-      - section: Other Resources
-        contents:
-        - text: Farmacias Similares Dashboard
-          href: https://j3suslm-fsdashboard.evidence.app
-        - text: Mexico City Crime Dashboard
-          href: https://j3susl-monroy.evidence.app
+        - text: Goodbye, Lake Zumpango
+          href: https://j3sus.quarto.pub/goodbye-lake-zumpango
         - text: Why BI tools Fall short
           href: https://j3suslm.github.io/posit-projects/marp_projects/why_bi_tools_fall_short_github.html
         - text: Window Functions in SQL
           href: https://j3suslm.github.io/posit-projects/marp_projects/github_sql_window_function/sql_wf_github.html
         - text: Dashboards vs Web reports
           href: https://j3suslm.github.io/posit-projects/marp_projects/github_dashboards_vs_reports/reporting_github.html
+      - section: Dashboards
+        contents:
+        - text: Gasoline Prices in Mexico
+          href: gasoline_dashboard.qmd
+        - text: Farmacias Similares Dashboard
+          href: https://j3suslm-fsdashboard.evidence.app
+        - text: Mexico City Crime Dashboard
+          href: https://j3susl-monroy.evidence.app
+        - text: Streamlit Financial Dashboard
+          href: https://jesuslm-dashboard.share.connect.posit.cloud
+        - text: Percepción de Seguridad en México ENSU 2015-2025
+          href: https://019b8053-a926-6f2a-5668-156ed6b24696.share.connect.posit.cloud
+        - text: Car Sales Dashboard
+          href: https://j3sus.quarto.pub/car-sales-dashboard
+
 
 format:
   html:

@@ -2,7 +2,7 @@
 title: "Creating Dashboards with Python"
 subtitle: 'Unleash the Power of Python'
 abstract: "Python, a versatile programming language, empowers you to create interactive dashboards that unlock the hidden potential of your data."
-author: 'Jesus L. Monroy'
+author: 'Jesus LM'
 date: 2024-04-12
 date-format: medium
 categories: [python]
@@ -52,7 +52,7 @@ You can interact with the dashboard herein or you can click [here](https://j3sus
 
 ## Contact
 
-**Jesus L. Monroy**
+**Jesus LM**
 <br>
 *Economist & Data Scientist*
 

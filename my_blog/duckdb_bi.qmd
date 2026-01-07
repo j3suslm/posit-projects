@@ -3,7 +3,7 @@
 *Efficient Data Exploration and Reporting with DuckDB and Evidence.dev*   
 *Mar, 2025*
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 <!-- use 03 spaces in markdown to create a new line -->
 
@@ -142,7 +142,7 @@ DuckDB and Evidence.dev are democratizing data analysis, empowering individuals 
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

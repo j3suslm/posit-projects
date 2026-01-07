@@ -3,7 +3,7 @@ title: Gasoline Prices in Mexico
 subtitle: "*Fuel Price Fluctuations, A Constant Concern*"
 date: '2025-02-03'
 date-format: MMM, YYYY
-author: Jesus L. Monroy
+author: Jesus LM
 abstract: |
   Gasoline prices in Mexico are a complex issue influenced by various factors.
   In this article we examine the gasoline prices in the 32 States that constitute Mexico and also their differences in cost, sale price and profits.
@@ -26,6 +26,9 @@ format:
       - text: Twitter
         icon: twitter
         href: https://x.com/j3suslm
+      - text: Tableau
+        icon: speedometer2
+        href: https://public.tableau.com/app/profile/jesus.lmonroy/vizzes
     code-fold: show
     code-summary: Show code
     code-tools:
@@ -299,7 +302,7 @@ The future of gasoline prices in Mexico remains uncertain, but one thing is clea
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

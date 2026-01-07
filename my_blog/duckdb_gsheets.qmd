@@ -3,7 +3,7 @@
 *Apr, 2025*
 
 <!-- use 03 spaces among paragraphs to create a new line-->
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 ![](https://www.arecadata.com/content/images/size/w960/2024/01/Group-6--1-.png){width=80%}   
@@ -116,7 +116,7 @@ Analyze data in Google Sheets using SQL with DuckDB
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

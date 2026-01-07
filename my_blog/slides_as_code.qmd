@@ -2,7 +2,7 @@
 *Create your slideshows with Marp, Python, and Quarto*! 🚀   
 *Apr, 2025*
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 ![](https://slidemodel.com/wp-content/uploads/00-conference-presentation-slides-cover.png){width=80%}
@@ -79,7 +79,7 @@ This powerful open-source scientific and technical publishing system ties everyt
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

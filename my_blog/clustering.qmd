@@ -3,7 +3,7 @@ title: Cluster Analysis with Python
 subtitle: A Basic Example using Polars
 date: '2025-04-04'
 date-format: MMM, YYYY
-author: '*Jesus L. Monroy*'
+author: '*Jesus LM*'
 citation-location: margin
 reference-location: margin
 cap-location: margin
@@ -192,7 +192,7 @@ Clustering is a valuable tool for data exploration and discovery. By uncovering 
 
 <!-- use 03 spaces and the sentence end to create a new line -->
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

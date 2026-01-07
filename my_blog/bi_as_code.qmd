@@ -2,7 +2,7 @@
 *Shifting from Drag-and-Drop BI Tools to Code-based Applications*   
 *May, 2025*
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 <div>
@@ -250,7 +250,7 @@ So, why settle for static reports? Embrace the power of Plotly Dash and start bu
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

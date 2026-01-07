@@ -1,7 +1,7 @@
 ---
 title: Spotify User Analysis
 subtitle: '*Uncovering Trends in Music Listening Behavior with Polars*'
-author: Jesus L. Monroy
+author: Jesus LM
 date: last-modified
 date-format: MMM, YYYY
 abstract: |
@@ -476,7 +476,7 @@ The appearance of certain genres or moods within the top 05 songs for a specific
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

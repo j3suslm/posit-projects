@@ -2,7 +2,7 @@
 title: ggplot2 in Python
 subtitle: '**An Overview of the famous ggplot2 R package in Python**'
 author-title: Author
-author: '**Jesus L. Monroy** <br> Economist & Data Scientist <br>'
+author: '**Jesus LM** <br> Economist & Data Scientist <br>'
 abstract-title: Abstract
 abstract: |
   Plotnine library in Python is based on the famous ggplot2 R package. In this article, we will show some examples of this superb visualization library.<br>
@@ -93,7 +93,7 @@ economics = pl.from_pandas(economics)
 
 ## Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

@@ -1,7 +1,7 @@
 ---
 title: Understanding Spotify User Behavior
 subtitle: '*Manipulating and Visualizing User Patterns with Polars*'
-author: Jesus L. Monroy
+author: Jesus LM
 date: last-modified
 date-format: MMM, YYYY
 abstract: |
@@ -463,7 +463,7 @@ In this analysis, we have shown the following metrics:
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

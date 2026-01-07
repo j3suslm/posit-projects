@@ -2,7 +2,7 @@
 *Progress, Concerns, and the Future of Public Security*   
 *Apr, 2024*
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 ![](https://ibero.mx/sites/default/files/prensaymultimedios/gn_mexico.jpg){width=90%}
@@ -105,7 +105,7 @@ Recent deployments, such as the reinforcement of the northern border with Army t
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

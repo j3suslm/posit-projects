@@ -1,6 +1,6 @@
 ---
 title: Zumpango Lake
-author: Jesus L. Monroy <br> Economist & Data Scientist
+author: Jesus LM <br> Economist & Data Scientist
 date: '2024-05-20'
 date-format: 'MMM, YYYY'
 format:
@@ -108,7 +108,7 @@ Zumpango Lake Air View
 
 ## Contact {.nostretch .center .smaller}
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

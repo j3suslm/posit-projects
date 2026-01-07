@@ -10,9 +10,9 @@ website:
     center:
       - text: "License"
         href: license.qmd
-      - text: "&emsp; &copy; 2025 &emsp;"
+      - text: "&emsp; &copy; 2026 &emsp;"
       - icon: speedometer2
-        href: https://tinyurl.com/jesus-tableau
+        href: https://public.tableau.com/app/profile/jesus.lmonroy/vizzes
       - icon: medium
         href: https://medium.com/@jesuslm
       - icon: linkedin
@@ -27,7 +27,7 @@ website:
     right:
       - href: portfolio/index.qmd
         text: Portfolio
-      - href: https://tinyurl.com/jesus-tableau
+      - href: https://public.tableau.com/app/profile/jesus.lmonroy/vizzes
         text: Tableau
       - icon: medium
         href: https://medium.com/@jesuslm
@@ -64,8 +64,6 @@ website:
           href: national_guard.qmd
         - text: The Economist & Data Scientist Role in Public Security
           href: public_security.qmd
-        - text: Cluster analysis with Python and Polars
-          href: clustering.qmd
         - text: Plotting with ggplot2 in Python
           href: plotnine.qmd
         - text: Understanding Spotify User Behavior
@@ -74,6 +72,8 @@ website:
           href: gasoline_web_nocode.qmd
         - text: Farmacias Similares Locations
           href: farmacias_similares.qmd
+        - text: Cluster analysis with Python and Polars
+          href: clustering.qmd
       - section: Slideshows
         contents:
         - text: Gasoline Prices in Mexico

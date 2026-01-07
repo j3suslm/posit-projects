@@ -13,32 +13,39 @@ include-in-header:
 
 ## Economist & Data Scientist
 
-For over a decade, I've leveraged data analysis and visualization to deliver strategic value across diverse sectors like public security, e-commerce, and healthcare. I use `Python` and `SQL` and `Tableau` to collect, transform, and analyze raw data, creating actionable data products such as *webpages, slideshows, and dashboards*, ocasionally including *regression* and *classification* analyses to support informed decision-making.
+I’ve applied data analysis and visualization for 10+ years to create added value in public security, e-commerce, and healthcare.
+I use `Python`, `SQL`, and `Tableau` to transform raw data into clear, actionable data products (*webpages, slideshows, interactive reports*)
+that support decision-making, ocasionally including *regression* and *classification* analyses to support informed decision-making.
 
 Background in `Economics` (BA), `Information Technology` (MA) and `Data Science & Machine Learning` (Certification).
 
 Committed to fostering data literacy, I share some data posts on **Learning Data** and **T3CH** via [Medium](https://medium.com/@jesuslm).
-   
+
+
 ## Professional Experience
 
 #### Secretariado Ejecutivo del Sistema Nacional de Seguridad Publica
 **Deputy Director of Public Policy**   
 *Jun 2025 -*
 
-- Design and implement `SQL` queries and `Python` scripts for *data collection, cleaning, transformation, and analysis of statistical and geospatial analysis* from diverse sources.
-- Automate the generation of *reports and presentations* to effectively communicate public policy performance in public security.
+- I developed automated workflows using `Python` and `SQL`, transforming raw data into actionable assets.
 - Developed detailed documentation using `Markdown` for the development and usage of *digital solutions*.
-- Engage with cross-functional stakeholders to facilitate continuous *evaluation of public policy* initiatives.
+- I collaborated with cross-functional teams to understand business problems and translate them into analytical
+solutions.
+- I developed a web portal for interactive reports and presentations using `Python`, `Streamlit`, `Shiny`, and `reveal.js`.
+
 
 #### Atos Consulting
 **Information Analyst**   
 *May 2024 - Mar 2025*
 
 - Used `Snowpark` and `Python` for data exploration, transformation, and analysis, enabling scalable data workflows.
+- Used `SQL` for data collection and transformation for late use in creating dashboards.
 - Designed intuitive `Tableau` dashboards to empower end-users with data-driven insights.
-- Created compelling interactive visualizations and web reports using `Python` to drive informed decision-making.
 - Collaborated with cross-functional teams to understand business needs and translate them into data solutions.
-- Developed engaging *web slideshows with interactive tables and charts* using `Python` to effectively communicate data-driven stories to diverse audiences.
+✔ Developed engaging web slideshows with interactive tables and charts using `Python` to effectively communicate
+data-driven stories to diverse audiences.
+
 
 #### Grupo PM Soluciones
 **Tableau Analyst**   
@@ -49,27 +56,29 @@ Committed to fostering data literacy, I share some data posts on **Learning Data
 - Created clear and concise *documentation* for digital products using `Markdown`.
 - Automated reports using `Python`, transitioning from manual spreadsheets and slideshows to *webpages*.
 
+
 #### Pepsi (Digital Transformation)
 **Sales Digitalization Specialist**   
 *Mar 2023 - May 2023*
 
-- Enhanced data-driven decision-making by building interactive *dashboards* with `Looker Studio` and `Google Analytics`.
+- Enhanced data-driven decision-making by building interactive *dashboards* with `Looker Studio` and `Power BI`.
 - Utilized `SQL` queries to extract, clean, and analyze relevant data from various sources.
-- Developed a repository with *Python*-based *web reports* for stakeholders.
+- Developed a repository with `Python`*-based *web reports* for stakeholders.
+
 
 #### Guardia Nacional
 **Information Analyst**   
 *Jan 2010 - Dec 2022*
 
-- Used `SQL` for data collection and transformation.
-- Created data pipelines with `Python` and *Google apps* for management reporting.
-- Designed interactive dashboards using `Looker Studio` for monitoring of operational performance.
-- Participated in meetings with diverse managers to understand business problems and propose data solutions.
-- Created a digital map of operational facilities using <code>Python</code>, providing an interactive visual of key locations.
-- Collaborated in the implementation of `Google Forms` and `Google Sheets` to streamline data collection.
-- Developed a digital *newspaper* for communication among personnel, fostering an engaged workforce.
-- I was promoted as **deputy director** of the *analytical area*, improving data governance and literacy.
-    
+I used `SQL` for database cleaning, debugging, and maintenance.
+I automated data collection and transformation using `Python` and `Google Sheets`.
+I created automated dashboards and reports with `Looker Studio`.
+I collaborated with management teams to understand business problems and translate them into data solutions.
+✔ I developed a geospatial application for operational sites using `Python` and `Folium`.
+✔ I collaborated on the implementation of Google `Sheets` and `Forms` for data collection.
+✔ I developed a digital newsletter for staff communication using `Notion`.
+
+
 ## Education
 
 |University|Career|Period|
@@ -80,16 +89,17 @@ Committed to fostering data literacy, I share some data posts on **Learning Data
 
 : {.striped .hover}
 
+
 ## Skills
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-- SQL
-- Python
-- Tableau
-- Markdown
-- Git & Github
+- MS Office
+- SQL, Python
+- Snowflake, Tableau
+- Streamlit, Shiny
+- Git, Github, Bash
 :::
 
 ::: {.column width="40%"}
@@ -102,8 +112,10 @@ Committed to fostering data literacy, I share some data posts on **Learning Data
 
 ::::
 
+
 ## Contact
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) |
 [Medium](https://medium.com/@jesuslm) |
 [Twitter](https://x.com/j3suslm) |
+[Tableau](https://public.tableau.com/app/profile/jesus.lmonroy/vizzes) |

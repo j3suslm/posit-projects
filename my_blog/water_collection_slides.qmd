@@ -2,7 +2,7 @@
 title: Water Collection System in Mexico City - 2022
 title-slide-attributes:
   data-background-color: '#ececec'
-author: '**Jesus L. Monroy** <br> Economist & Data Scientist'
+author: '**Jesus LM** <br> Economist & Data Scientist'
 date: '2024-03-28'
 date-format: 'MMM D, YYYY'
 format:
@@ -275,7 +275,7 @@ You can hover over the icons on the map to get further information and zoom in o
 
 ## Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

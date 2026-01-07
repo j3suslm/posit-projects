@@ -1,6 +1,6 @@
 ---
 title: Gasoline Prices in Mexico Dashboard
-author: Jesus L. Monroy
+author: Jesus LM
 format:
   dashboard:
     logo: images/gas.png

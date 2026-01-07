@@ -1,7 +1,7 @@
 ---
 title: Location of Farmacias Similares in Mexico
 subtitle: A Geographical Overview
-author: '*Jesus L. Monroy*'
+author: '*Jesus LM*'
 date: last-modified
 date-format: MMM, YYYY
 abstract: In this post, we will show the sundry locations of Farmacias Smilares alongside Mexico.
@@ -126,7 +126,7 @@ simi_map
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Medium](https://medium.com/@jesuslm) |

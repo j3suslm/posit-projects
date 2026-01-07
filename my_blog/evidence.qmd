@@ -2,7 +2,7 @@
 *Ditch the drag-and-drop: Code is the Future of Data Analysis*   
 *Mar, 2025*
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 ![](https://static.vecteezy.com/system/resources/previews/011/599/360/non_2x/newspaper-with-the-headline-news-and-glasses-and-coffee-cup-on-wooden-table-daily-newspaper-mock-up-concept-photo.jpg){width=60%}
@@ -84,7 +84,7 @@ By leveraging Evidence.dev, teams can bridge the gap between data analysis and w
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

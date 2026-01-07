@@ -1,7 +1,7 @@
 ---
 title: Gasoline Prices in Mexico
 subtitle: Fuel Price Fluctuations, A Constant Concern
-author: '**Jesus L. Monroy** <br> *Economist & Data Scientist*'
+author: '**Jesus LM** <br> *Economist & Data Scientist*'
 date: '2025-02-03'
 date-format: MMM, YYYY
 format:
@@ -336,7 +336,7 @@ The future of gasoline prices in Mexico remains uncertain, but one thing is clea
 
 # Contact {.smaller}
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

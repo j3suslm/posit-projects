@@ -1,7 +1,7 @@
 # The Scales of Popularity: Economic Implications of Judicial Elections in Mexico
 *Mar, 2025*
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
         
 ![](images/choice.png){width=60%}
@@ -56,7 +56,7 @@ In essence, applying economic theories of elections to the proposed judicial ref
 
 # Contact
 
-**Jesus L. Monroy**   
+**Jesus LM**   
 *Economist & Data Scientist*
 
 [Linkedin](https://www.linkedin.com/in/j3sus-lm) | 

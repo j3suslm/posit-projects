@@ -14,15 +14,15 @@ _ = load_dotenv('.env')
 
 # Link the CSS file
 # 1. Get the directory where your current script (e.g., app.py) is located
-PARENT_DIR = Path(__file__).parent
+dir = Path('.')
 
 # 2. Join that directory with your filename
-css_path = PARENT_DIR / "custom.css"
+css_path = dir / "www/custom.css"
 
 # 3. Use the path in your code
 with open(css_path) as f:
     # your logic here
-    ui.include_css(css)
+    ui.include_css(f)
 
 # --- 1. Data Connection ---
 try:

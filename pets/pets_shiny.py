@@ -3,6 +3,7 @@ import polars as pl
 import duckdb as db
 import plotly.express as px
 from dotenv import load_dotenv
+from pathlib import Path
 
 from shiny import reactive, render
 from shiny.express import input, ui
@@ -11,7 +12,8 @@ from shinywidgets import render_plotly
 _ = load_dotenv('.env')
 
 # Link the CSS file
-ui.include_css("www/custom.css")
+css = Path("www/custom.css")
+ui.include_css(css)
 
 # --- 1. Data Connection ---
 try:

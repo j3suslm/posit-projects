@@ -1,7 +1,7 @@
 ---
 title: LM Family Pets Reporting
 author-title: Author
-author: Jesus L. Monroy
+author: Jesus LM
 abstract: |
   In this report we can get last events about diseases, vaccines, surgeries, weight and esthetics for family pets.
 published-title: Published
@@ -32,6 +32,7 @@ format:
 jupyter: python3
 ---
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVL9tfVWVWLX8jiKGmbm4PhI8VGIqpM0GVxQ&s){.lightbox fig-align="left" width=50%}
 
 - [How to Analyze Data in Google Sheets With Python: A Step-By-Step Guide](https://www.datacamp.com/tutorial/how-to-analyze-data-in-google-sheets-with-python-a-step-by-step-guide)
 
@@ -46,8 +47,8 @@ import duckdb as db
 import plotly.express as px
 import json
 import os
-#from dotenv import load_dotenv
-#load_dotenv('.env')
+from dotenv import load_dotenv
+load_dotenv('.env')
 from pathlib import Path
 from google.oauth2 import service_account
 import gspread
@@ -79,10 +80,6 @@ data = worksheet.get_all_records()
 
 # create dataframe
 df_pd = pd.DataFrame.from_dict(data)
-```
-
-```{python}
-df_pd.columns
 ```
 
 ```{python}
@@ -128,7 +125,7 @@ df = (
 
 ```{python}
 #| output: false
-
+# echo: false
 ## Creating tables
 ### Get categories
 
@@ -200,7 +197,7 @@ terapias = tables.get('categoria_Fisioterapia')
 
 ```{python}
 # motherduck database cloud
-token = os.getenv('MD_TOKEN')
+token = os.environ["MD_TOKEN"]
 ```
 
 ```{python}
@@ -437,7 +434,7 @@ fig.update_layout(
     yaxis=dict(title=dict(text='Peso')),
     yaxis_range=[0, 12],
     plot_bgcolor='#ececec',
-    title=dict(text="Evolucion del peso de Reyna", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
+    title=dict(text="Reyna's Weight Evolution", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
     )
 
 fig.update_traces(line_color='#9A607F',
@@ -465,7 +462,7 @@ fig.update_layout(
     yaxis=dict(title=dict(text='Peso')),
     yaxis_range=[0, 12],
     plot_bgcolor='#ececec',
-    title=dict(text="Evolucion del peso de Pelusa", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
+    title=dict(text="Pelusa's Weight Evolution", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
     )
 
 fig.update_traces(line_color='#9A607F',
@@ -493,7 +490,7 @@ fig.update_layout(
     yaxis=dict(title=dict(text='Peso')),
     yaxis_range=[0, 10],
     plot_bgcolor='#ececec',
-    title=dict(text="Evolucion del peso de Gunther", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
+    title=dict(text="Gunther's Weight Evolution", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
     )
 
 fig.update_traces(line_color='#576E79',
@@ -522,7 +519,7 @@ fig.update_layout(
     yaxis=dict(title=dict(text='Peso')),
     yaxis_range=[0, 5],
     plot_bgcolor='#ececec',
-    title=dict(text="Evolucion del peso de Dino", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
+    title=dict(text="Dino's Weight Evolution", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
     )
 
 fig.update_traces(line_color='#576E79',
@@ -551,7 +548,7 @@ fig.update_layout(
     yaxis=dict(title=dict(text='Peso')),
     yaxis_range=[0, 70],
     plot_bgcolor='#ececec',
-    title=dict(text="Evolucion del peso de Naty", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
+    title=dict(text="Naty's Weight Evolution", font=dict(size=30, color='#9A607F',), automargin=True, yref='paper'),
     )
 
 fig.update_traces(line_color='#9A607F',
@@ -580,7 +577,7 @@ fig.update_layout(
     yaxis=dict(title=dict(text='Peso')),
     yaxis_range=[0, 90],
     plot_bgcolor='#ececec',
-    title=dict(text="Evolucion del peso de Jesus", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
+    title=dict(text="Jesus' Weight Evolution", font=dict(size=30, color='#576E79',), automargin=True, yref='paper'),
     )
 
 fig.update_traces(line_color='#576E79',
@@ -590,4 +587,3 @@ fig.update_traces(line_color='#576E79',
 
 fig.show()
 ```
-

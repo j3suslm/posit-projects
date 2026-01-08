@@ -30,7 +30,7 @@ try:
 except Exception as e:
     print(f"Error connecting to database or fetching data: {e}")
     # Initialize an empty Polars DataFrame if there's a DB issue
-    weights = pl.DataFrame({"Fecha": [], "Nombre": [], "Categoria": [], "Peso": []})
+    #weights = pl.DataFrame({"Fecha": [], "Nombre": [], "Categoria": [], "Peso": []})
 
 # Layout
 app.layout = html.Div([

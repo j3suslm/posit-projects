@@ -11,9 +11,18 @@ from shinywidgets import render_plotly
 
 _ = load_dotenv('.env')
 
+
 # Link the CSS file
-css = Path(__file__) / 'custom.css'
-ui.include_css(css)
+# 1. Get the directory where your current script (e.g., app.py) is located
+PARENT_DIR = Path(__file__).parent
+
+# 2. Join that directory with your filename
+css_path = PARENT_DIR / "custom.css"
+
+# 3. Use the path in your code
+with open(css_path) as f:
+    # your logic here
+    ui.include_css(css)
 
 # --- 1. Data Connection ---
 try:

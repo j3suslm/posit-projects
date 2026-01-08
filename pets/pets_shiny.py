@@ -12,7 +12,7 @@ from shinywidgets import render_plotly
 _ = load_dotenv('.env')
 
 # Link the CSS file
-css = Path("www/custom.css")
+css = Path(__file__) / 'custom.css'
 ui.include_css(css)
 
 # --- 1. Data Connection ---

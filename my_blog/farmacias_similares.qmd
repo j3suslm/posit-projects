@@ -14,7 +14,6 @@ jupyter: python3
 
 
 ```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:35.813237Z', start_time: '2025-04-08T19:44:35.194752Z'}
 # import libraries
 import pandas as pd
 import requests
@@ -23,23 +22,22 @@ import folium.plugins
 ```
 
 ```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:35.820277Z', start_time: '2025-04-08T19:44:35.817024Z'}
 url = 'https://www.farmaciasdesimilares.com/getpickuppoints'
 ```
 
 ```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:39.270828Z', start_time: '2025-04-08T19:44:35.956125Z'}
 # request data
 response = requests.get(url)
 stores = response.json()
 ```
 
 ```{python}
+#| echo: false
 stores[0]
 ```
 
 ```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:39.286398Z', start_time: '2025-04-08T19:44:39.280550Z'}
+#| echo: false
 drugstore=[]
 city=[]
 state=[]
@@ -63,7 +61,7 @@ for store in range(len(stores)):
 ```
 
 ```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:39.316342Z', start_time: '2025-04-08T19:44:39.297306Z'}
+#| echo: false
 simi_df = pd.DataFrame(
     {'drugstore':drugstore,
     'street':street,
@@ -77,20 +75,19 @@ simi_df = pd.DataFrame(
 ```
 
 ```{python}
+#simi_df.to_csv('similares.csv')
+```
+
+```{python}
+simi_df = pd.read_csv('similares.csv')
 simi_df.head()
 ```
 
 ```{python}
-simi_df.to_csv('similares.csv')
-```
-
-```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:39.452371Z', start_time: '2025-04-08T19:44:39.448897Z'}
 simi_face = 'https://tinyurl.com/3mvfbu4t'
 ```
 
 ```{python}
-#| ExecuteTime: {end_time: '2025-04-08T19:44:40.419760Z', start_time: '2025-04-08T19:44:39.485535Z'}
 # map
 simi_map = folium.Map(location=[23, -101], zoom_start=5, attr='Google')
 
